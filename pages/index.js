@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -18,7 +19,9 @@ export default function Home() {
         >
           <ul>
             <li>
-              <a className="has-text-grey">Lifting Equipment</a>
+              <Link href="/LiftingEquipment">
+                <a className="has-text-grey">Lifting Equipment</a>
+              </Link>
             </li>
             <li>
               <a className="has-text-grey">Lifting Accessories</a>
@@ -69,97 +72,119 @@ export default function Home() {
           <h3 className="title has-text-centered is-size-4">
             Product Categories
           </h3>
-
+          <br />
           <div className="columns is-mobile is-multiline">
             <div className="column is-6-mobile is-4-tablet is-3-widescreen">
-              <div className="card">
-                <div className="card-header">
-                  <p className="card-header-title">A. Lifting Equipment</p>
-                </div>
-                <div className="card-image has-text-centered pt-6">
-                  <Image
-                    width={165}
-                    height={165}
-                    src="/A.-Lifting-Equipment_T.jpg"
-                    alt="Lifing accessories"
-                  />
-                </div>
-                <div className="card-content">
-                  <div class="content">
-                    The term lifting equipment contains all lifting accessories
-                    and appliances, any machine which is able to raise, lower or
-                    suspend a load. Examples are cranes, hoists, jacks, etc.
+              <Link href="/LiftingEquipment">
+                <a>
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">A. Lifting Equipment</p>
+                    </div>
+                    <div className="card-image has-text-centered pt-6">
+                      <Image
+                        width={165}
+                        height={165}
+                        src="/A.-Lifting-Equipment_T.jpg"
+                        alt="Lifing accessories"
+                      />
+                    </div>
+                    <div className="card-content">
+                      <div class="content">
+                        The term lifting equipment contains all lifting
+                        accessories and appliances, any machine which is able to
+                        raise, lower or suspend a load. Examples are cranes,
+                        hoists, jacks, etc.
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </a>
+              </Link>
             </div>
             <div className="column is-6-mobile is-4-tablet is-3-widescreen">
-              <div className="card">
-                <div className="card-header">
-                  <p className="card-header-title">B. Operators Duty Service</p>
-                </div>
-                <div className="card-image has-text-centered pt-6">
-                  <Image
-                    width={165}
-                    height={165}
-                    src="/B.-Operators-Duty-Service_T.jpg"
-                    alt="Lifing accessories"
-                  />
-                </div>
-                <div className="card-content">
-                  <div class="content">
-                    A service to help operators to comply with legislative
-                    requirements concerning the use of lifting equipment.
+              <Link href="/OperatorsDuty">
+                <a>
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">
+                        B. Operators Duty Service
+                      </p>
+                    </div>
+                    <div className="card-image has-text-centered pt-6">
+                      <Image
+                        width={165}
+                        height={165}
+                        src="/B.-Operators-Duty-Service_T.jpg"
+                        alt="Lifing accessories"
+                      />
+                    </div>
+                    <div className="card-content">
+                      <div class="content">
+                        A service to help operators to comply with legislative
+                        requirements concerning the use of lifting equipment.
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </a>
+              </Link>
             </div>
             <div className="column is-6-mobile is-4-tablet is-3-widescreen">
-              <div className="card">
-                <div className="card-header">
-                  <p className="card-header-title">C. Material Handling</p>
-                </div>
-                <div className="card-image has-text-centered pt-6">
-                  <Image
-                    width={165}
-                    height={165}
-                    src="/C. Material Handling_T.jpg"
-                    alt="Lifing accessories"
-                  />
-                </div>
-                <div className="card-content">
-                  <div class="content">
-                    Mechanical equipment used for the movement, transport,
-                    positioning, storage of materials, goods and products
-                    throughout the process of manufacturing, distribution,
-                    consumption, and disposal.
+              <Link href="/MaterialHandling">
+                <a>
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">C. Material Handling</p>
+                    </div>
+                    <div className="card-image has-text-centered pt-6">
+                      <Image
+                        width={165}
+                        height={165}
+                        src="/C. Material Handling_T.jpg"
+                        alt="Lifing accessories"
+                      />
+                    </div>
+                    <div className="card-content">
+                      <div class="content">
+                        Mechanical equipment used for the movement, transport,
+                        positioning, storage of materials, goods and products
+                        throughout the process of manufacturing, distribution,
+                        consumption, and disposal.
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </a>
+              </Link>
             </div>
+
             <div className="column is-6-mobile is-4-tablet is-3-widescreen">
-              <div className="card">
-                <div className="card-header">
-                  <p className="card-header-title">D. Miscellaneous products</p>
-                </div>
-                <div className="card-image has-text-centered pt-6">
-                  <Image
-                    width={165}
-                    height={165}
-                    src="/D.-Miscellaneous_T.jpg"
-                    alt="Lifing accessories"
-                  />
-                </div>
-                <div className="card-content">
-                  <div class="content">
-                    Lorem ipsum leo risus, porta ac consectetur ac, vestibulum
-                    at eros. Donec id elit non mi porta gravida at eget metus.
-                    Cum sociis natoque penatibus et magnis dis parturient
-                    montes, nascetur ridiculus mus. Cras mattis consectetur
-                    purus sit amet fermentum.
+              <Link href="/Miscellaneous">
+                <a>
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">
+                        D. Miscellaneous products
+                      </p>
+                    </div>
+                    <div className="card-image has-text-centered pt-6">
+                      <Image
+                        width={165}
+                        height={165}
+                        src="/D.-Miscellaneous_T.jpg"
+                        alt="Lifing accessories"
+                      />
+                    </div>
+                    <div className="card-content">
+                      <div class="content">
+                        Lorem ipsum leo risus, porta ac consectetur ac,
+                        vestibulum at eros. Donec id elit non mi porta gravida
+                        at eget metus. Cum sociis natoque penatibus et magnis
+                        dis parturient montes, nascetur ridiculus mus. Cras
+                        mattis consectetur purus sit amet fermentum.
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
