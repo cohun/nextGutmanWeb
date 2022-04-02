@@ -41,26 +41,32 @@ export default function Home() {
           <div className="columns">
             <div className="column">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae beatae quisquam rerum magni sequi perferendis
-                laborum! Suscipit aut laboriosam voluptatem blanditiis magnam
-                qui, consequuntur assumenda quod et, accusamus, quidem veniam.
+                Gutman is a well known brandname among lifting equipment users.
+                Gutman stands for safe, reliable products and best service. Any
+                lifting-related activity shall be covered by a product-, system-
+                or service solution of Gutman. Therefore you can find in our
+                product range an always improving and expanding assortment which
+                has been carefully made up for your benefit.
               </p>
             </div>
             <div className="column">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae beatae quisquam rerum magni sequi perferendis
-                laborum! Suscipit aut laboriosam voluptatem blanditiis magnam
-                qui, consequuntur assumenda quod et, accusamus, quidem veniam.
+                We supply only the very highest quality lifting equipment with a
+                strong and durable design - priding ourselves on providing an
+                exemplary customer service. A broad product range allow us to
+                facilitate almost any lifting requirement for our customers. Our
+                products and services are continually up-dated to meet the needs
+                of industry with a strong emphasis on quality and safety
               </p>
             </div>
             <div className="column">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae beatae quisquam rerum magni sequi perferendis
-                laborum! Suscipit aut laboriosam voluptatem blanditiis magnam
-                qui, consequuntur assumenda quod et, accusamus, quidem veniam.
+                For the marketed Gutman products through our dealer network and
+                representatives we are able to perform inspection and testing as
+                well. This service includes providing registers of lifting
+                equipment for our customers and completing the 6 or 12 monthly
+                inspections as required by law. Our clients can enjoy the
+                benefits of short delivery time due to our large stocks.
               </p>
             </div>
           </div>
