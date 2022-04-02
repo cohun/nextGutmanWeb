@@ -73,8 +73,8 @@ export default function Home() {
             Product Categories
           </h3>
           <br />
-          <div className="columns is-mobile is-multiline">
-            <div className="column is-6-mobile is-4-tablet is-3-widescreen">
+          <div className="columns is-multiline">
+            <div className="column is-12-mobile is-6-tablet is-3-widescreen">
               <Link href="/LiftingEquipment">
                 <a>
                   <div className="card">
@@ -101,7 +101,7 @@ export default function Home() {
                 </a>
               </Link>
             </div>
-            <div className="column is-6-mobile is-4-tablet is-3-widescreen">
+            <div className="column is-12-mobile is-6-tablet is-3-widescreen">
               <Link href="/OperatorsDuty">
                 <a>
                   <div className="card">
@@ -128,7 +128,7 @@ export default function Home() {
                 </a>
               </Link>
             </div>
-            <div className="column is-6-mobile is-4-tablet is-3-widescreen">
+            <div className="column is-12-mobile is-6-tablet is-3-widescreen">
               <Link href="/MaterialHandling">
                 <a>
                   <div className="card">
@@ -156,7 +156,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="column is-6-mobile is-4-tablet is-3-widescreen">
+            <div className="column is-12-mobile is-6-tablet is-3-widescreen">
               <Link href="/Miscellaneous">
                 <a>
                   <div className="card">
