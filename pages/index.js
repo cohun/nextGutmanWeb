@@ -1,7 +1,7 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
-import styles from '../styles/Home.module.css';
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -96,7 +96,7 @@ export default function Home() {
                       />
                     </div>
                     <div className="card-content">
-                      <div class="content">
+                      <div className="content">
                         The term lifting equipment contains all lifting
                         accessories and appliances, any machine which is able to
                         raise, lower or suspend a load. Examples are cranes,
@@ -125,7 +125,7 @@ export default function Home() {
                       />
                     </div>
                     <div className="card-content">
-                      <div class="content">
+                      <div className="content">
                         A service to help operators to comply with legislative
                         requirements concerning the use of lifting equipment.
                       </div>
@@ -145,12 +145,12 @@ export default function Home() {
                       <Image
                         width={165}
                         height={165}
-                        src="/C. Material Handling_T.jpg"
+                        src="/C.-Material-Handling_T.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
-                      <div class="content">
+                      <div className="content">
                         Mechanical equipment used for the movement, transport,
                         positioning, storage of materials, goods and products
                         throughout the process of manufacturing, distribution,
@@ -180,7 +180,7 @@ export default function Home() {
                       />
                     </div>
                     <div className="card-content">
-                      <div class="content">
+                      <div className="content">
                         Lorem ipsum leo risus, porta ac consectetur ac,
                         vestibulum at eros. Donec id elit non mi porta gravida
                         at eget metus. Cum sociis natoque penatibus et magnis
