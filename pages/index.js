@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Disributors from "../components/Distributors";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -75,7 +76,7 @@ export default function Home() {
 
       <section className="section">
         <div className="container">
-          <h3 className="title has-text-centered is-size-4">
+          <h3 className="title has-text-centered is-size-3">
             Product Categories
           </h3>
           <br />
@@ -195,6 +196,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Disributors />
     </div>
   );
 }
