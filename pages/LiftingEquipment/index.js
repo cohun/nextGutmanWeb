@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 const LiftingEquipment = () => {
   return (
@@ -23,8 +23,8 @@ const LiftingEquipment = () => {
           </ul>
         </nav>
       </section>
-      <section className="section">
-        <div className="container">
+      <section className="section mb-6">
+        <div className="container mb-6">
           <h3 className="title has-text-centered is-size-3">
             Lifting Equipment
           </h3>
@@ -49,10 +49,10 @@ const LiftingEquipment = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        The term lifting equipment contains all lifting
-                        accessories and appliances, any machine which is able to
-                        raise, lower or suspend a load. Examples are cranes,
-                        hoists, jacks, etc.
+                        A crane is a type of machine, generally equipped with a
+                        hoist rope, wire ropes or chains, and sheaves, that can
+                        be used both to lift and lower materials and to move
+                        them horizontally.
                       </div>
                     </div>
                   </div>
@@ -78,8 +78,9 @@ const LiftingEquipment = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        A service to help operators to comply with legislative
-                        requirements concerning the use of lifting equipment.
+                        A lifting equipment which can be worked through power.
+                        They are designed to reduce the manual handling effort
+                        and associated risk to the user to a minimum.
                       </div>
                     </div>
                   </div>
@@ -105,10 +106,9 @@ const LiftingEquipment = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Mechanical equipment used for the movement, transport,
-                        positioning, storage of materials, goods and products
-                        throughout the process of manufacturing, distribution,
-                        consumption, and disposal.
+                        A lifting equipment which is not worked through power
+                        but by an individual. (lifting, putting down, pushing,
+                        pulling, carrying or moving)
                       </div>
                     </div>
                   </div>
@@ -117,7 +117,7 @@ const LiftingEquipment = () => {
             </div>
 
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/Miscellaneous">
+              <Link href="/LiftingEquipment/LiftingAccessories">
                 <a>
                   <div className="card">
                     <div className="card-header">
@@ -129,17 +129,16 @@ const LiftingEquipment = () => {
                       <Image
                         width={165}
                         height={165}
-                        src="/D.-Miscellaneous_T.jpg"
+                        src="/Lifting_Accessories_T.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Lorem ipsum leo risus, porta ac consectetur ac,
-                        vestibulum at eros. Donec id elit non mi porta gravida
-                        at eget metus. Cum sociis natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus mus. Cras
-                        mattis consectetur purus sit amet fermentum.
+                        The term lifting accessory, or accessory for lifting, is
+                        an item of equipment used to attach the load to the
+                        lifting appliance. Such equipment is also known as
+                        ‘rigging equipment’, ‘lifting gear’ or ‘lifting tackle’.
                       </div>
                     </div>
                   </div>

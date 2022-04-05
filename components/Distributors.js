@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 const Disributors = () => {
   return (
@@ -26,23 +26,23 @@ const Disributors = () => {
           <br />
           <div className="columns is-multiline">
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment">
+              <Link href="https://h-itb.hu">
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title is-flex-direction-row">
+                      <div className="card-header-title is-flex-direction-row">
                         <p className="mr-6 ml-4 is-justify-content-flex-center is-flex-wrap-nowrap">
                           Hungary
                         </p>
 
                         <Image
                           className="is-justify-content-flex-end"
-                          width={125}
-                          height={50}
+                          width={100}
+                          height={40}
                           src="/H-ITBLogo.jpg"
                           alt="H-ITB logo"
                         />
-                      </p>
+                      </div>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
@@ -54,8 +54,14 @@ const Disributors = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        H-1119 Budapest, Kelenvölgy htsr.5 www.h-itb.hu
-                        hitb@h-itb.hu +36 1 2056208
+                        <p className="mb-0 has-text-weight-semibold">
+                          H-ITB Kft.
+                        </p>
+                        <p className="mb-0">
+                          H-1119 Budapest, Kelenvölgyi htsr. 5
+                        </p>
+                        <p className="mb-0">Tel: +36 1 2056208</p>
+                        <p>Email: hitb@h-itb.hu</p>
                       </div>
                     </div>
                   </div>
@@ -63,11 +69,11 @@ const Disributors = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/OperatorsDuty">
+              <Link href="https://www.alfa-cluj.ro/">
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title is-flex-direction-row">
+                      <div className="card-header-title is-flex-direction-row">
                         <p className="mr-6 ml-4 is-justify-content-flex-center is-flex-wrap-nowrap">
                           Romania
                         </p>
@@ -79,7 +85,7 @@ const Disributors = () => {
                           src="/alfa.jpg"
                           alt="Alfa-Cluj logo"
                         />
-                      </p>
+                      </div>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
@@ -91,8 +97,14 @@ const Disributors = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        A service to help operators to comply with legislative
-                        requirements concerning the use of lifting equipment.
+                        <p className="mb-0 has-text-weight-semibold">
+                          Alfa Cluj SRL
+                        </p>
+                        <p className="mb-0">
+                          Bd. Muncii, nr. 14, perim. 10 Cluj-Napoca
+                        </p>
+                        <p className="mb-0">Tel: +40 264 415 662</p>
+                        <p>Email: info@alfa-cluj.ro</p>
                       </div>
                     </div>
                   </div>
@@ -100,11 +112,23 @@ const Disributors = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment">
+              <Link href="https://www.gutmanlifting.sk/">
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title">Slovakia</p>
+                      <div className="card-header-title is-flex-direction-row">
+                        <p className="mr-6 ml-4 is-justify-content-flex-center is-flex-wrap-nowrap">
+                          Slovakia
+                        </p>
+
+                        <Image
+                          className="is-justify-content-flex-end"
+                          width={125}
+                          height={40}
+                          src="/Gutman_Dizalica.png"
+                          alt="Dizalica logo"
+                        />
+                      </div>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
@@ -116,8 +140,14 @@ const Disributors = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        H-1119 Budapest, Kelenvölgy htsr.5 www.h-itb.hu
-                        hitb@h-itb.hu +36 1 2056208
+                        <p className="mb-0 has-text-weight-semibold">
+                          Gutman Lifting, s.r.o.
+                        </p>
+                        <p className="mb-0">
+                          Bratislavská cesta 13 949 01 Nitra
+                        </p>
+                        <p className="mb-0">Tel: +421 949 00 53 53</p>
+                        <p>Email: shop@gutmanlifting.sk</p>
                       </div>
                     </div>
                   </div>
@@ -125,11 +155,23 @@ const Disributors = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/OperatorsDuty">
+              <Link href="https://gutmanlifting.rs/">
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title">Serbia</p>
+                      <div className="card-header-title is-flex-direction-row">
+                        <p className="mr-6 ml-4 is-justify-content-flex-center is-flex-wrap-nowrap">
+                          Serbia
+                        </p>
+
+                        <Image
+                          className="is-justify-content-flex-end"
+                          width={125}
+                          height={40}
+                          src="/Gutman_Dizalica.png"
+                          alt="Dizalica logo"
+                        />
+                      </div>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
@@ -141,8 +183,12 @@ const Disributors = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        A service to help operators to comply with legislative
-                        requirements concerning the use of lifting equipment.
+                        <p className="mb-0 has-text-weight-semibold">
+                          GUTMAN LIFTING DOO
+                        </p>
+                        <p className="mb-0">Miška Jovanovića 16-18, Beograd</p>
+                        <p className="mb-0">Tel: +381 11 39 80 315</p>
+                        <p>Email: gutmanlift@verat.net</p>
                       </div>
                     </div>
                   </div>
@@ -150,7 +196,7 @@ const Disributors = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/MaterialHandling">
+              <Link href="https://dizalica.hr/">
                 <a>
                   <div className="card">
                     <div className="card-header">
@@ -178,10 +224,14 @@ const Disributors = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Mechanical equipment used for the movement, transport,
-                        positioning, storage of materials, goods and products
-                        throughout the process of manufacturing, distribution,
-                        consumption, and disposal.
+                        <p className="mb-0 has-text-weight-semibold">
+                          DIZALICA d.o.o.
+                        </p>
+                        <p className="mb-0">
+                          Slavonska avenija 22E, 10000 Zagreb
+                        </p>
+                        <p className="mb-0">Tel: +385 1 553 0706</p>
+                        <p>Email: prodaja@dizalica.hr</p>
                       </div>
                     </div>
                   </div>

@@ -12,14 +12,17 @@ const Navbar = () => {
   return (
     <nav className="navbar has-shadow is-dark">
       <div className="navbar-brand">
-        <a className="navbar-item">
-          <Image
-            width={250}
-            height={100}
-            src="/GutmanLogo.jpg"
-            alt="site logo"
-          />
-        </a>
+        <Link href="https://gutmanlifting.com">
+          <a className="navbar-item">
+            <Image
+              width={250}
+              height={100}
+              src="/GutmanLogo.jpg"
+              alt="site logo"
+            />
+          </a>
+        </Link>
+
         <a
           role="button"
           className="navbar-burger"

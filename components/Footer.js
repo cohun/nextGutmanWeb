@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="content has-text-centered">
-        <p>Copyright &copy; {today.getFullYear()} | Horváth Attila</p>
+        <p>Copyright &copy; {today.getFullYear()} | H-ITB</p>
       </div>
     </footer>
   );
