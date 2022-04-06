@@ -1,18 +1,18 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import Disributors from "../components/Distributors";
-import styles from "../styles/Home.module.css";
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import Disributors from '../components/Distributors';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="has-navbar-fixed-top">
       <Head>
         <title>Gutman lifting products</title>
         <meta name="description" content="Gutman lifting products" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <section className="pt-6"></section>
       <section className="pt-4 pb-0">
         <nav
           className="breadcrumb is-right has-arrow-separator"
@@ -37,7 +37,7 @@ export default function Home() {
         </nav>
       </section>
 
-      <section className="section">
+      <section className="section is-hidden-mobile">
         <div className="container">
           <div className="columns">
             <div className="column">

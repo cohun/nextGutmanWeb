@@ -1,6 +1,6 @@
-import Link from "next/link";
-import Image from "next/image";
-import { useState } from "react";
+import Link from 'next/link';
+import Image from 'next/image';
+import { useState } from 'react';
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar has-shadow is-dark">
+    <nav className="navbar has-shadow is-dark is-fixed-top">
       <div className="navbar-brand">
         <Link href="https://gutmanlifting.com">
           <a className="navbar-item">
@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`navbar-menu ${active ? "is-active" : ""}`}
+        className={`navbar-menu ${active ? 'is-active' : ''}`}
         id="nav-links"
       >
         <div className="navbar-end">
