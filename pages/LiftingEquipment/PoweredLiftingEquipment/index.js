@@ -20,13 +20,18 @@ const LiftingEquipment = () => {
                 <a className="has-text-grey">Lifting Equipment</a>
               </Link>
             </li>
+            <li>
+              <Link href="/LiftingEquipment">
+                <a className="has-text-grey">Powered Lifting Equipment</a>
+              </Link>
+            </li>
           </ul>
         </nav>
       </section>
       <section className="section mb-6">
         <div className="container mb-6">
           <h3 className="title has-text-centered is-size-3">
-            Lifting Equipment
+            Powered Lifting Equipment
           </h3>
           <br />
           <div className="columns is-multiline">
@@ -35,24 +40,25 @@ const LiftingEquipment = () => {
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title">
-                        A.1. Crane and Trolley
-                      </p>
+                      <p className="card-header-title">A.21. Electric hoists</p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/A.1.-Crane-and-Trolley_T.jpg"
+                        src="/A.21.-Electric-hoists_T.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        A crane is a type of machine, generally equipped with a
-                        hoist rope, wire ropes or chains, and sheaves, that can
-                        be used both to lift and lower materials and to move
-                        them horizontally.
+                        Power operated hoists are widely used in industry, often
+                        as part of a larger lifting installation, e.g. with an
+                        overhead runway, jib crane or overhead travelling crane,
+                        or where a permanent lifting facility is required. They
+                        may also be used for fxed position lifting applications
+                        or where a temporary powered lifting facility is
+                        required
                       </div>
                     </div>
                   </div>
@@ -60,27 +66,29 @@ const LiftingEquipment = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/PoweredLiftingEquipment">
+              <Link href="/OperatorsDuty">
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title">
-                        A.2. Powered Lifting Equipment
-                      </p>
+                      <p className="card-header-title">A.22. Lifting tables</p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/A.2.-Powered_Liftinf_Equipment_T.jpg"
+                        src="/A.22.-Lifting-tables_T.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        A lifting equipment which can be worked through power.
-                        They are designed to reduce the manual handling effort
-                        and associated risk to the user to a minimum.
+                        A lift table is a device that employs a scissors
+                        mechanism to raise or lower goods. Typically lift tables
+                        are used to raise large, heavy loads through relatively
+                        small distances. They can work in hostile environments,
+                        be manufactured in stainless steel and have equipment
+                        like conveyors, turn-tables, barriers and gates easily
+                        added to their deckplates.
                       </div>
                     </div>
                   </div>
@@ -88,27 +96,29 @@ const LiftingEquipment = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/ManualLiftingEquipment">
+              <Link href="/MaterialHandling">
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title">
-                        A.3. Manual Lifting Equipment
-                      </p>
+                      <p className="card-header-title">A.23. Vacuum lifter</p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/A.3.-Manual_Lifting_Equipment_T.jpg"
+                        src="/A.23.-Vacuum-lifter_T.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        A lifting equipment which is not worked through power
-                        but by an individual. (lifting, putting down, pushing,
-                        pulling, carrying or moving)
+                        Vacuum lifters can be suitable for lifting loads which
+                        have a smooth, non-porous surface such as metal plates,
+                        glass, stone slabs, cardboard boxes, etc. If required,
+                        the vacuum lifter can have the facility to tilt a load,
+                        such as a steel or glass plate from horizontal to
+                        vertical or vice versa, and be capable of rotating the
+                        load.
                       </div>
                     </div>
                   </div>
@@ -117,28 +127,27 @@ const LiftingEquipment = () => {
             </div>
 
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/LiftingAccessories">
+              <Link href="/Miscellaneous">
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title">
-                        A.4. Lifting Accessories
-                      </p>
+                      <p className="card-header-title">A.24. Air hoists</p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/Lifting_Accessories_T.jpg"
+                        src="/A.24.-Air-hoists_T.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        The term lifting accessory, or accessory for lifting, is
-                        an item of equipment used to attach the load to the
-                        lifting appliance. Such equipment is also known as
-                        ‘rigging equipment’, ‘lifting gear’ or ‘lifting tackle’.
+                        Pneumatic power operated hoists offer many advantages
+                        over electrically operated equipment and as a result are
+                        widely used in industries where air is provided for
+                        other purposes or where the safety aspects associated
+                        with air operated equipment are a major consideration.
                       </div>
                     </div>
                   </div>

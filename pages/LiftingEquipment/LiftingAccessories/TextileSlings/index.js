@@ -20,13 +20,23 @@ const LiftingEquipment = () => {
                 <a className="has-text-grey">Lifting Equipment</a>
               </Link>
             </li>
+            <li>
+              <Link href="/LiftingEquipment">
+                <a className="has-text-grey">Lifting Accessories</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/LiftingEquipment">
+                <a className="has-text-grey">Textile Slings</a>
+              </Link>
+            </li>
           </ul>
         </nav>
       </section>
       <section className="section mb-6">
         <div className="container mb-6">
           <h3 className="title has-text-centered is-size-3">
-            Lifting Equipment
+            Textile Slings and Components
           </h3>
           <br />
           <div className="columns is-multiline">
@@ -35,24 +45,22 @@ const LiftingEquipment = () => {
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title">
-                        A.1. Crane and Trolley
-                      </p>
+                      <p className="card-header-title">A.411. Round slings</p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/A.1.-Crane-and-Trolley_T.jpg"
+                        src="/411.-Round-slings_T.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        A crane is a type of machine, generally equipped with a
-                        hoist rope, wire ropes or chains, and sheaves, that can
-                        be used both to lift and lower materials and to move
-                        them horizontally.
+                        Round slings are made from a continuous loop of
+                        polyester yarn covered by a double wall tubular
+                        polyester jacket. It is manufactured according to EN
+                        1492 Part 2
                       </div>
                     </div>
                   </div>
@@ -60,27 +68,27 @@ const LiftingEquipment = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/PoweredLiftingEquipment">
+              <Link href="/OperatorsDuty">
                 <a>
                   <div className="card">
                     <div className="card-header">
                       <p className="card-header-title">
-                        A.2. Powered Lifting Equipment
+                        A.412. Flat woven webbing sling
                       </p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/A.2.-Powered_Liftinf_Equipment_T.jpg"
+                        src="/412.-Flat-woven-webbing-sling_T.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        A lifting equipment which can be worked through power.
-                        They are designed to reduce the manual handling effort
-                        and associated risk to the user to a minimum.
+                        Flat webbing sling is a standard device for lifting
+                        applications. It is made from high tensile polyester
+                        (PES) manufactured according to EN 1492 Part 1
                       </div>
                     </div>
                   </div>
@@ -88,27 +96,28 @@ const LiftingEquipment = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/ManualLiftingEquipment">
+              <Link href="/MaterialHandling">
                 <a>
                   <div className="card">
                     <div className="card-header">
                       <p className="card-header-title">
-                        A.3. Manual Lifting Equipment
+                        A.413. Textile Bridle Slings
                       </p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/A.3.-Manual_Lifting_Equipment_T.jpg"
+                        src="/413.-Textile-Bridle-Slings_T.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        A lifting equipment which is not worked through power
-                        but by an individual. (lifting, putting down, pushing,
-                        pulling, carrying or moving)
+                        Type IRG sling configurations consist of round sling
+                        legs, which are affixed on one end to a master link,
+                        with some type of attachment, usually a hook, affixed to
+                        the opposite end.
                       </div>
                     </div>
                   </div>
@@ -117,28 +126,29 @@ const LiftingEquipment = () => {
             </div>
 
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/LiftingAccessories">
+              <Link href="/Miscellaneous">
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title">
-                        A.4. Lifting Accessories
-                      </p>
+                      <p className="card-header-title">A.414. Fibre ropes</p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/Lifting_Accessories_T.jpg"
+                        src="/414.-Fibre-ropes_T.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        The term lifting accessory, or accessory for lifting, is
-                        an item of equipment used to attach the load to the
-                        lifting appliance. Such equipment is also known as
-                        ‘rigging equipment’, ‘lifting gear’ or ‘lifting tackle’.
+                        Fibre rope slings are the traditional form of textile
+                        sling whose origins are recorded in the earliest history
+                        of lifting equipment. Although their use has declined in
+                        recent years in favour of the newer forms of textile
+                        slings, i.e. ﬂat woven webbing slings and roundslings,
+                        they may still be found in general use throughout
+                        industry
                       </div>
                     </div>
                   </div>

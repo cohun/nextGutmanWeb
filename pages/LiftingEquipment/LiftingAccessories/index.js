@@ -36,7 +36,7 @@ const LiftingEquipment = () => {
           <br />
           <div className="columns is-multiline">
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment">
+              <Link href="\LiftingEquipment\LiftingAccessories\TextileSlings">
                 <a>
                   <div className="card">
                     <div className="card-header">
@@ -54,10 +54,13 @@ const LiftingEquipment = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        The term lifting equipment contains all lifting
-                        accessories and appliances, any machine which is able to
-                        raise, lower or suspend a load. Examples are cranes,
-                        hoists, jacks, etc.
+                        Textile slings for multi-purposes, made of Polyester are
+                        soft and easy to handle whilst offering rigidity across
+                        their width. These qualities make them ideal for
+                        handling loads which require some support when being
+                        lifted as the load is spread across the full width, thus
+                        avoiding point contact as is the case with chains or
+                        ropes.
                       </div>
                     </div>
                   </div>
@@ -83,8 +86,12 @@ const LiftingEquipment = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        A service to help operators to comply with legislative
-                        requirements concerning the use of lifting equipment.
+                        Chain slings represent a highly versatile, durable and
+                        safe means of connecting loads to lifting appliances.
+                        The majority of chain slings in service are grade 8 or
+                        grade 80 (or T). Although not yet standardised in many
+                        parts of the world, grade 10, or higher, chain slings
+                        are available and gaining in popularity.
                       </div>
                     </div>
                   </div>
@@ -110,10 +117,13 @@ const LiftingEquipment = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Mechanical equipment used for the movement, transport,
-                        positioning, storage of materials, goods and products
-                        throughout the process of manufacturing, distribution,
-                        consumption, and disposal.
+                        Wire rope slings give the user a versatile and safe
+                        means of connecting loads to lifting appliances,
+                        provided that they are used in the correct manner and
+                        dangerous lifting practices and service damage are
+                        avoided. In many cases the use of a wire rope sling in
+                        preference to, for example, a chain sling is a matter of
+                        the personal choice of the user.
                       </div>
                     </div>
                   </div>
@@ -138,11 +148,13 @@ const LiftingEquipment = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Lorem ipsum leo risus, porta ac consectetur ac,
-                        vestibulum at eros. Donec id elit non mi porta gravida
-                        at eget metus. Cum sociis natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus mus. Cras
-                        mattis consectetur purus sit amet fermentum.
+                        Plate clamps are widely used, particularly in the steel
+                        fabrication industry, for handling a variety of work
+                        including individual pieces of plate, fabricated
+                        assemblies and bundles of plates. Clamps are subdivided
+                        into those used to lift the plate in the vertical
+                        position only and those which lift from the horizontal
+                        to the vertical or viceversa.
                       </div>
                     </div>
                   </div>
@@ -166,11 +178,13 @@ const LiftingEquipment = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Lorem ipsum leo risus, porta ac consectetur ac,
-                        vestibulum at eros. Donec id elit non mi porta gravida
-                        at eget metus. Cum sociis natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus mus. Cras
-                        mattis consectetur purus sit amet fermentum.
+                        Magnets will only work on a magnetic material which
+                        usually means a ferrous metal although some other
+                        materials such as cobalt or nickel are capable of being
+                        lifted magnetically. As there is no positive connection
+                        between the lifting device and the load, the ability of
+                        the magnetic lifter to safely lift a particular load
+                        needs to be carefully considered.
                       </div>
                     </div>
                   </div>
@@ -196,11 +210,11 @@ const LiftingEquipment = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Lorem ipsum leo risus, porta ac consectetur ac,
-                        vestibulum at eros. Donec id elit non mi porta gravida
-                        at eget metus. Cum sociis natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus mus. Cras
-                        mattis consectetur purus sit amet fermentum.
+                        Lifting beams, spreaders and frames are usually designed
+                        either for a specifc purpose or as general purpose beams
+                        for a specifed range of lifts. They are attached to the
+                        load suspension point of a lifting machine or crane and
+                        can therefore be considered to be portable.
                       </div>
                     </div>
                   </div>
@@ -226,11 +240,11 @@ const LiftingEquipment = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Lorem ipsum leo risus, porta ac consectetur ac,
-                        vestibulum at eros. Donec id elit non mi porta gravida
-                        at eget metus. Cum sociis natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus mus. Cras
-                        mattis consectetur purus sit amet fermentum.
+                        Eyebolt and shackles for lifting purposes are one of the
+                        most widely used items of lifting gear. They are
+                        normally forged from various grades of steel, mostly
+                        from higher tensile steel which gives them a higher
+                        working load limit than those made in mild steel.
                       </div>
                     </div>
                   </div>
