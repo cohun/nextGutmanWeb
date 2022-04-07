@@ -1,44 +1,70 @@
 const Table = () => {
   const irsData = [
-    { id: 1, Type: "IRS 10", WLL: "1000 kg", "0,8": "800 kg" },
-    { id: 2, Type: "IRS 20", WLL: "2000 kg", "0,8": "1600 kg" },
-    { id: 3, Type: "IRS 30", WLL: "3000 kg", "0,8": "2400 kg" },
-    { id: 4, Type: "IRS 40", WLL: "4000 kg", "0,8": "3200 kg" },
+    {
+      id: 1,
+      Type: 'IRS 10',
+      WLL: '1000 kg',
+      '0,8': '800 kg',
+      color: 'lila',
+      length: '1 m',
+    },
+    {
+      id: 2,
+      Type: 'IRS 20',
+      WLL: '2000 kg',
+      '0,8': '1600 kg',
+      color: 'green',
+      length: '1 m',
+    },
+    {
+      id: 3,
+      Type: 'IRS 30',
+      WLL: '3000 kg',
+      '0,8': '2400 kg',
+      color: 'yellow',
+      length: '1 m',
+    },
+    {
+      id: 4,
+      Type: 'IRS 40',
+      WLL: '4000 kg',
+      '0,8': '3200 kg',
+      color: 'grey',
+      length: '1 m',
+    },
   ];
-  const kkey = Object.keys(irsData[0]);
-  const dataLength = irsData.length;
-  const kkeyLength = kkey.length;
-  console.log(dataLength, kkeyLength);
+  const tableHead = Object.keys(irsData[0]);
 
   return (
     <section className="section">
       <table className="table">
         <thead>
           <tr>
-            {kkey.map((item) => {
-              return <th key={item}>{item}</th>;
+            {tableHead.map((key) => {
+              return <th key={key}>{key}</th>;
             })}
           </tr>
         </thead>
 
         <tfoot>
           <tr>
-            <th>{kkey[0]}</th>
-            <th>{kkey[1]}</th>
+            {tableHead.map((key) => {
+              return <th key={key}>{key}</th>;
+            })}
           </tr>
         </tfoot>
 
-        {/* <tbody>
+        <tbody>
           {irsData.map((item) => {
             return (
-              <tr key={item[kkey[0]]}>
-                {kkey.map((keys, index) => {
-                  return <td key={item[keys[index]]}>{item[keys[index]]}</td>;
+              <tr key={item[tableHead[0]]}>
+                {tableHead.map((key) => {
+                  return <td key={key}>{item[key]}</td>;
                 })}
               </tr>
             );
           })}
-        </tbody> */}
+        </tbody>
       </table>
     </section>
   );
