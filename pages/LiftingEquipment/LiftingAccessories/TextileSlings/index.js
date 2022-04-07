@@ -4,6 +4,7 @@ import Link from "next/link";
 const LiftingEquipment = () => {
   return (
     <div>
+      <section className="pt-6"></section>
       <section className="pt-4 pb-0">
         <nav
           className="breadcrumb is-right has-arrow-separator"
@@ -21,12 +22,12 @@ const LiftingEquipment = () => {
               </Link>
             </li>
             <li>
-              <Link href="/LiftingEquipment">
+              <Link href="/LiftingEquipment/LiftingAccessories">
                 <a className="has-text-grey">Lifting Accessories</a>
               </Link>
             </li>
             <li>
-              <Link href="/LiftingEquipment">
+              <Link href="/LiftingEquipment/LiftingAccessories/TextileSlings">
                 <a className="has-text-grey">Textile Slings</a>
               </Link>
             </li>
@@ -41,7 +42,7 @@ const LiftingEquipment = () => {
           <br />
           <div className="columns is-multiline">
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment">
+              <Link href="/LiftingEquipment/LiftingAccessories/TextileSlings/RoundSling">
                 <a>
                   <div className="card">
                     <div className="card-header">

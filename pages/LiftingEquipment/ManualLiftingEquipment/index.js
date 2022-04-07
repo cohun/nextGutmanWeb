@@ -4,6 +4,7 @@ import Link from "next/link";
 const LiftingEquipment = () => {
   return (
     <div>
+      <section className="pt-6"></section>
       <section className="pt-4 pb-0">
         <nav
           className="breadcrumb is-right has-arrow-separator"
