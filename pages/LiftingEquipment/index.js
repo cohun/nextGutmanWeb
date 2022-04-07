@@ -13,12 +13,12 @@ const LiftingEquipment = () => {
           <ul>
             <li>
               <Link href="/">
-                <a className="has-text-grey">Home</a>
+                <div className="has-text-grey px-3">Home</div>
               </Link>
             </li>
             <li>
               <Link href="/LiftingEquipment">
-                <a className="has-text-grey">Lifting Equipment</a>
+                <div className="px-3 is-active">Lifting Equipment</div>
               </Link>
             </li>
           </ul>

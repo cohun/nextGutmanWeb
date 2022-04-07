@@ -20,18 +20,9 @@ export default function Home() {
         >
           <ul>
             <li>
-              <Link href="/LiftingEquipment">
-                <a className="has-text-grey">Lifting Equipment</a>
+              <Link href="/">
+                <div className="px-3 is-active">Home</div>
               </Link>
-            </li>
-            <li>
-              <a className="has-text-grey">Lifting Accessories</a>
-            </li>
-            <li>
-              <a className="has-text-grey">Textile Slings</a>
-            </li>
-            <li className="is-active">
-              <a aria-current="page">Roundslings</a>
             </li>
           </ul>
         </nav>

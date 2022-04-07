@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import Table from "../../../../../components/Table";
+import Image from 'next/image';
+import Link from 'next/link';
+import Table from '../../../../../components/Table';
 
 function RoundSling() {
   return (
@@ -14,27 +14,27 @@ function RoundSling() {
           <ul>
             <li>
               <Link href="/">
-                <a className="has-text-grey">Home</a>
+                <div className="has-text-grey px-3">Home</div>
               </Link>
             </li>
             <li>
               <Link href="/LiftingEquipment">
-                <a className="has-text-grey">Lifting Equipment</a>
+                <div className="has-text-grey px-3">Lifting Equipment</div>
               </Link>
             </li>
             <li>
               <Link href="/LiftingEquipment/LiftingAccessories">
-                <a className="has-text-grey">Lifting Accessories</a>
+                <div className="has-text-grey px-3">Lifting Accessories</div>
               </Link>
             </li>
             <li>
               <Link href="/LiftingEquipment/LiftingAccessories/TextileSlings">
-                <a className="has-text-grey">Textile Slings</a>
+                <div className="has-text-grey px-3">Textile Slings</div>
               </Link>
             </li>
             <li>
               <Link href="/LiftingEquipment/LiftingAccessories/TextileSlings/RoundSling">
-                <a className="has-text-grey">Roundlings</a>
+                <div className="is-active px-3">Roundlings</div>
               </Link>
             </li>
           </ul>
