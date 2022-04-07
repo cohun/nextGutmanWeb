@@ -12,15 +12,15 @@ const Navbar = () => {
   return (
     <nav className="navbar has-shadow is-dark is-fixed-top">
       <div className="navbar-brand">
-        <Link href="https://gutmanlifting.com">
-          <a className="navbar-item">
+        <Link href="https://gutmanlifting.com" className="navbar-item">
+          <div className="ml-3 mt-2 mb-1">
             <Image
-              width={250}
-              height={100}
+              width={100}
+              height={40}
               src="/GutmanLogo.jpg"
               alt="site logo"
             />
-          </a>
+          </div>
         </Link>
 
         <a
@@ -42,13 +42,13 @@ const Navbar = () => {
       >
         <div className="navbar-end">
           <Link href="/">
-            <a className="navbar-item">Home</a>
+            <div className="navbar-item">Home</div>
           </Link>
           <Link href="/about">
-            <a className="navbar-item">Categories</a>
+            <div className="navbar-item">Categories</div>
           </Link>
           <Link href="/ninjas/">
-            <a className="navbar-item">Products</a>
+            <div className="navbar-item">Products</div>
           </Link>
         </div>
       </div>
