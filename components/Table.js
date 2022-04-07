@@ -37,7 +37,7 @@ const Table = () => {
 
   return (
     <section className="section">
-      <table className="table">
+      <table className="table is-striped is-fullwidth">
         <thead>
           <tr>
             {tableHead.map((key) => {
