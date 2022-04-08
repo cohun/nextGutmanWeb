@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 const LiftingEquipment = () => {
   return (
@@ -12,17 +12,17 @@ const LiftingEquipment = () => {
         >
           <ul>
             <li>
-              <Link href="/">
+              <Link href="/" passHref>
                 <div className="has-text-grey px-3">Home</div>
               </Link>
             </li>
             <li>
-              <Link href="/LiftingEquipment">
+              <Link href="/LiftingEquipment" passHref>
                 <div className="has-text-grey px-3">Lifting Equipment</div>
               </Link>
             </li>
             <li>
-              <Link href="/LiftingEquipment/LiftingAccessories">
+              <Link href="/LiftingEquipment/LiftingAccessories" passHref>
                 <div className="is-active px-3">Lifting Accessories</div>
               </Link>
             </li>
