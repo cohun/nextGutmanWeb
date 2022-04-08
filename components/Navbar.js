@@ -41,13 +41,13 @@ const Navbar = () => {
         id="nav-links"
       >
         <div className="navbar-end">
-          <Link href="/">
+          <Link href="/" className="navbar-item" passHref>
             <div className="navbar-item">Home</div>
           </Link>
-          <Link href="/about">
+          <Link href="/about" passHref>
             <div className="navbar-item">Categories</div>
           </Link>
-          <Link href="/ninjas/">
+          <Link href="/ninjas/" passHref>
             <div className="navbar-item">Products</div>
           </Link>
         </div>

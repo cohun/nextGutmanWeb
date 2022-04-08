@@ -79,12 +79,14 @@ export default function Home() {
                       <p className="card-header-title">A. Lifting Equipment</p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
-                      <Image
-                        width={165}
-                        height={165}
-                        src="/A.-Lifting-Equipment_T.jpg"
-                        alt="Lifing accessories"
-                      />
+                      <figure className="image is-165x165">
+                        <Image
+                          width={165}
+                          height={165}
+                          src="/A.-Lifting-Equipment_T.jpg"
+                          alt="Lifing accessories"
+                        />
+                      </figure>
                     </div>
                     <div className="card-content">
                       <div className="content">

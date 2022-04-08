@@ -1,5 +1,8 @@
+import Image from "next/image";
+
 const Table = ({ irs }) => {
   console.log(irs);
+  console.log(irs[0].fields.name);
   const irsData = irs[0].fields.table;
 
   /* const irsData = [
@@ -40,6 +43,9 @@ const Table = ({ irs }) => {
 
   return (
     <section className="section">
+      <h3 className="title has-text-centered is-size-3">
+        Product type: {irs[0].fields.name}
+      </h3>
       <table className="table is-striped is-fullwidth">
         <thead>
           <tr>
@@ -69,6 +75,9 @@ const Table = ({ irs }) => {
           })}
         </tbody>
       </table>
+      <section className="section">
+        <div>{irs[0].fields.name}</div>
+      </section>
     </section>
   );
 };
