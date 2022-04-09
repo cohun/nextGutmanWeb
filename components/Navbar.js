@@ -44,10 +44,58 @@ const Navbar = () => {
           <Link href="/" className="navbar-item" passHref>
             <div className="navbar-item">Home</div>
           </Link>
-          <Link href="/about" passHref>
-            <div className="navbar-item">Categories</div>
-          </Link>
-          <Link href="/ninjas/" passHref>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">Categories</a>
+            <div className="navbar-dropdown">
+              <a className="navbar-item has-text-weight-semibold">
+                Lifting Equipment
+              </a>
+              <hr className="navbar-divider" />
+              <a className="navbar-item ml-3">Crane and Trolley</a>
+              <a
+                href="/LiftingEquipment/PoweredLiftingEquipment"
+                className="navbar-item ml-3"
+              >
+                Powered Lifting Equipment
+              </a>
+              <a
+                href="/LiftingEquipment/ManualLiftingEquipment"
+                className="navbar-item ml-3"
+              >
+                Manual Lifting Equipment
+              </a>
+              <a
+                href="/LiftingEquipment/LiftingAccessories"
+                className="navbar-item ml-3"
+              >
+                Lifting Accessories
+              </a>
+              <hr className="navbar-divider" />
+              <a className="navbar-item has-text-weight-semibold">
+                Operators Duty Service
+              </a>
+              <hr className="navbar-divider" />
+              <a className="navbar-item ml-3">ETAR</a>
+              <a className="navbar-item ml-3">ETAR EN</a>
+              <hr className="navbar-divider" />
+              <a className="navbar-item has-text-weight-semibold">
+                Material Handling
+              </a>
+              <hr className="navbar-divider" />
+              <a className="navbar-item ml-3">Lift Trucks</a>
+              <a className="navbar-item ml-3">Attachments</a>
+              <hr className="navbar-divider" />
+              <a className="navbar-item has-text-weight-semibold">
+                Miscellaneous Products
+              </a>
+              <hr className="navbar-divider" />
+              <a className="navbar-item ml-3">Lashing Systems</a>
+              <a className="navbar-item ml-3">Shop Equipment</a>
+              <a className="navbar-item ml-3">Fall Protection</a>
+            </div>
+          </div>
+          <Link href="/" passHref>
             <div className="navbar-item">Products</div>
           </Link>
         </div>
