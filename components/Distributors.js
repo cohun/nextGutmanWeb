@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Disributors = () => {
   return (
@@ -80,7 +80,7 @@ const Disributors = () => {
 
                         <Image
                           className="is-justify-content-flex-end"
-                          width={125}
+                          width={160}
                           height={40}
                           src="/alfa.jpg"
                           alt="Alfa-Cluj logo"
@@ -123,8 +123,8 @@ const Disributors = () => {
 
                         <Image
                           className="is-justify-content-flex-end"
-                          width={125}
-                          height={40}
+                          width={128}
+                          height={38}
                           src="/Gutman_Dizalica.png"
                           alt="Dizalica logo"
                         />
@@ -166,8 +166,8 @@ const Disributors = () => {
 
                         <Image
                           className="is-justify-content-flex-end"
-                          width={125}
-                          height={40}
+                          width={128}
+                          height={38}
                           src="/Gutman_Dizalica.png"
                           alt="Dizalica logo"
                         />
@@ -207,8 +207,8 @@ const Disributors = () => {
 
                         <Image
                           className="is-justify-content-flex-end"
-                          width={125}
-                          height={40}
+                          width={128}
+                          height={38}
                           src="/Gutman_Dizalica.png"
                           alt="Dizalica logo"
                         />

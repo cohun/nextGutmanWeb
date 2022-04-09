@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 const LiftingEquipment = () => {
   return (
@@ -70,11 +70,6 @@ const LiftingEquipment = () => {
                   </div>
                 </a>
               </Link>
-              <button className="button">Product 1</button>
-              <button className="button">Product 2</button>
-              <button className="button">Product 1</button>
-              <button className="button">Product 1</button>
-              <button className="button">Product 1</button>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
               <Link href="/OperatorsDuty">

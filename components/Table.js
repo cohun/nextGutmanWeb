@@ -1,51 +1,37 @@
-import Image from "next/image";
+import Image from 'next/image';
+import { useState } from 'react';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
-const Table = ({ irs }) => {
-  console.log(irs);
-  console.log(irs[0].fields.name);
-  const irsData = irs[0].fields.table;
+const Table = ({ type }) => {
+  const [number, setNumber] = useState(0);
+  console.log(number);
 
-  /* const irsData = [
-    {
-      id: 1,
-      Type: "IRS 10",
-      WLL: "1000 kg",
-      "0,8": "800 kg",
-      color: "lila",
-      length: "1 m",
-    },
-    {
-      id: 2,
-      Type: "IRS 20",
-      WLL: "2000 kg",
-      "0,8": "1600 kg",
-      color: "green",
-      length: "1 m",
-    },
-    {
-      id: 3,
-      Type: "IRS 30",
-      WLL: "3000 kg",
-      "0,8": "2400 kg",
-      color: "yellow",
-      length: "1 m",
-    },
-    {
-      id: 4,
-      Type: "IRS 40",
-      WLL: "4000 kg",
-      "0,8": "3200 kg",
-      color: "grey",
-      length: "1 m",
-    },
-  ]; */
-  const tableHead = Object.keys(irsData[0]);
+  console.log(type);
+  console.log(type[0].fields.name);
+  const typeData = type[number].fields.table;
+  const image = type[number].fields.productImage.fields.file;
+  const description = type[number].fields.description;
+  console.log('https:' + image);
+
+  const tableHead = Object.keys(typeData[0]);
+  const handleClick = (e) => setNumber(e);
 
   return (
     <section className="section">
-      <h3 className="title has-text-centered is-size-3">
-        Product type: {irs[0].fields.name}
-      </h3>
+      <h3 className="title has-text-centered is-size-3">Product type:</h3>
+      <div className="container">
+        {type.map((i, index) => {
+          return (
+            <button
+              key={i.sys.id}
+              onClick={(e) => handleClick(index)}
+              className="button mr-4"
+            >
+              {type[index].fields.name}
+            </button>
+          );
+        })}
+      </div>
       <table className="table is-striped is-fullwidth">
         <thead>
           <tr>
@@ -64,7 +50,7 @@ const Table = ({ irs }) => {
         </tfoot>
 
         <tbody>
-          {irsData.map((item) => {
+          {typeData.map((item) => {
             return (
               <tr key={item[tableHead[0]]}>
                 {tableHead.map((key) => {
@@ -76,7 +62,13 @@ const Table = ({ irs }) => {
         </tbody>
       </table>
       <section className="section">
-        <div>{irs[0].fields.name}</div>
+        <img
+          src={'https:' + image.url}
+          width={image.details.image.width}
+          height={image.details.image.height}
+        />
+        <br />
+        <div>{documentToReactComponents(description)}</div>
       </section>
     </section>
   );
