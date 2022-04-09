@@ -18,21 +18,29 @@ const Table = ({ type }) => {
 
   return (
     <section className="section">
-      <h3 className="title has-text-centered is-size-3">Product type:</h3>
-      <div className="container">
-        {type.map((i, index) => {
-          return (
-            <button
-              key={i.sys.id}
-              onClick={(e) => handleClick(index)}
-              className="button mr-4"
-            >
-              {type[index].fields.name}
-            </button>
-          );
-        })}
+      <div class="tile is-ancestor mb-5">
+        <div className="tile is-4"></div>
+        <div class="tile is-2">
+          <h4 className="title is-size-3">Product type:</h4>
+        </div>
+        <div class="tile">
+          <div className="container">
+            {type.map((i, index) => {
+              return (
+                <button
+                  key={i.sys.id}
+                  onClick={(e) => handleClick(index)}
+                  className="button mr-4"
+                >
+                  {type[index].fields.name}
+                </button>
+              );
+            })}
+          </div>
+        </div>
       </div>
-      <table className="table is-striped is-fullwidth">
+
+      <table className="table is-striped is-fullwidth mt-6">
         <thead>
           <tr>
             {tableHead.map((key) => {
@@ -61,14 +69,17 @@ const Table = ({ type }) => {
           })}
         </tbody>
       </table>
-      <section className="section">
+      <section className="section mb-6">
         <img
           src={'https:' + image.url}
           width={image.details.image.width}
           height={image.details.image.height}
         />
+
         <br />
-        <div>{documentToReactComponents(description)}</div>
+        <section className="my-6">
+          {documentToReactComponents(description)}
+        </section>
       </section>
     </section>
   );
