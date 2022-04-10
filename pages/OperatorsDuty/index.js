@@ -68,6 +68,12 @@ const OperatorsDuty = () => {
                 </a>
               </Link>
             </div>
+            <div className="column is-12-mobile is-6-tablet is-6-widescreen">
+              <div className="card-image has-text-centered pt-6">
+                <div className="pt-6"></div>
+                <Image width={1201} height={600} src="/image.jpg" alt="ETAR" />
+              </div>
+            </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
               <Link href="/OperatorsDuty">
                 <a>
