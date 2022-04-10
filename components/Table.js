@@ -18,12 +18,12 @@ const Table = ({ type }) => {
 
   return (
     <section className="section">
-      <div class="tile is-ancestor mb-5">
+      <div className="tile is-ancestor mb-5">
         <div className="tile is-4"></div>
-        <div class="tile is-2">
+        <div className="tile is-2">
           <h4 className="title is-size-3">Product type:</h4>
         </div>
-        <div class="tile">
+        <div className="tile">
           <div className="container">
             {type.map((i, index) => {
               return (
