@@ -32,7 +32,7 @@ const LiftingEquipment = () => {
           <br />
           <div className="columns is-multiline">
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment">
+              <Link href="/LiftingEquipment/CraneAndTrolley">
                 <a>
                   <div className="card">
                     <div className="card-header">
@@ -45,7 +45,7 @@ const LiftingEquipment = () => {
                         width={165}
                         height={165}
                         src="/A.1.-Crane-and-Trolley_T.jpg"
-                        alt="Lifing accessories"
+                        alt="Crane and Trolley"
                       />
                     </div>
                     <div className="card-content">

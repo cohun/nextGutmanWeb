@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { useState } from 'react';
+import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`navbar-menu ${active ? 'is-active' : ''}`}
+        className={`navbar-menu ${active ? "is-active" : ""}`}
         id="nav-links"
       >
         <div className="navbar-end">
@@ -53,7 +53,9 @@ const Navbar = () => {
               </a>
               <hr className="navbar-divider" />
               <p className="navbar-item ml-3">
-                <Link href="/">Crane and Trolley</Link>
+                <Link href="/LiftingEquipment/CraneAndTrolley">
+                  Crane and Trolley
+                </Link>
               </p>
               <p className="navbar-item ml-3">
                 <Link href="/LiftingEquipment/PoweredLiftingEquipment">

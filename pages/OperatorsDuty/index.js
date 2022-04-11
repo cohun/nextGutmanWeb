@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 const OperatorsDuty = () => {
   return (
@@ -33,7 +33,7 @@ const OperatorsDuty = () => {
           <br />
           <div className="columns is-multiline">
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/LiftingAccessories/TextileSlings/RoundSling">
+              <Link href="/OperatorsDuty">
                 <a>
                   <div className="card">
                     <div className="card-header">

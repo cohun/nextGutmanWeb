@@ -22,8 +22,8 @@ const LiftingEquipment = () => {
               </Link>
             </li>
             <li>
-              <Link href="/LiftingEquipment/ManualLiftingEquipment">
-                <a className="has-text-grey">Manual Lifting Equipment</a>
+              <Link href="/LiftingEquipment/CraneAndTrolley">
+                <a className="has-text-grey">Crane and Trolley</a>
               </Link>
             </li>
           </ul>
@@ -32,34 +32,34 @@ const LiftingEquipment = () => {
       <section className="section mb-6">
         <div className="container mb-6">
           <h3 className="title has-text-centered is-size-3">
-            Manual Lifting Equipment
+            Crane and Trolley
           </h3>
           <br />
           <div className="columns is-multiline">
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment">
+              <Link href="/LiftingEquipment/CraneAndTrolley">
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title">
-                        A.31. Chain hoists, trolleys
-                      </p>
+                      <p className="card-header-title">A.11. Overhead crane</p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/A.31.-Chain-hoists,-trolleys_T.jpg"
+                        src="/A.11.-Overhead-Crane_T.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Hand operated chain hoists which require the use of a
-                        hand chain for both hoisting and lowering. They are
-                        ftted with an automatic brake which is capable of
-                        arresting and sustaining the load at any position.
-                        Available with separate or built in travelling trolleys.
+                        An overhead crane, commonly called a bridge crane, is a
+                        type of crane found in industrial environments. An
+                        overhead crane consists of two parallel rails seated on
+                        longitudinal I-beams attached to opposite steel columns
+                        by means of brackets. The traveling bridge spans the
+                        gap. A hoist, the lifting component of a crane, travels
+                        along the bridge.
                       </div>
                     </div>
                   </div>
@@ -67,30 +67,26 @@ const LiftingEquipment = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/OperatorsDuty">
+              <Link href="/LiftingEquipment/CraneAndTrolley">
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title">A.32. Lever hoists</p>
+                      <p className="card-header-title">A.12. Gantry Crane</p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/A.32.-Lever-hoists_T.jpg"
+                        src="/A.12.-Gantry-Crane_T.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Chain lever hoists are in wide use throughout industry
-                        for both lifting and pulling applications. They provide
-                        a comparatively lightweight method of moving loads over
-                        a short distance and the lever operation allows them to
-                        be used in any operating position. Chain lever hoists
-                        have a ‘free wheel’ facility, which allows the operative
-                        to rapidly extend or take up slack chain under no load
-                        conditions.
+                        A gantry crane is a type of an overhead crane where the
+                        bridge is rigidly supported on two or more legs running
+                        on two fixed rails at ground level. Such a crane is
+                        called a gantry crane or a goliath crane.
                       </div>
                     </div>
                   </div>
@@ -102,24 +98,23 @@ const LiftingEquipment = () => {
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title">A.33. Racks & Jacks</p>
+                      <p className="card-header-title">A.13. JibCrane</p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/A.33.-Racks-&-Jacks_T.jpg"
+                        src="/A.13.-Jib-Crane_T.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Jacks are widely used in industry where loads need to be
-                        raised or lowered a limited distance. They are often
-                        used to afford access for other means of handling or
-                        lifting equipment and for levelling purposes. Their
-                        versatility of use and portability make them ideal for
-                        many maintenance functions.
+                        A jib crane is a type of crane where a horizontal member
+                        (jib or boom), supporting a moveable hoist, is fixed to
+                        a wall or to a floor-mounted pillar. The jib may swing
+                        through an arc, to give additional lateral movement, or
+                        be fixed.
                       </div>
                     </div>
                   </div>
@@ -132,26 +127,52 @@ const LiftingEquipment = () => {
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title">A.34. Pulling hoists</p>
+                      <p className="card-header-title">A.14. Portal Crane</p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/A.34.-Pulling-hoists,-Lifting-Pulleys-&-Winches_T.jpg"
+                        src="/A.14.-Portal-Crane.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Lifting and pulling machines, also known as jaw winches,
-                        are, by their very nature, versatile pieces of equipment
-                        and are widely used throughout industry. A hand operated
-                        lever activates a mechanism to provide a direct pull on
-                        an integral rope which is attached to the load. The pull
-                        is applied by means of two pairs of self-energising
-                        jaws, which exert a grip on the rope, the distance of
-                        travel being limited only by the length of the rope.
+                        Portable gantry cranes are used to lift and transport
+                        smaller items. They are intended to be stationary when
+                        loaded, and mobile when unloaded. Portal Cranes can be
+                        outfitted with either a handoperated or a lower capacity
+                        poweroperated chain hoist.
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </Link>
+            </div>
+            <div className="column is-12-mobile is-6-tablet is-3-widescreen">
+              <Link href="/Miscellaneous">
+                <a>
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">A.15. Light Crane</p>
+                    </div>
+                    <div className="card-image has-text-centered pt-6">
+                      <Image
+                        width={165}
+                        height={165}
+                        src="/A.15.-Light-Crane_T.jpg"
+                        alt="Lifing accessories"
+                      />
+                    </div>
+                    <div className="card-content">
+                      <div className="content">
+                        The light crane system can transfer loads along smooth,
+                        three-dimensional lines. The low mass of the rail gives
+                        it advantages over ceiling-mounted cranes in building a
+                        production line in an existing plant. The system
+                        requires only light force to operate, so it can be
+                        easily handled by women and seniors.
                       </div>
                     </div>
                   </div>
@@ -164,33 +185,23 @@ const LiftingEquipment = () => {
                   <div className="card">
                     <div className="card-header">
                       <p className="card-header-title">
-                        A.35. Lifting Pulleys & Winches
+                        A.16. Crane Components
                       </p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/A.35.-Lifting-Pulleys-&-Winches_T.jpg"
+                        src="/A.16.-Crane-Components.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Winches are versatile lifting and pulling appliances,
-                        lending themselves to easy adaptation and are widely
-                        used throughout industry for both permanent and
-                        temporary rigging applications. Although winches may be
-                        used as a means of raising and lowering loads in lifting
-                        operations. They may be ftted or built into structures
-                        to enable loads to be moved from one position to
-                        another. They may also be used to advantage as a safe
-                        method of lifting loads in confned spaces as they can be
-                        arranged to occupy less headroom than other lifting
-                        appliances and the operative may be remote from the
-                        load. They are often used in conjunction with pulley
-                        blocks. Although some types of winch may be used with
-                        fibre ropes,they mainly used with wire ropes.
+                        Crane control: Control pendant, Radio remote control
+                        (can be duplicated with a control pendant). Cable power
+                        supply systems: galvanised C-rail, mounting hardware,
+                        cable trolley. Electrical and safety components.
                       </div>
                     </div>
                   </div>

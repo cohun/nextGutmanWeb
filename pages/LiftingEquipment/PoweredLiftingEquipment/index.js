@@ -22,7 +22,7 @@ const LiftingEquipment = () => {
               </Link>
             </li>
             <li>
-              <Link href="/LiftingEquipment">
+              <Link href="/LiftingEquipment/PoweredLiftingEquipment">
                 <a className="has-text-grey">Powered Lifting Equipment</a>
               </Link>
             </li>
