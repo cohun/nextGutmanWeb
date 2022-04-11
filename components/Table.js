@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import { useState } from 'react';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import Image from "next/image";
+import { useState } from "react";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 const Table = ({ type }) => {
   const [number, setNumber] = useState(0);
@@ -11,7 +11,7 @@ const Table = ({ type }) => {
   const typeData = type[number].fields.table;
   const image = type[number].fields.productImage.fields.file;
   const description = type[number].fields.description;
-  console.log('https:' + image);
+  console.log("https:" + image);
 
   const tableHead = Object.keys(typeData[0]);
   const handleClick = (e) => setNumber(e);
@@ -70,10 +70,11 @@ const Table = ({ type }) => {
         </tbody>
       </table>
       <section className="section mb-6">
-        <img
-          src={'https:' + image.url}
+        <Image
+          src={"https:" + image.url}
           width={image.details.image.width}
           height={image.details.image.height}
+          alt="ETAR"
         />
 
         <br />

@@ -67,7 +67,7 @@ const LiftingEquipment = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/OperatorsDuty">
+              <Link href="/LiftingEquipment/PoweredLiftingEquipment/LiftingTable">
                 <a>
                   <div className="card">
                     <div className="card-header">
