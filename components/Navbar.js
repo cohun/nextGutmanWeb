@@ -1,6 +1,6 @@
-import Link from "next/link";
-import Image from "next/image";
-import { useState } from "react";
+import Link from 'next/link';
+import Image from 'next/image';
+import { useState } from 'react';
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`navbar-menu ${active ? "is-active" : ""}`}
+        className={`navbar-menu ${active ? 'is-active' : ''}`}
         id="nav-links"
       >
         <div className="navbar-end">
@@ -46,11 +46,11 @@ const Navbar = () => {
           </Link>
 
           <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">Categories</a>
+            <p className="navbar-link">Categories</p>
             <div className="navbar-dropdown">
-              <a className="navbar-item has-text-weight-semibold">
-                Lifting Equipment
-              </a>
+              <p className="navbar-item has-text-weight-semibold">
+                <Link href="/LiftingEquipment">Lifting Equipment</Link>
+              </p>
               <hr className="navbar-divider" />
               <p className="navbar-item ml-3">
                 <Link href="/LiftingEquipment/CraneAndTrolley">
@@ -76,9 +76,9 @@ const Navbar = () => {
                 </Link>
               </p>
               <hr className="navbar-divider" />
-              <a className="navbar-item has-text-weight-semibold">
-                Operators Duty Service
-              </a>
+              <p className="navbar-item has-text-weight-semibold">
+                <Link href="/OperatorsDuty">Operators Duty Service</Link>
+              </p>
               <hr className="navbar-divider" />
               <p className="navbar-item ml-3">
                 <Link href="/OperatorsDuty">ETAR</Link>
@@ -87,9 +87,9 @@ const Navbar = () => {
                 <Link href="/OperatorsDuty">ETAR EN</Link>
               </p>
               <hr className="navbar-divider" />
-              <a className="navbar-item has-text-weight-semibold">
-                Material Handling
-              </a>
+              <p className="navbar-item has-text-weight-semibold">
+                <Link href="/MaterialHandling">Material Handling</Link>
+              </p>
               <hr className="navbar-divider" />
               <p className="navbar-item ml-3">
                 <Link href="/">Lift Trucks</Link>
@@ -98,9 +98,9 @@ const Navbar = () => {
                 <Link href="/">Attachments</Link>
               </p>
               <hr className="navbar-divider" />
-              <a className="navbar-item has-text-weight-semibold">
-                Miscellaneous Products
-              </a>
+              <p className="navbar-item has-text-weight-semibold">
+                <Link href="/Miscellaneous">Miscellaneous Products</Link>
+              </p>
               <hr className="navbar-divider" />
               <p className="navbar-item ml-3">
                 <Link href="/">Lashing Systems</Link>
