@@ -1,9 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 const LiftingEquipment = () => {
   return (
     <div>
+      <Head>
+        <title>Gutman powered lifting equipment</title>
+        <meta name="description" content="Gutman powered lifting equipment" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <section className="pt-6"></section>
       <section className="pt-4 pb-0">
         <nav
