@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta
           name="keywords"
           content="lifting, lashing, material handling, crane, chain, polyester, wire rope"

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { BLOCKS } from "@contentful/rich-text-types";
 
 const Table = ({ type }) => {
   const [number, setNumber] = useState(0);
@@ -13,7 +14,40 @@ const Table = ({ type }) => {
   const typeData = type[number].fields.table;
   const image = type[number].fields.productImage.fields.file;
   const description = type[number].fields.description;
-  console.log(description.content);
+
+  const renderOption = {
+    renderNode: {
+      [BLOCKS.EMBEDDED_ASSET]: (node, children) => {
+        return (
+          <Image
+            src={`https:${node.data.target.fields.file.url}`}
+            height={node.data.target.fields.file.details.image.height}
+            width={node.data.target.fields.file.details.image.width}
+            alt="Some Image"
+            priority={true}
+          />
+        );
+      },
+      [BLOCKS.HEADING_1]: (node, children) => {
+        return <h1 className="is-size-1">{children}</h1>;
+      },
+      [BLOCKS.HEADING_2]: (node, children) => {
+        return <h1 className="is-size-2">{children}</h1>;
+      },
+      [BLOCKS.HEADING_3]: (node, children) => {
+        return <h1 className="is-size-3">{children}</h1>;
+      },
+      [BLOCKS.HEADING_4]: (node, children) => {
+        return <h1 className="is-size-4">{children}</h1>;
+      },
+      [BLOCKS.HEADING_5]: (node, children) => {
+        return <h1 className="is-size-5">{children}</h1>;
+      },
+      [BLOCKS.HEADING_6]: (node, children) => {
+        return <h1 className="is-size-6">{children}</h1>;
+      },
+    },
+  };
 
   const tableHead = Object.keys(typeData[0]);
   const handleClick = (e) => setNumber(e);
@@ -81,7 +115,7 @@ const Table = ({ type }) => {
 
         <br />
         <section className="my-6">
-          {documentToReactComponents(description)}
+          {documentToReactComponents(description, renderOption)}
         </section>
       </section>
     </section>
