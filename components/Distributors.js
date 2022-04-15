@@ -200,7 +200,7 @@ const Disributors = () => {
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title is-flex-direction-row">
+                      <div className="card-header-title is-flex-direction-row">
                         <p className="mr-6 ml-4 is-justify-content-flex-center is-flex-wrap-nowrap">
                           Croatia
                         </p>
@@ -212,7 +212,7 @@ const Disributors = () => {
                           src="/Gutman_Dizalica.png"
                           alt="Dizalica logo"
                         />
-                      </p>
+                      </div>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image

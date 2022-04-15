@@ -1,6 +1,7 @@
-import Link from "next/link";
-import Image from "next/image";
-import { useState } from "react";
+import Link from 'next/link';
+import Image from 'next/image';
+import { useState } from 'react';
+import Search from './Search';
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -37,9 +38,23 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`navbar-menu ${active ? "is-active" : ""}`}
+        className={`navbar-menu ${active ? 'is-active' : ''}`}
         id="nav-links"
       >
+        <div className="navbar-end container">
+          <div className="navbar-menu"></div>
+
+          <Link href="/" passHref className="container is-primary">
+            <div className="navbar-item">
+              <Search />
+            </div>
+          </Link>
+
+          <div className="navbar-item"></div>
+          <div className="navbar-item"></div>
+          <div className="navbar-item"></div>
+        </div>
+
         <div className="navbar-end">
           <Link href="/" className="navbar-item" passHref>
             <div className="navbar-item">Home</div>
@@ -48,69 +63,69 @@ const Navbar = () => {
           <div className="navbar-item has-dropdown is-hoverable">
             <p className="navbar-link">Categories</p>
             <div className="navbar-dropdown">
-              <p className="navbar-item has-text-weight-semibold">
+              <div className="navbar-item has-text-weight-semibold">
                 <Link href="/LiftingEquipment">Lifting Equipment</Link>
-              </p>
+              </div>
               <hr className="navbar-divider" />
-              <p className="navbar-item ml-3">
+              <div className="navbar-item ml-3">
                 <Link href="/LiftingEquipment/CraneAndTrolley">
                   Crane and Trolley
                 </Link>
-              </p>
-              <p className="navbar-item ml-3">
+              </div>
+              <div className="navbar-item ml-3">
                 <Link href="/LiftingEquipment/PoweredLiftingEquipment">
                   Powered Lifting Equipment
                 </Link>
-              </p>
-              <p className="navbar-item ml-3">
+              </div>
+              <div className="navbar-item ml-3">
                 <Link href="/LiftingEquipment/ManualLiftingEquipment">
                   Manual Lifting Equipment
                 </Link>
-              </p>
-              <p className="navbar-item ml-3">
+              </div>
+              <div className="navbar-item ml-3">
                 <Link
                   href="/LiftingEquipment/LiftingAccessories"
                   className="navbar-item ml-3"
                 >
                   Lifting Accessories
                 </Link>
-              </p>
+              </div>
               <hr className="navbar-divider" />
-              <p className="navbar-item has-text-weight-semibold">
+              <div className="navbar-item has-text-weight-semibold">
                 <Link href="/OperatorsDuty">Operators Duty Service</Link>
-              </p>
+              </div>
               <hr className="navbar-divider" />
-              <p className="navbar-item ml-3">
+              <div className="navbar-item ml-3">
                 <Link href="/OperatorsDuty">ETAR</Link>
-              </p>
-              <p className="navbar-item ml-3">
+              </div>
+              <div className="navbar-item ml-3">
                 <Link href="/OperatorsDuty">ETAR EN</Link>
-              </p>
+              </div>
               <hr className="navbar-divider" />
-              <p className="navbar-item has-text-weight-semibold">
+              <div className="navbar-item has-text-weight-semibold">
                 <Link href="/MaterialHandling">Material Handling</Link>
-              </p>
+              </div>
               <hr className="navbar-divider" />
-              <p className="navbar-item ml-3">
+              <div className="navbar-item ml-3">
                 <Link href="/MaterialHandling/LiftTrucks">Lift Trucks</Link>
-              </p>
-              <p className="navbar-item ml-3">
+              </div>
+              <div className="navbar-item ml-3">
                 <Link href="/MaterialHandling/Attachments">Attachments</Link>
-              </p>
+              </div>
               <hr className="navbar-divider" />
-              <p className="navbar-item has-text-weight-semibold">
+              <div className="navbar-item has-text-weight-semibold">
                 <Link href="/Miscellaneous">Miscellaneous Products</Link>
-              </p>
+              </div>
               <hr className="navbar-divider" />
-              <p className="navbar-item ml-3">
+              <div className="navbar-item ml-3">
                 <Link href="/">Lashing Systems</Link>
-              </p>
-              <p className="navbar-item ml-3">
+              </div>
+              <div className="navbar-item ml-3">
                 <Link href="/">Shop Equipment</Link>
-              </p>
-              <p className="navbar-item ml-3">
+              </div>
+              <div className="navbar-item ml-3">
                 <Link href="/">Fall Protection</Link>
-              </p>
+              </div>
             </div>
           </div>
           <Link href="/" passHref>
