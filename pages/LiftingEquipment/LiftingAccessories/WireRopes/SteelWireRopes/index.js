@@ -15,7 +15,7 @@ export async function getStaticProps(context) {
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === 'A.411.'
+    (item) => item.fields.productGroupId === 'A.432.'
   );
 
   return {
@@ -25,12 +25,12 @@ export async function getStaticProps(context) {
   };
 }
 
-function RoundSling({ type }) {
+function SteelWireRopes({ type }) {
   return (
     <div>
       <Head>
-        <title>Gutman roundsling</title>
-        <meta name="description" content="Gutman polyester roundsling" />
+        <title>Gutman bridle slings</title>
+        <meta name="description" content="Gutman bridle slings" />
       </Head>
 
       <section className="pt-6"></section>
@@ -57,18 +57,18 @@ function RoundSling({ type }) {
             </li>
             <li>
               <Link
-                href="/LiftingEquipment/LiftingAccessories/TextileSlings"
+                href="/LiftingEquipment/LiftingAccessories/WireRopes"
                 passHref
               >
-                <div className="has-text-grey px-3">Textile Slings</div>
+                <div className="has-text-grey px-3">Wire Ropes</div>
               </Link>
             </li>
             <li>
               <Link
-                href="/LiftingEquipment/LiftingAccessories/TextileSlings/RoundSling"
+                href="/LiftingEquipment/LiftingAccessories/WireRopes/SteelWireRopes"
                 passHref
               >
-                <div className="is-active px-3">Roundslings</div>
+                <div className="is-active px-3">Steel Wire Ropes</div>
               </Link>
             </li>
           </ul>
@@ -80,4 +80,4 @@ function RoundSling({ type }) {
   );
 }
 
-export default RoundSling;
+export default SteelWireRopes;

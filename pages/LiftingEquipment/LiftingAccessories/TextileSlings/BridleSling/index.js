@@ -15,7 +15,7 @@ export async function getStaticProps(context) {
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === 'A.411.'
+    (item) => item.fields.productGroupId === 'A.413.'
   );
 
   return {
@@ -25,12 +25,12 @@ export async function getStaticProps(context) {
   };
 }
 
-function RoundSling({ type }) {
+function BridleSling({ type }) {
   return (
     <div>
       <Head>
-        <title>Gutman roundsling</title>
-        <meta name="description" content="Gutman polyester roundsling" />
+        <title>Gutman bridle slings</title>
+        <meta name="description" content="Gutman bridle slings" />
       </Head>
 
       <section className="pt-6"></section>
@@ -68,7 +68,7 @@ function RoundSling({ type }) {
                 href="/LiftingEquipment/LiftingAccessories/TextileSlings/RoundSling"
                 passHref
               >
-                <div className="is-active px-3">Roundslings</div>
+                <div className="is-active px-3">Bridle Slings</div>
               </Link>
             </li>
           </ul>
@@ -80,4 +80,4 @@ function RoundSling({ type }) {
   );
 }
 
-export default RoundSling;
+export default BridleSling;

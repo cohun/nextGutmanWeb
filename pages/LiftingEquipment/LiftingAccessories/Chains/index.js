@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const TextileSlings = () => {
+const Chains = () => {
   return (
     <div>
       <section className="pt-6"></section>
@@ -31,7 +31,7 @@ const TextileSlings = () => {
                 href="/LiftingEquipment/LiftingAccessories/TextileSlings"
                 passHref
               >
-                <div className="is-active px-3">Textile Slings</div>
+                <div className="is-active px-3">Chains</div>
               </Link>
             </li>
           </ul>
@@ -40,16 +40,16 @@ const TextileSlings = () => {
       <section className="section mb-6">
         <div className="container mb-6">
           <h3 className="title has-text-centered is-size-3">
-            Textile Slings and Components
+            Chain, -slings, components
           </h3>
           <br />
           <div className="columns is-multiline">
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/LiftingAccessories/TextileSlings/RoundSling">
+              <Link href="/LiftingEquipment/LiftingAccessories/Chains/ChainSlings">
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title">A.411. Round slings</p>
+                      <p className="card-header-title">421. Chain slings</p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
@@ -72,12 +72,12 @@ const TextileSlings = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/LiftingAccessories/TextileSlings/WebbingSling">
+              <Link href="/LiftingEquipment/LiftingAccessories/Chains/ChainComponents">
                 <a>
                   <div className="card">
                     <div className="card-header">
                       <p className="card-header-title">
-                        A.412. Flat woven webbing sling
+                        422. Chains & Components
                       </p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
@@ -99,66 +99,6 @@ const TextileSlings = () => {
                 </a>
               </Link>
             </div>
-            <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/LiftingAccessories/TextileSlings/BridleSling">
-                <a>
-                  <div className="card">
-                    <div className="card-header">
-                      <p className="card-header-title">
-                        A.413. Textile Bridle Slings
-                      </p>
-                    </div>
-                    <div className="card-image has-text-centered pt-6">
-                      <Image
-                        width={165}
-                        height={165}
-                        src="/413.-Textile-Bridle-Slings_T.jpg"
-                        alt="Lifing accessories"
-                      />
-                    </div>
-                    <div className="card-content">
-                      <div className="content">
-                        Type IRG sling configurations consist of round sling
-                        legs, which are affixed on one end to a master link,
-                        with some type of attachment, usually a hook, affixed to
-                        the opposite end.
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </div>
-
-            <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/LiftingAccessories/TextileSlings/FibreRopes">
-                <a>
-                  <div className="card">
-                    <div className="card-header">
-                      <p className="card-header-title">A.414. Fibre ropes</p>
-                    </div>
-                    <div className="card-image has-text-centered pt-6">
-                      <Image
-                        width={165}
-                        height={165}
-                        src="/414.-Fibre-ropes_T.jpg"
-                        alt="Lifing accessories"
-                      />
-                    </div>
-                    <div className="card-content">
-                      <div className="content">
-                        Fibre rope slings are the traditional form of textile
-                        sling whose origins are recorded in the earliest history
-                        of lifting equipment. Although their use has declined in
-                        recent years in favour of the newer forms of textile
-                        slings, i.e. ﬂat woven webbing slings and roundslings,
-                        they may still be found in general use throughout
-                        industry
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </div>
           </div>
         </div>
       </section>
@@ -166,4 +106,4 @@ const TextileSlings = () => {
   );
 };
 
-export default TextileSlings;
+export default Chains;

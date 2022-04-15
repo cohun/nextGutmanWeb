@@ -15,7 +15,7 @@ export async function getStaticProps(context) {
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === 'A.411.'
+    (item) => item.fields.productGroupId === 'A.431.'
   );
 
   return {
@@ -25,12 +25,12 @@ export async function getStaticProps(context) {
   };
 }
 
-function RoundSling({ type }) {
+function ChainSling({ type }) {
   return (
     <div>
       <Head>
-        <title>Gutman roundsling</title>
-        <meta name="description" content="Gutman polyester roundsling" />
+        <title>Gutman chain slings</title>
+        <meta name="description" content="Gutman chain slings" />
       </Head>
 
       <section className="pt-6"></section>
@@ -56,19 +56,16 @@ function RoundSling({ type }) {
               </Link>
             </li>
             <li>
-              <Link
-                href="/LiftingEquipment/LiftingAccessories/TextileSlings"
-                passHref
-              >
-                <div className="has-text-grey px-3">Textile Slings</div>
+              <Link href="/LiftingEquipment/LiftingAccessories/Chains" passHref>
+                <div className="has-text-grey px-3">Chains</div>
               </Link>
             </li>
             <li>
               <Link
-                href="/LiftingEquipment/LiftingAccessories/TextileSlings/RoundSling"
+                href="/LiftingEquipment/LiftingAccessories/Chains/ChainSlings"
                 passHref
               >
-                <div className="is-active px-3">Roundslings</div>
+                <div className="is-active px-3">Chain Slings</div>
               </Link>
             </li>
           </ul>
@@ -80,4 +77,4 @@ function RoundSling({ type }) {
   );
 }
 
-export default RoundSling;
+export default ChainSling;
