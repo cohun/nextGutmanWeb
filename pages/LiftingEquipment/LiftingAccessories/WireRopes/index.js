@@ -55,7 +55,7 @@ const WireRopes = () => {
                       <Image
                         width={165}
                         height={165}
-                        src="/411.-Round-slings_T.jpg"
+                        src="/431.-Wire-rope-slings.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
@@ -82,7 +82,7 @@ const WireRopes = () => {
                       <Image
                         width={165}
                         height={165}
-                        src="/412.-Flat-woven-webbing-sling_T.jpg"
+                        src="/432.-Steel-wire-ropes.jpg"
                         alt="Lifing accessories"
                       />
                     </div>

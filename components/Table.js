@@ -1,7 +1,7 @@
-import Image from "next/image";
-import { useState } from "react";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { BLOCKS } from "@contentful/rich-text-types";
+import Image from 'next/image';
+import { useState } from 'react';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { BLOCKS } from '@contentful/rich-text-types';
 
 const Table = ({ type }) => {
   const [number, setNumber] = useState(0);
@@ -76,7 +76,7 @@ const Table = ({ type }) => {
         </div>
       </div>
 
-      <table className="table is-striped is-fullwidth mt-6">
+      <table className="table  is-fullwidth mt-6">
         <thead>
           <tr>
             {tableHead.map((key) => {
@@ -107,7 +107,7 @@ const Table = ({ type }) => {
       </table>
       <section className="section mb-6">
         <Image
-          src={"https:" + image.url}
+          src={'https:' + image.url}
           width={image.details.image.width}
           height={image.details.image.height}
           alt="ETAR"

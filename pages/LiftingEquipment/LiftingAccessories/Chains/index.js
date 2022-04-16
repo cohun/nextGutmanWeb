@@ -55,7 +55,7 @@ const Chains = () => {
                       <Image
                         width={165}
                         height={165}
-                        src="/411.-Round-slings_T.jpg"
+                        src="/421.-Chain-slings.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
@@ -84,7 +84,7 @@ const Chains = () => {
                       <Image
                         width={165}
                         height={165}
-                        src="/412.-Flat-woven-webbing-sling_T.jpg"
+                        src="/422.-Chains-&-Components.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
