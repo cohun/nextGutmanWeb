@@ -118,7 +118,7 @@ const Navbar = () => {
               </div>
               <hr className="navbar-divider" />
               <div className="navbar-item ml-3">
-                <Link href="/">Lashing Systems</Link>
+                <Link href="/Miscellaneous/Lashing">Lashing Systems</Link>
               </div>
               <div className="navbar-item ml-3">
                 <Link href="/">Shop Equipment</Link>
