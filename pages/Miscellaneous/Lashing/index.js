@@ -46,7 +46,7 @@ const Lashing = () => {
                         width={165}
                         height={165}
                         src="/D.11.-Lashing-straps.jpg"
-                        alt="Lashing strap"
+                        alt="Lashing"
                       />
                     </div>
                     <div className="card-content">

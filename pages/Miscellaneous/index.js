@@ -59,7 +59,7 @@ const Miscellaneous = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/Miscellaneous/PoweredMiscellaneous">
+              <Link href="/Miscellaneous/">
                 <a>
                   <div className="card">
                     <div className="card-header">
@@ -85,7 +85,7 @@ const Miscellaneous = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/Miscellaneous/ManualMiscellaneous">
+              <Link href="/Miscellaneous/">
                 <a>
                   <div className="card">
                     <div className="card-header">
