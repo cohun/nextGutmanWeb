@@ -1,19 +1,21 @@
-import Link from "next/link";
-import Table from "../../../../components/Table";
-import Head from "next/head";
-import { createClient } from "contentful";
+import Link from 'next/link';
+import Table from '../../../../components/Table';
+import Head from 'next/head';
+import { createClient } from 'contentful';
 
 export async function getStaticProps(context) {
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   });
-  const res = await client.getEntries({ content_type: "productTable" });
+  const res = await client.getEntries({
+    content_type: 'productTable',
+  });
   console.log(res.items);
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === "A.22."
+    (item) => item.fields.productGroupId === 'A.22.'
   );
 
   return {
