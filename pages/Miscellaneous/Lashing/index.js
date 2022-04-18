@@ -58,7 +58,7 @@ const Lashing = () => {
                         sling fitted permanently to the ratchet. 2 part ratchet
                         straps have a separate web sling with end fittings. The
                         web sling can be supplied with different end fittings
-                        dependant on our customer's applications, usually hook
+                        dependant on our customer s applications, usually hook
                         or eye or buckle (many types). We also supply cam buckle
                         restraint straps, lorry straps, one way straps.
                       </div>
@@ -88,8 +88,8 @@ const Lashing = () => {
                         ratchet straps. They are totally made from steel using a
                         chain sling with grab hook as opposed to a webbing
                         sling. There are differing styles available, ratchet
-                        load binders and lever action load binders. these are
-                        used in applications where items with shape edge's or
+                        load binders and lever action load binders. These are
+                        used in applications where items with shape edge s or
                         abrasive surfaced need to be restrained; surfaces that
                         would damage or cut a polyester sling ratchet load
                         binder and can be supplied in different configurations
