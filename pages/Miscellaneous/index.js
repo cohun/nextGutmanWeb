@@ -79,7 +79,7 @@ const Miscellaneous = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        In this category Gutman offers many items that don’t
+                        In this category Gutman offers many items that do not
                         really fall into any other category but for a
                         maintenance or repair facility these items of garage
                         equipment are needed to lift or move things around.
