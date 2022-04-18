@@ -51,10 +51,16 @@ const Lashing = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Round slings are made from a continuous loop of
-                        polyester yarn covered by a double wall tubular
-                        polyester jacket. It is manufactured according to EN
-                        1492 Part 2
+                        Cargo restraint ratchet straps are available in
+                        different sizes , capacities and lengths. Ratchet straps
+                        have a steel ratchet handle with a polyester webbing
+                        sling. Single part ratchet straps have the long webbing
+                        sling fitted permanently to the ratchet. 2 part ratchet
+                        straps have a separate web sling with end fittings. The
+                        web sling can be supplied with different end fittings
+                        dependant on our customer's applications, usually hook
+                        or eye or buckle (many types). We also supply cam buckle
+                        restraint straps, lorry straps, one way straps.
                       </div>
                     </div>
                   </div>
@@ -78,9 +84,17 @@ const Lashing = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Flat webbing sling is a standard device for lifting
-                        applications. It is made from high tensile polyester
-                        (PES) manufactured according to EN 1492 Part 1
+                        Load binders are to achieve exactly the same function as
+                        ratchet straps. They are totally made from steel using a
+                        chain sling with grab hook as opposed to a webbing
+                        sling. There are differing styles available, ratchet
+                        load binders and lever action load binders. these are
+                        used in applications where items with shape edge's or
+                        abrasive surfaced need to be restrained; surfaces that
+                        would damage or cut a polyester sling ratchet load
+                        binder and can be supplied in different configurations
+                        with a hook or eye termination or with a permanently
+                        fitted restraint chain fitted.
                       </div>
                     </div>
                   </div>
@@ -104,9 +118,11 @@ const Lashing = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Flat webbing sling is a standard device for lifting
-                        applications. It is made from high tensile polyester
-                        (PES) manufactured according to EN 1492 Part 1
+                        Edge or corner protectors (sometimes also called strap
+                        protectors, vee boards, or tie down strap protectors)
+                        are an inexpensive way to protect not only your cargo,
+                        but also protect your straps or chains, and any tarps or
+                        covers that you use in tie down applications.
                       </div>
                     </div>
                   </div>
@@ -132,9 +148,12 @@ const Lashing = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Flat webbing sling is a standard device for lifting
-                        applications. It is made from high tensile polyester
-                        (PES) manufactured according to EN 1492 Part 1
+                        The number one priority of all transport truck drivers
+                        is safety. The second priority of all transport truck
+                        drivers is getting the cargo to its final destination
+                        undamaged. Knowing this, load restraint systems are a
+                        quick and easy way to secure cargo in the back of a
+                        pickup truck.
                       </div>
                     </div>
                   </div>
@@ -158,9 +177,11 @@ const Lashing = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Flat webbing sling is a standard device for lifting
-                        applications. It is made from high tensile polyester
-                        (PES) manufactured according to EN 1492 Part 1
+                        Anti-slip mats are an indispensable and important way to
+                        secure cargo. They make a valuable contribution to
+                        safety and, due to the increase in the coefficient of
+                        sliding friction to μD 0.6, prevent your goods and cargo
+                        from slipping around dangerously.
                       </div>
                     </div>
                   </div>
@@ -186,9 +207,9 @@ const Lashing = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Flat webbing sling is a standard device for lifting
-                        applications. It is made from high tensile polyester
-                        (PES) manufactured according to EN 1492 Part 1
+                        Disposable or one way lashing for applications in which
+                        the lashings used are disposed of at the end of the
+                        transport route.
                       </div>
                     </div>
                   </div>

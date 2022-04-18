@@ -48,10 +48,14 @@ const Miscellaneous = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        A crane is a type of machine, generally equipped with a
-                        hoist rope, wire ropes or chains, and sheaves, that can
-                        be used both to lift and lower materials and to move
-                        them horizontally.
+                        Load restraint equipment are used to tie down equipment
+                        stopping it from moving. Load restraint and cargo
+                        restraint products are not lifting equipment and cannot
+                        be used for lifting application under any circumstances.
+                        Items need restraining from movement when being
+                        transported between locations for example road and rail
+                        freight. If the cargo is not restrained it could easily
+                        cause an accident falling from the vehicle or train.
                       </div>
                     </div>
                   </div>
@@ -75,9 +79,10 @@ const Miscellaneous = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        A lifting equipment which can be worked through power.
-                        They are designed to reduce the manual handling effort
-                        and associated risk to the user to a minimum.
+                        In this category Gutman offers many items that don’t
+                        really fall into any other category but for a
+                        maintenance or repair facility these items of garage
+                        equipment are needed to lift or move things around.
                       </div>
                     </div>
                   </div>
@@ -101,9 +106,9 @@ const Miscellaneous = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        A lifting equipment which is not worked through power
-                        but by an individual. (lifting, putting down, pushing,
-                        pulling, carrying or moving)
+                        We offer a very comprehensive selection of fall arrest
+                        and height safety equipment for those needing to keep
+                        safe while working at height.
                       </div>
                     </div>
                   </div>
