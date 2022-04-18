@@ -15,7 +15,7 @@ export async function getStaticProps(context) {
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === 'A.431.'
+    (item) => item.fields.productGroupId === 'A.421.'
   );
 
   return {

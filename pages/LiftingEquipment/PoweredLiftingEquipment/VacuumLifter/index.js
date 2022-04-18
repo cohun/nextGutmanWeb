@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Chains = () => {
+const VacuumLifter = () => {
   return (
     <div>
       <section className="pt-6"></section>
@@ -22,13 +22,18 @@ const Chains = () => {
               </Link>
             </li>
             <li>
-              <Link href="/LiftingEquipment/LiftingAccessories" passHref>
-                <div className="has-text-grey px-3">Lifting Accessories</div>
+              <Link href="/LiftingEquipment/PoweredLiftingEquipment" passHref>
+                <div className="has-text-grey px-3">
+                  Powered Lifting Equipment
+                </div>
               </Link>
             </li>
             <li>
-              <Link href="/LiftingEquipment/LiftingAccessories/Chains" passHref>
-                <div className="is-active px-3">Chains</div>
+              <Link
+                href="/LiftingEquipment/PoweredLiftingEquipment/VacuumLifter"
+                passHref
+              >
+                <div className="is-active px-3">Vacuum Lifter</div>
               </Link>
             </li>
           </ul>
@@ -36,32 +41,37 @@ const Chains = () => {
       </section>
       <section className="section mb-6">
         <div className="container mb-6">
-          <h3 className="title has-text-centered is-size-3">
-            Chain, -slings, components
-          </h3>
+          <h3 className="title has-text-centered is-size-3">Vacuum Lifter</h3>
           <br />
           <div className="columns is-multiline">
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/LiftingAccessories/Chains/ChainSlings">
+              <Link href="/LiftingEquipment/PoweredLiftingEquipment/VacuumLifter/TraversingVacuum">
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title">A.421. Chain slings</p>
+                      <p className="card-header-title">
+                        A.231. Traversing Vacuum Lifting device
+                      </p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/421.-Chain-slings.jpg"
+                        src="/A.231.-Traversing-Vacuum-Lifting-device.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Round slings are made from a continuous loop of
-                        polyester yarn covered by a double wall tubular
-                        polyester jacket. It is manufactured according to EN
-                        1492 Part 2
+                        A vacuum lifter is a type of load-handling attachment.
+                        It is used primarily when moving goods with smooth and
+                        largely non-porous surfaces, such as panels made of
+                        sheet metal, Glass and chipboard. Vacuum lifters are
+                        attached to electric Cable hoists and Chain hoists. A
+                        vacuum pump generates underpressure between the
+                        load-handling attachment and the load, while a rubber
+                        Seal protects the vacuum from the surrounding
+                        atmospheric pressure.
                       </div>
                     </div>
                   </div>
@@ -69,27 +79,31 @@ const Chains = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/LiftingAccessories/Chains/ChainComponents">
+              <Link href="/LiftingEquipment/PoweredLiftingEquipment/VacuumLifter/TubeVacuum">
                 <a>
                   <div className="card">
                     <div className="card-header">
                       <p className="card-header-title">
-                        A.422. Chains & Components
+                        A.232. Tube Vacuum Lifter
                       </p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/422.-Chains-&-Components.jpg"
+                        src="/A.232.-Tube-Vacuum-Lifter.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Flat webbing sling is a standard device for lifting
-                        applications. It is made from high tensile polyester
-                        (PES) manufactured according to EN 1492 Part 1
+                        Vacuum tube lifters are a unique lifting aid designed
+                        for repetitive handling of materials or loads. These
+                        systems hold, lift, and lower the load all with a single
+                        operator control, and require minimal operator training.
+                        The use of interchangeable attachments allows for a
+                        variety of shaped and sized loads to be handled without
+                        the need for multiple systems.
                       </div>
                     </div>
                   </div>
@@ -103,4 +117,4 @@ const Chains = () => {
   );
 };
 
-export default Chains;
+export default VacuumLifter;

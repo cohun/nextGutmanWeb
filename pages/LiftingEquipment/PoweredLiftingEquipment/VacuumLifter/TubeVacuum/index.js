@@ -15,7 +15,7 @@ export async function getStaticProps(context) {
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === 'A.422.'
+    (item) => item.fields.productGroupId === 'A.232.'
   );
 
   return {
@@ -25,12 +25,12 @@ export async function getStaticProps(context) {
   };
 }
 
-function ChainComponents({ type }) {
+function TubeVacuum({ type }) {
   return (
     <div>
       <Head>
-        <title>Gutman chain components</title>
-        <meta name="description" content="Gutman chain components" />
+        <title>Tube Vacuum</title>
+        <meta name="description" content="Tube Vacuum Lifting Device" />
       </Head>
 
       <section className="pt-6"></section>
@@ -51,21 +51,26 @@ function ChainComponents({ type }) {
               </Link>
             </li>
             <li>
-              <Link href="/LiftingEquipment/LiftingAccessories" passHref>
-                <div className="has-text-grey px-3">Lifting Accessories</div>
-              </Link>
-            </li>
-            <li>
-              <Link href="/LiftingEquipment/LiftingAccessories/Chains" passHref>
-                <div className="has-text-grey px-3">Chains</div>
+              <Link href="/LiftingEquipment/PoweredLiftingEquipment" passHref>
+                <div className="has-text-grey px-3">
+                  Powered Lifting Equipment
+                </div>
               </Link>
             </li>
             <li>
               <Link
-                href="/LiftingEquipment/LiftingAccessories/Chains/ChainComponents"
+                href="/LiftingEquipment/PoweredLiftingEquipment/VacuumLifter"
                 passHref
               >
-                <div className="is-active px-3">Chain Components</div>
+                <div className="has-text-grey px-3">Vacuum Lifter</div>
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/LiftingEquipment/PoweredLiftingEquipment/VacuumLifter/TubeVacuum"
+                passHref
+              >
+                <div className="is-active px-3">Tube Vacuum Lifter</div>
               </Link>
             </li>
           </ul>
@@ -77,4 +82,4 @@ function ChainComponents({ type }) {
   );
 }
 
-export default ChainComponents;
+export default TubeVacuum;
