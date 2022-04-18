@@ -1,9 +1,14 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
+import Head from 'next/head';
 
 const LiftingEquipment = () => {
   return (
     <div>
+      <Head>
+        <title>Gutman lifting equipment</title>
+        <meta name="description" content="Gutman lifting equipment" />
+      </Head>
       <section className="pt-6"></section>
       <section className="pt-4 pb-0">
         <nav
