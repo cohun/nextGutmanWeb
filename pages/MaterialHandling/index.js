@@ -48,10 +48,8 @@ const MaterialHandling = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        A crane is a type of machine, generally equipped with a
-                        hoist rope, wire ropes or chains, and sheaves, that can
-                        be used both to lift and lower materials and to move
-                        them horizontally.
+                        Different small trucks used to lift and move materials
+                        over short distances.
                       </div>
                     </div>
                   </div>

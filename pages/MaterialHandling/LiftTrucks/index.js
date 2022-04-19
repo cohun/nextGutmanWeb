@@ -41,7 +41,7 @@ const LiftTrucks = () => {
           <br />
           <div className="columns is-multiline">
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/PoweredLiftingEquipment/ElectricHoist">
+              <Link href="/MaterialHandling/LiftTrucks/HandPalletTrucks">
                 <a>
                   <div className="card">
                     <div className="card-header">
@@ -59,13 +59,13 @@ const LiftTrucks = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Power operated hoists are widely used in industry, often
-                        as part of a larger lifting installation, e.g. with an
-                        overhead runway, jib crane or overhead travelling crane,
-                        or where a permanent lifting facility is required. They
-                        may also be used for fxed position lifting applications
-                        or where a temporary powered lifting facility is
-                        required
+                        Hand pallet trucks are a versatile piece of kit and a
+                        must for any warehouse. Agile and easy-to-operate, these
+                        trucks are the perfect choice whenever you need to
+                        transport large volumes of goods or heavy loads quickly
+                        and efficiently over short distances. Narrow aisles,
+                        tight lorry loading areas, and steep ramps pose no
+                        problem for them.
                       </div>
                     </div>
                   </div>
@@ -73,7 +73,7 @@ const LiftTrucks = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/PoweredLiftingEquipment/LiftingTable">
+              <Link href="/MaterialHandling/LiftTrucks/TableLifters">
                 <a>
                   <div className="card">
                     <div className="card-header">
@@ -89,13 +89,11 @@ const LiftTrucks = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        A lift table is a device that employs a scissors
-                        mechanism to raise or lower goods. Typically lift tables
-                        are used to raise large, heavy loads through relatively
-                        small distances. They can work in hostile environments,
-                        be manufactured in stainless steel and have equipment
-                        like conveyors, turn-tables, barriers and gates easily
-                        added to their deckplates.
+                        The device has a scissor lifting mechanism. This enables
+                        it to lift loads up to different heights without
+                        compromising on maximum load capacity. All Gutman
+                        lifting tables are raised with a foot pedal and can be
+                        proportionally lowered with a hand lever.
                       </div>
                     </div>
                   </div>
@@ -103,7 +101,7 @@ const LiftTrucks = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/MaterialHandling">
+              <Link href="/MaterialHandling/LiftTrucks/Stackers">
                 <a>
                   <div className="card">
                     <div className="card-header">
@@ -119,13 +117,11 @@ const LiftTrucks = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Vacuum lifters can be suitable for lifting loads which
-                        have a smooth, non-porous surface such as metal plates,
-                        glass, stone slabs, cardboard boxes, etc. If required,
-                        the vacuum lifter can have the facility to tilt a load,
-                        such as a steel or glass plate from horizontal to
-                        vertical or vice versa, and be capable of rotating the
-                        load.
+                        Manual Stacker are equipped with standard formed metal
+                        forks. The Gutman Stacker range enables you to lift and
+                        rack pallets up to a height of 1,6m. The pump comes
+                        standard with proportional lowering and a foot pedal to
+                        speed up the lifting process.
                       </div>
                     </div>
                   </div>
