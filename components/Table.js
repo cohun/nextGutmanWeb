@@ -31,17 +31,15 @@ const Table = ({ type }) => {
       [INLINES.HYPERLINK]: (node) => {
         if (node.data.uri.includes('player.vimeo.com/video')) {
           return (
-            <IframeContainer>
-              <iframe
-                id="ytplayer"
-                src={node.data.uri}
-                type="text/html"
-                width="640"
-                height="360"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture ; fullscreen"
-              ></iframe>
-            </IframeContainer>
+            <iframe
+              id="ytplayer"
+              src={node.data.uri}
+              type="text/html"
+              width="640"
+              height="360"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture ; fullscreen"
+            ></iframe>
           );
         } else if (node.data.uri.includes('youtube.com/embed')) {
           return (
