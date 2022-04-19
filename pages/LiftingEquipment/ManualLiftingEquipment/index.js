@@ -128,7 +128,7 @@ const LiftingEquipment = () => {
             </div>
 
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/ManualLiftingEquipment/">
+              <Link href="/LiftingEquipment/ManualLiftingEquipment/PullingHoist">
                 <a>
                   <div className="card">
                     <div className="card-header">
@@ -159,7 +159,7 @@ const LiftingEquipment = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/ManualLiftingEquipment/">
+              <Link href="/LiftingEquipment/ManualLiftingEquipment/PulleyWinches">
                 <a>
                   <div className="card">
                     <div className="card-header">
