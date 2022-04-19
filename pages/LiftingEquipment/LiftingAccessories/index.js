@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import Head from 'next/head';
+import Image from "next/image";
+import Link from "next/link";
+import Head from "next/head";
 
 const LiftingEquipment = () => {
   return (
@@ -139,7 +139,7 @@ const LiftingEquipment = () => {
             </div>
 
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/Miscellaneous">
+              <Link href="/LiftingEquipment/LiftingAccessories/Clamps">
                 <a>
                   <div className="card">
                     <div className="card-header">
@@ -169,7 +169,7 @@ const LiftingEquipment = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/Miscellaneous">
+              <Link href="/LiftingEquipment/LiftingAccessories/Magnets">
                 <a>
                   <div className="card">
                     <div className="card-header">
@@ -199,7 +199,7 @@ const LiftingEquipment = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/Miscellaneous">
+              <Link href="/LiftingEquipment/LiftingAccessories/Beams">
                 <a>
                   <div className="card">
                     <div className="card-header">
@@ -229,7 +229,7 @@ const LiftingEquipment = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/Miscellaneous">
+              <Link href="/LiftingEquipment/LiftingAccessories/LiftingEyes">
                 <a>
                   <div className="card">
                     <div className="card-header">
