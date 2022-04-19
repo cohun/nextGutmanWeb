@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import { BLOCKS } from '@contentful/rich-text-types';
+import { INLINES, BLOCKS } from '@contentful/rich-text-types';
 
 const Table = ({ type }) => {
   const [number, setNumber] = useState(0);
@@ -28,6 +28,39 @@ const Table = ({ type }) => {
           />
         );
       },
+      [INLINES.HYPERLINK]: (node) => {
+        if (node.data.uri.includes('player.vimeo.com/video')) {
+          return (
+            <IframeContainer>
+              <iframe
+                id="ytplayer"
+                src={node.data.uri}
+                type="text/html"
+                width="640"
+                height="360"
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture ; fullscreen"
+              ></iframe>
+            </IframeContainer>
+          );
+        } else if (node.data.uri.includes('youtube.com/embed')) {
+          return (
+            <figure className="image is-16by9">
+              <iframe
+                className="has-ratio"
+                width="320"
+                height="180"
+                title="Unique Title 002"
+                src={node.data.uri}
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            </figure>
+          );
+        }
+      },
+
       [BLOCKS.HEADING_1]: (node, children) => {
         return <h1 className="is-size-1">{children}</h1>;
       },
