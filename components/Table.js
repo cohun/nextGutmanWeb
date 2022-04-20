@@ -1,7 +1,7 @@
-import Image from "next/image";
-import { useState } from "react";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { INLINES, BLOCKS } from "@contentful/rich-text-types";
+import Image from 'next/image';
+import { useState } from 'react';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { INLINES, BLOCKS } from '@contentful/rich-text-types';
 
 const Table = ({ type }) => {
   const [number, setNumber] = useState(0);
@@ -29,7 +29,7 @@ const Table = ({ type }) => {
         );
       },
       [INLINES.HYPERLINK]: (node) => {
-        if (node.data.uri.includes("player.vimeo.com/video")) {
+        if (node.data.uri.includes('player.vimeo.com/video')) {
           return (
             <iframe
               id="ytplayer"
@@ -41,7 +41,7 @@ const Table = ({ type }) => {
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture ; fullscreen"
             ></iframe>
           );
-        } else if (node.data.uri.includes("youtube.com/embed")) {
+        } else if (node.data.uri.includes('youtube.com/embed')) {
           return (
             <figure className="image is-16by9">
               <iframe
@@ -100,7 +100,7 @@ const Table = ({ type }) => {
                 <button
                   key={i.sys.id}
                   onClick={(e) => handleClick(index)}
-                  className="button mr-4"
+                  className="button mr-4 "
                 >
                   {type[index].fields.name}
                 </button>
@@ -141,7 +141,7 @@ const Table = ({ type }) => {
       </table>
       <section className="section mb-6">
         <Image
-          src={"https:" + image.url}
+          src={'https:' + image.url}
           width={image.details.image.width}
           height={image.details.image.height}
           alt="ETAR"
