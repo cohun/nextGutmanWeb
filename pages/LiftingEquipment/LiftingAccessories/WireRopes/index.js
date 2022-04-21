@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 const WireRopes = () => {
   return (
@@ -49,7 +49,9 @@ const WireRopes = () => {
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title">431. Wire rope slings</p>
+                      <p className="card-header-title">
+                        A.431. Wire rope slings
+                      </p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
@@ -76,7 +78,9 @@ const WireRopes = () => {
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title">432. Steel wire ropes</p>
+                      <p className="card-header-title">
+                        A.432. Steel wire ropes
+                      </p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image

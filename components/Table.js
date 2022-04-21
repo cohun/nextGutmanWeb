@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import { useState } from 'react';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import { INLINES, BLOCKS } from '@contentful/rich-text-types';
+import Image from "next/image";
+import { useState } from "react";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { INLINES, BLOCKS } from "@contentful/rich-text-types";
 
 const Table = ({ type }) => {
   const [number, setNumber] = useState(0);
@@ -29,7 +29,7 @@ const Table = ({ type }) => {
         );
       },
       [INLINES.HYPERLINK]: (node) => {
-        if (node.data.uri.includes('player.vimeo.com/video')) {
+        if (node.data.uri.includes("player.vimeo.com/video")) {
           return (
             <iframe
               id="ytplayer"
@@ -41,7 +41,7 @@ const Table = ({ type }) => {
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture ; fullscreen"
             ></iframe>
           );
-        } else if (node.data.uri.includes('youtube.com/embed')) {
+        } else if (node.data.uri.includes("youtube.com/embed")) {
           return (
             <figure className="image is-16by9">
               <iframe
@@ -84,6 +84,8 @@ const Table = ({ type }) => {
   };
 
   const tableHead = Object.keys(typeData[0]);
+  const tableHead1 = Object.values(typeData[0]);
+  console.log(tableHead1);
   const handleClick = (e) => setNumber(e);
 
   return (
@@ -113,7 +115,7 @@ const Table = ({ type }) => {
       <table className="table  is-fullwidth mt-6">
         <thead>
           <tr>
-            {tableHead.map((key) => {
+            {tableHead1.map((key, i) => {
               return <th key={key}>{key}</th>;
             })}
           </tr>
@@ -121,27 +123,29 @@ const Table = ({ type }) => {
 
         <tfoot>
           <tr>
-            {tableHead.map((key) => {
+            {tableHead1.map((key) => {
               return <th key={key}>{key}</th>;
             })}
           </tr>
         </tfoot>
 
         <tbody>
-          {typeData.map((item) => {
-            return (
-              <tr key={item[tableHead[0]]}>
-                {tableHead.map((key) => {
-                  return <td key={key}>{item[key]}</td>;
-                })}
-              </tr>
-            );
+          {typeData.map((item, index) => {
+            if (index !== 0) {
+              return (
+                <tr key={item[tableHead[0]]}>
+                  {tableHead.map((key) => {
+                    return <td key={key}>{item[key]}</td>;
+                  })}
+                </tr>
+              );
+            }
           })}
         </tbody>
       </table>
       <section className="section mb-6">
         <Image
-          src={'https:' + image.url}
+          src={"https:" + image.url}
           width={image.details.image.width}
           height={image.details.image.height}
           alt="ETAR"
