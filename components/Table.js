@@ -1,10 +1,11 @@
-import Image from "next/image";
-import { useState } from "react";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { INLINES, BLOCKS } from "@contentful/rich-text-types";
+import Image from 'next/image';
+import { useState } from 'react';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { INLINES, BLOCKS } from '@contentful/rich-text-types';
 
 const Table = ({ type }) => {
   const [number, setNumber] = useState(0);
+  const [color, setColor] = useState('is-primary');
 
   if (type.length === 0) {
     return <div>No Data</div>;
@@ -29,7 +30,7 @@ const Table = ({ type }) => {
         );
       },
       [INLINES.HYPERLINK]: (node) => {
-        if (node.data.uri.includes("player.vimeo.com/video")) {
+        if (node.data.uri.includes('player.vimeo.com/video')) {
           return (
             <iframe
               id="ytplayer"
@@ -41,7 +42,7 @@ const Table = ({ type }) => {
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture ; fullscreen"
             ></iframe>
           );
-        } else if (node.data.uri.includes("youtube.com/embed")) {
+        } else if (node.data.uri.includes('youtube.com/embed')) {
           return (
             <figure className="image is-16by9">
               <iframe
@@ -86,7 +87,9 @@ const Table = ({ type }) => {
   const tableHead = Object.keys(typeData[0]);
   const tableHead1 = Object.values(typeData[0]);
   console.log(tableHead1);
-  const handleClick = (e) => setNumber(e);
+  const handleClick = (e) => {
+    setNumber(e);
+  };
 
   return (
     <section className="section">
@@ -98,11 +101,15 @@ const Table = ({ type }) => {
         <div className="tile">
           <div className="container">
             {type.map((i, index) => {
+              let focus = '';
+              if (index === number) {
+                focus = 'is-focused';
+              }
               return (
                 <button
                   key={i.sys.id}
                   onClick={(e) => handleClick(index)}
-                  className="button mr-4 "
+                  className={`button mr-4 is-outlined is-info + ${focus}`}
                 >
                   {type[index].fields.name}
                 </button>
@@ -145,7 +152,7 @@ const Table = ({ type }) => {
       </table>
       <section className="section mb-6">
         <Image
-          src={"https:" + image.url}
+          src={'https:' + image.url}
           width={image.details.image.width}
           height={image.details.image.height}
           alt="ETAR"
