@@ -73,7 +73,7 @@ const Lashing = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/Miscellaneous/Lashing/">
+              <Link href="/Miscellaneous/Lashing/LashingChains">
                 <a>
                   <div className="card">
                     <div className="card-header">
