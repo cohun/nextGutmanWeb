@@ -1,9 +1,15 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
+import Head from "next/head";
 
 const VacuumLifter = () => {
   return (
     <div>
+      <Head>
+        <title>Gutman vacuum lifter</title>
+        <meta name="description" content="Gutman vacuum lifter" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <section className="pt-6"></section>
       <section className="pt-4 pb-0">
         <nav

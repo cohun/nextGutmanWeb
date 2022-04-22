@@ -1,9 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Head } from "next/head";
 
 const MaterialHandling = () => {
   return (
     <div>
+      <Head>
+        <title>Gutman lifttruck</title>
+        <meta name="description" content="Gutman lifttruck" />
+      </Head>
       <section className="pt-6"></section>
       <section className="pt-4 pb-0">
         <nav

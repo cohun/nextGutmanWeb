@@ -2,12 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 
-const FallProtection = () => {
+const ShopEquipment = () => {
   return (
     <div>
       <Head>
-        <title>Gutman FallProtection</title>
-        <meta name="description" content="Gutman FallProtection" />
+        <title>Gutman ShopEquipment</title>
+        <meta name="description" content="Gutman ShopEquipment" />
       </Head>
       <section className="pt-6"></section>
       <section className="pt-4 pb-0">
@@ -27,8 +27,8 @@ const FallProtection = () => {
               </Link>
             </li>
             <li>
-              <Link href="/Miscellaneous/FallProtection" passHref>
-                <div className="is-active px-3">FallProtection</div>
+              <Link href="/Miscellaneous/ShopEquipment" passHref>
+                <div className="is-active px-3">ShopEquipment</div>
               </Link>
             </li>
           </ul>
@@ -36,24 +36,24 @@ const FallProtection = () => {
       </section>
       <section className="section mb-6">
         <div className="container mb-6">
-          <h3 className="title has-text-centered is-size-3">FallProtection</h3>
+          <h3 className="title has-text-centered is-size-3">ShopEquipment</h3>
           <br />
           <div className="columns is-multiline">
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/Miscellaneous/FallProtection/">
+              <Link href="/Miscellaneous/ShopEquipment/">
                 <a>
                   <div className="card">
                     <div className="card-header">
                       <p className="card-header-title">
-                        D.31. FallProtection straps
+                        D.21. ShopEquipment straps
                       </p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/D.11.-FallProtection-straps.jpg"
-                        alt="FallProtection"
+                        src="/D.11.-ShopEquipment-straps.jpg"
+                        alt="ShopEquipment"
                       />
                     </div>
                     <div className="card-content">
@@ -75,20 +75,20 @@ const FallProtection = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/Miscellaneous/FallProtection/">
+              <Link href="/Miscellaneous/ShopEquipment/">
                 <a>
                   <div className="card">
                     <div className="card-header">
                       <p className="card-header-title">
-                        D.32. FallProtection chains
+                        D.22. ShopEquipment chains
                       </p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/D.12.-FallProtection-chains.jpg"
-                        alt="FallProtection chain"
+                        src="/D.12.-ShopEquipment-chains.jpg"
+                        alt="ShopEquipment chain"
                       />
                     </div>
                     <div className="card-content">
@@ -117,4 +117,4 @@ const FallProtection = () => {
   );
 };
 
-export default FallProtection;
+export default ShopEquipment;

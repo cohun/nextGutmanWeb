@@ -31,7 +31,6 @@ function Jack({ type }) {
       <Head>
         <title>Gutman Jacks</title>
         <meta name="description" content="Jacks" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <section className="pt-6"></section>

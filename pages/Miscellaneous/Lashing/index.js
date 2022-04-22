@@ -1,9 +1,14 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
+import Head from "next/head";
 
 const Lashing = () => {
   return (
     <div>
+      <Head>
+        <title>Gutman lashing</title>
+        <meta name="description" content="Gutman lashing" />
+      </Head>
       <section className="pt-6"></section>
       <section className="pt-4 pb-0">
         <nav
@@ -35,7 +40,7 @@ const Lashing = () => {
           <br />
           <div className="columns is-multiline">
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/Miscellaneous/Lashing/">
+              <Link href="/Miscellaneous/Lashing/LashingStraps">
                 <a>
                   <div className="card">
                     <div className="card-header">

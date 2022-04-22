@@ -1,9 +1,14 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
+import Head from "next/head";
 
 const TextileSlings = () => {
   return (
     <div>
+      <Head>
+        <title>Gutman textile slings</title>
+        <meta name="description" content="Gutman textile slings" />
+      </Head>
       <section className="pt-6"></section>
       <section className="pt-4 pb-0">
         <nav

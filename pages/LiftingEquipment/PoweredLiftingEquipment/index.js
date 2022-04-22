@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import Head from 'next/head';
+import Image from "next/image";
+import Link from "next/link";
+import Head from "next/head";
 
-const LiftingEquipment = () => {
+const PoweredLiftingEquipment = () => {
   return (
     <div>
       <Head>
@@ -168,4 +168,4 @@ const LiftingEquipment = () => {
   );
 };
 
-export default LiftingEquipment;
+export default PoweredLiftingEquipment;

@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Table from '../../../../components/Table';
-import Head from 'next/head';
-import { createClient } from 'contentful';
+import Link from "next/link";
+import Table from "../../../../components/Table";
+import Head from "next/head";
+import { createClient } from "contentful";
 
 export async function getStaticProps(context) {
   const client = createClient({
@@ -9,13 +9,13 @@ export async function getStaticProps(context) {
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   });
   const res = await client.getEntries({
-    content_type: 'productTable',
+    content_type: "productTable",
   });
   console.log(res.items);
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === 'A.31.'
+    (item) => item.fields.productGroupId === "A.31."
   );
 
   return {
@@ -31,7 +31,6 @@ function ChainHoist({ type }) {
       <Head>
         <title>Gutman chainhoists</title>
         <meta name="description" content="Chainhoists" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <section className="pt-6"></section>
