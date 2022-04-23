@@ -1,11 +1,12 @@
-import Footer from "./Footer";
-import Navbar from "./Navbar";
-import Head from "next/head";
+import Footer from './Footer';
+import Navbar from './Navbar';
+import Head from 'next/head';
 
 const Layout = ({ children }) => {
   return (
     <div>
       <Head>
+        <title>Gutman Lifting Equipment</title>
         <meta charSet="UTF-8" />
         <meta
           name="keywords"

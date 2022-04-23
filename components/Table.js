@@ -5,7 +5,6 @@ import { INLINES, BLOCKS } from '@contentful/rich-text-types';
 
 const Table = ({ type }) => {
   const [number, setNumber] = useState(0);
-  const [color, setColor] = useState('is-primary');
 
   if (type.length === 0) {
     return <div>No Data</div>;
@@ -28,6 +27,65 @@ const Table = ({ type }) => {
             priority={true}
           />
         );
+      },
+      [BLOCKS.EMBEDDED_ENTRY]: (node, children) => {
+        if (node.data.target.fields.length !== 0) {
+          const desc1 = node.data.target.fields.description;
+          const name1 = node.data.target.fields.name;
+          const image1 = node.data.target.fields.media.fields.file;
+          const typeData1 = node.data.target.fields.table;
+          const tableHead2h = Object.keys(typeData1[0]);
+          const tableHead2 = Object.values(typeData1[0]);
+
+          return (
+            <div className="section">
+              <hr />
+              <h2 className="is-size-2">{name1}</h2>
+
+              <table className="table  is-fullwidth mt-6">
+                <thead>
+                  <tr>
+                    {tableHead2.map((key, i) => {
+                      return <th key={key}>{key}</th>;
+                    })}
+                  </tr>
+                </thead>
+
+                <tfoot>
+                  <tr>
+                    {tableHead2.map((key) => {
+                      return <th key={key}>{key}</th>;
+                    })}
+                  </tr>
+                </tfoot>
+
+                <tbody>
+                  {typeData1.map((item, index) => {
+                    if (index !== 0) {
+                      return (
+                        <tr key={item[tableHead2h[0]]}>
+                          {tableHead2h.map((key) => {
+                            return <td key={key}>{item[key]}</td>;
+                          })}
+                        </tr>
+                      );
+                    }
+                  })}
+                </tbody>
+              </table>
+
+              <Image
+                src={'https:' + image1.url}
+                width={image1.details.image.width}
+                height={image1.details.image.height}
+                alt="ETAR"
+              />
+
+              <br />
+              {documentToReactComponents(desc1, renderOption)}
+            </div>
+          );
+        }
       },
       [INLINES.HYPERLINK]: (node) => {
         if (node.data.uri.includes('player.vimeo.com/video')) {
