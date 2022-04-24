@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { INLINES, BLOCKS } from '@contentful/rich-text-types';
+import ReactMarkdown from 'react-markdown';
 
 const Table = ({ type }) => {
   const [number, setNumber] = useState(0);
@@ -9,11 +10,13 @@ const Table = ({ type }) => {
   if (type.length === 0) {
     return <div>No Data</div>;
   }
-  console.log(type);
+
   console.log(type[0].fields.name);
   const typeData = type[number].fields.table;
   const image = type[number].fields.productImage.fields.file;
   const description = type[number].fields.description;
+  const tableInfo = type[number].fields.tableInfo;
+  console.log(tableInfo);
 
   const renderOption = {
     renderNode: {
@@ -144,7 +147,7 @@ const Table = ({ type }) => {
 
   const tableHead = Object.keys(typeData[0]);
   const tableHead1 = Object.values(typeData[0]);
-  console.log(tableHead1);
+
   const handleClick = (e) => {
     setNumber(e);
   };
@@ -176,6 +179,10 @@ const Table = ({ type }) => {
           </div>
         </div>
       </div>
+
+      <section className="mt-4">
+        <ReactMarkdown>{tableInfo}</ReactMarkdown>
+      </section>
 
       <table className="table  is-fullwidth mt-6">
         <thead>
