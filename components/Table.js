@@ -42,7 +42,7 @@ const Table = ({ type }) => {
           const tableHead2 = Object.values(typeData1[0]);
 
           return (
-            <div className="section">
+            <div className="container">
               <hr />
               <h2 className="is-size-2">{name1}</h2>
 
@@ -158,7 +158,7 @@ const Table = ({ type }) => {
   };
 
   return (
-    <section className="section">
+    <section className="container px-4">
       <div className="tile is-ancestor mb-5">
         <div className="tile is-4"></div>
         <div className="tile is-2">
