@@ -34,6 +34,7 @@ const Table = ({ type }) => {
       [BLOCKS.EMBEDDED_ENTRY]: (node, children) => {
         if (node.data.target.fields.length !== 0) {
           const desc1 = node.data.target.fields.description;
+          const tableInfo1 = node.data.target.fields.tableInfo;
           const name1 = node.data.target.fields.name;
           const image1 = node.data.target.fields.media.fields.file;
           const typeData1 = node.data.target.fields.table;
@@ -44,6 +45,10 @@ const Table = ({ type }) => {
             <div className="section">
               <hr />
               <h2 className="is-size-2">{name1}</h2>
+
+              <section className="mt-4">
+                <ReactMarkdown>{tableInfo1}</ReactMarkdown>
+              </section>
 
               <table className="table  is-fullwidth mt-6">
                 <thead>
