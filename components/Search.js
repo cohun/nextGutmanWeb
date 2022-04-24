@@ -10,7 +10,7 @@ const Search = () => {
           placeholder="Search for Products"
         ></input>
         <span className="icon is-small is-left">
-          <figure class="image is-24x24">
+          <figure className="image is-24x24">
             <Image
               width={24}
               height={24}
