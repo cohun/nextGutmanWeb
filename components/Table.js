@@ -11,12 +11,10 @@ const Table = ({ type }) => {
     return <div>No Data</div>;
   }
 
-  console.log(type[0].fields.name);
   const typeData = type[number].fields.table;
   const image = type[number].fields.productImage.fields.file;
   const description = type[number].fields.description;
   const tableInfo = type[number].fields.tableInfo;
-  console.log(tableInfo);
 
   const renderOption = {
     renderNode: {
@@ -158,8 +156,8 @@ const Table = ({ type }) => {
   };
 
   return (
-    <section className="container px-4">
-      <div className="tile is-ancestor mb-5">
+    <section className="container px-4 my-5">
+      <div className="tile is-ancestor my-4">
         <div className="tile is-4"></div>
         <div className="tile is-2">
           <h4 className="title is-size-3">Product type:</h4>
@@ -175,7 +173,7 @@ const Table = ({ type }) => {
                 <button
                   key={i.sys.id}
                   onClick={(e) => handleClick(index)}
-                  className={`button mr-4 is-outlined is-info + ${focus}`}
+                  className={`button mr-4 mb-1 mt-2 is-outlined is-info + ${focus}`}
                 >
                   {type[index].fields.name}
                 </button>
@@ -189,7 +187,7 @@ const Table = ({ type }) => {
         <ReactMarkdown>{tableInfo}</ReactMarkdown>
       </section>
 
-      <table className="table  is-fullwidth mt-6">
+      <table className="table  is-fullwidth mt-4">
         <thead>
           <tr>
             {tableHead1.map((key, i) => {
