@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import { useState } from 'react';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import { INLINES, BLOCKS } from '@contentful/rich-text-types';
-import ReactMarkdown from 'react-markdown';
+import Image from "next/image";
+import { useState } from "react";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { INLINES, BLOCKS } from "@contentful/rich-text-types";
+import ReactMarkdown from "react-markdown";
 
 const Table = ({ type }) => {
   const [number, setNumber] = useState(0);
@@ -34,58 +34,71 @@ const Table = ({ type }) => {
           const desc1 = node.data.target.fields.description;
           const tableInfo1 = node.data.target.fields.tableInfo;
           const name1 = node.data.target.fields.name;
-          const image1 = node.data.target.fields.media.fields.file;
+          const image1 = node.data.target.fields.media
+            ? node.data.target.fields.media.fields.file
+            : "";
           const typeData1 = node.data.target.fields.table;
-          const tableHead2h = Object.keys(typeData1[0]);
-          const tableHead2 = Object.values(typeData1[0]);
+          const tableHead2h = node.data.target.fields.table
+            ? Object.keys(typeData1[0])
+            : "";
+          const tableHead2 = node.data.target.fields.table
+            ? Object.values(typeData1[0])
+            : "";
 
           return (
             <div className="container">
               <hr />
               <h2 className="is-size-2">{name1}</h2>
-
               <section className="mt-4">
                 <ReactMarkdown>{tableInfo1}</ReactMarkdown>
               </section>
 
-              <table className="table  is-fullwidth mt-6">
-                <thead>
-                  <tr>
-                    {tableHead2.map((key, i) => {
-                      return <th key={key}>{key}</th>;
+              {node.data.target.fields.table ? (
+                <table className="table  is-fullwidth mt-6">
+                  <thead>
+                    <tr>
+                      {tableHead2.map((key, i) => {
+                        return <th key={key}>{key}</th>;
+                      })}
+                    </tr>
+                  </thead>
+
+                  <tfoot>
+                    <tr>
+                      {tableHead2.map((key) => {
+                        return <th key={key}>{key}</th>;
+                      })}
+                    </tr>
+                  </tfoot>
+
+                  <tbody>
+                    {typeData1.map((item, index) => {
+                      if (index !== 0) {
+                        return (
+                          <tr key={item[tableHead2h[0]]}>
+                            {tableHead2h.map((key) => {
+                              return <td key={key}>{item[key]}</td>;
+                            })}
+                          </tr>
+                        );
+                      }
                     })}
-                  </tr>
-                </thead>
+                  </tbody>
+                </table>
+              ) : (
+                <span></span>
+              )}
 
-                <tfoot>
-                  <tr>
-                    {tableHead2.map((key) => {
-                      return <th key={key}>{key}</th>;
-                    })}
-                  </tr>
-                </tfoot>
-
-                <tbody>
-                  {typeData1.map((item, index) => {
-                    if (index !== 0) {
-                      return (
-                        <tr key={item[tableHead2h[0]]}>
-                          {tableHead2h.map((key) => {
-                            return <td key={key}>{item[key]}</td>;
-                          })}
-                        </tr>
-                      );
-                    }
-                  })}
-                </tbody>
-              </table>
-
-              <Image
-                src={'https:' + image1.url}
-                width={image1.details.image.width}
-                height={image1.details.image.height}
-                alt="ETAR"
-              />
+              {image1 !== "" ? (
+                <Image
+                  src={"https:" + image1.url}
+                  width={image1.details.image.width}
+                  height={image1.details.image.height}
+                  alt="ETAR"
+                />
+              ) : (
+                <span></span>
+              )}
 
               <br />
               {documentToReactComponents(desc1, renderOption)}
@@ -94,7 +107,7 @@ const Table = ({ type }) => {
         }
       },
       [INLINES.HYPERLINK]: (node) => {
-        if (node.data.uri.includes('player.vimeo.com/video')) {
+        if (node.data.uri.includes("player.vimeo.com/video")) {
           return (
             <iframe
               id="ytplayer"
@@ -106,7 +119,7 @@ const Table = ({ type }) => {
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture ; fullscreen"
             ></iframe>
           );
-        } else if (node.data.uri.includes('youtube.com/embed')) {
+        } else if (node.data.uri.includes("youtube.com/embed")) {
           return (
             <figure className="image is-16by9">
               <iframe
@@ -165,9 +178,9 @@ const Table = ({ type }) => {
         <div className="tile">
           <div className="container">
             {type.map((i, index) => {
-              let focus = '';
+              let focus = "";
               if (index === number) {
-                focus = 'is-focused';
+                focus = "is-focused";
               }
               return (
                 <button
@@ -220,7 +233,7 @@ const Table = ({ type }) => {
       </table>
       <section className="section mb-6">
         <Image
-          src={'https:' + image.url}
+          src={"https:" + image.url}
           width={image.details.image.width}
           height={image.details.image.height}
           alt="ETAR"
