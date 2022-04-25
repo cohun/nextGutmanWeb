@@ -211,7 +211,7 @@ const LiftingEquipment = () => {
                       <Image
                         width={165}
                         height={165}
-                        src="/46.-Lifting-Beams-,-Spreaders-&-Frames_T.jpg"
+                        src="/A.46.-Lifting-Beams.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
