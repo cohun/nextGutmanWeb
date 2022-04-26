@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import Head from 'next/head';
+import Image from "next/image";
+import Link from "next/link";
+import Head from "next/head";
 
 const LiftingEquipment = () => {
   return (
@@ -135,7 +135,7 @@ const LiftingEquipment = () => {
                       <Image
                         width={165}
                         height={165}
-                        src="/Lifting_Accessories_T.jpg"
+                        src="/A.4.-Lifting-Accessories.jpg"
                         alt="Lifing accessories"
                       />
                     </div>

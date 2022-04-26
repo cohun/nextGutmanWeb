@@ -118,7 +118,7 @@ const LiftingEquipment = () => {
                       <Image
                         width={165}
                         height={165}
-                        src="/43.-Steel-wire-rope-and-slings_T.jpg"
+                        src="/A.43.-Steel-Wire-Rope,-Slings.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
@@ -149,7 +149,7 @@ const LiftingEquipment = () => {
                       <Image
                         width={165}
                         height={165}
-                        src="/44.-clamps_T.jpg"
+                        src="/A.44.-Clamps.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
@@ -179,7 +179,7 @@ const LiftingEquipment = () => {
                       <Image
                         width={165}
                         height={165}
-                        src="/45.-Lifting-Magnets_T.jpg"
+                        src="/A.45.-Lifting-Magnets.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
