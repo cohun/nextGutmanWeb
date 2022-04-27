@@ -50,7 +50,21 @@ const Table = ({ type }) => {
               <hr />
               <h2 className="is-size-2">{name1}</h2>
               <section className="mt-4">
-                <ReactMarkdown>{tableInfo1}</ReactMarkdown>
+                <ReactMarkdown
+                  components={{
+                    h3: ({ node, children }) => {
+                      return <h3 className="is-size-4">{children}</h3>;
+                    },
+                    h2: ({ node, children }) => {
+                      return <h2 className="is-size-3">{children}</h2>;
+                    },
+                    h1: ({ node, children }) => {
+                      return <h1 className="is-size-2">{children}</h1>;
+                    },
+                  }}
+                >
+                  {tableInfo1}
+                </ReactMarkdown>
               </section>
 
               {node.data.target.fields.table ? (
@@ -197,7 +211,21 @@ const Table = ({ type }) => {
       </div>
 
       <section className="mt-4">
-        <ReactMarkdown>{tableInfo}</ReactMarkdown>
+        <ReactMarkdown
+          components={{
+            h3: ({ node, children }) => {
+              return <h3 className="is-size-4">{children}</h3>;
+            },
+            h2: ({ node, children }) => {
+              return <h2 className="is-size-3">{children}</h2>;
+            },
+            h1: ({ node, children }) => {
+              return <h1 className="is-size-2">{children}</h1>;
+            },
+          }}
+        >
+          {tableInfo}
+        </ReactMarkdown>
       </section>
 
       <table className="table  is-fullwidth mt-4">
