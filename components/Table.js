@@ -12,14 +12,16 @@ const Table = ({ type }) => {
   }
 
   const typeData = type[number].fields.table;
-  const image = type[number].fields.productImage.fields.file;
+  const image = type[number].fields.productImage
+    ? type[number].fields.productImage.fields.file
+    : "";
   const description = type[number].fields.description;
   const tableInfo = type[number].fields.tableInfo;
 
   const renderOption = {
     renderNode: {
       [BLOCKS.EMBEDDED_ASSET]: (node, children) => {
-        return (
+        return image !== "" ? (
           <Image
             src={`https:${node.data.target.fields.file.url}`}
             height={node.data.target.fields.file.details.image.height}
@@ -27,6 +29,8 @@ const Table = ({ type }) => {
             alt="Some Image"
             priority={true}
           />
+        ) : (
+          <span></span>
         );
       },
       [BLOCKS.EMBEDDED_ENTRY]: (node, children) => {
@@ -260,12 +264,16 @@ const Table = ({ type }) => {
         </tbody>
       </table>
       <section className="section mb-6">
-        <Image
-          src={"https:" + image.url}
-          width={image.details.image.width}
-          height={image.details.image.height}
-          alt="ETAR"
-        />
+        {image !== "" ? (
+          <Image
+            src={"https:" + image.url}
+            width={image.details.image.width}
+            height={image.details.image.height}
+            alt="ETAR"
+          />
+        ) : (
+          <span></span>
+        )}
 
         <br />
         <section className="my-6">

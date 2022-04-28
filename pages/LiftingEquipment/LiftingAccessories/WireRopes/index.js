@@ -68,10 +68,11 @@ const WireRopes = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Round slings are made from a continuous loop of
-                        polyester yarn covered by a double wall tubular
-                        polyester jacket. It is manufactured according to EN
-                        1492 Part 2
+                        Wire rope is often used in slings because of its
+                        strength, durability, abrasion resistance and ability to
+                        conform to the shape of the loads. The use of wire rope
+                        slings is one of the most important pieces of rigging
+                        hardware used in lifting and hoisting operations.
                       </div>
                     </div>
                   </div>
@@ -91,15 +92,19 @@ const WireRopes = () => {
                       <Image
                         width={165}
                         height={165}
-                        src="/432.-Steel-wire-ropes.jpg"
+                        src="/A.432.-SteelWireRope.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Flat webbing sling is a standard device for lifting
-                        applications. It is made from high tensile polyester
-                        (PES) manufactured according to EN 1492 Part 1
+                        Wire rope is several strands of metal wire twisted into
+                        a helix forming a composite rope, in a pattern known as
+                        laid rope. Steel wires for wire ropes are normally made
+                        of non-alloy carbon steel. Depending on where they are
+                        used, wire ropes have to fulfill different requirements.
+                        The main uses are: Running ropes, Stationary ropes, Wire
+                        rope slings.
                       </div>
                     </div>
                   </div>

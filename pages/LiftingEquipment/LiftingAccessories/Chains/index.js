@@ -63,10 +63,9 @@ const Chains = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Round slings are made from a continuous loop of
-                        polyester yarn covered by a double wall tubular
-                        polyester jacket. It is manufactured according to EN
-                        1492 Part 2
+                        Multi-leg chain slings manufactured with high quality
+                        components. All slings meet the requirements of EU
+                        standards and have CE marking.
                       </div>
                     </div>
                   </div>
@@ -86,15 +85,14 @@ const Chains = () => {
                       <Image
                         width={165}
                         height={165}
-                        src="/422.-Chains-&-Components.jpg"
+                        src="/A.422.-Chain&Components.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Flat webbing sling is a standard device for lifting
-                        applications. It is made from high tensile polyester
-                        (PES) manufactured according to EN 1492 Part 1
+                        Lifting chains according to EN 818-2 and different
+                        components according to EN 1677-1, CE-marked.
                       </div>
                     </div>
                   </div>
