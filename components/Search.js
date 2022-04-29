@@ -1,8 +1,8 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const Search = () => {
   return (
-    <div>
+    <div className="field has-addons">
       <p className="control has-icons-left">
         <input
           className="input is-primary"
@@ -20,6 +20,9 @@ const Search = () => {
           </figure>
         </span>
       </p>
+      <div className="control">
+        <a className="button is-primary">Search</a>
+      </div>
     </div>
   );
 };
