@@ -73,19 +73,69 @@ const Chains = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/LiftingAccessories/Chains/ChainComponents">
+              <Link href="/LiftingEquipment/LiftingAccessories/Chains/MasterLinks">
                 <a>
                   <div className="card">
                     <div className="card-header">
                       <p className="card-header-title">
-                        A.422. Chains & Components
+                        A.422. Master Links & Connectors
                       </p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/A.422.-Chain&Components.jpg"
+                        src="/A.4221.-MasterLinks.jpg"
+                        alt="Lifing accessories"
+                      />
+                    </div>
+                    <div className="card-content">
+                      <div className="content">
+                        Lifting chains according to EN 818-2 and different
+                        components according to EN 1677-1, CE-marked.
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </Link>
+            </div>
+            <div className="column is-12-mobile is-6-tablet is-3-widescreen">
+              <Link href="/LiftingEquipment/LiftingAccessories/Chains/LiftingHooks">
+                <a>
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">A.423. Lifting Hooks</p>
+                    </div>
+                    <div className="card-image has-text-centered pt-6">
+                      <Image
+                        width={165}
+                        height={165}
+                        src="/A.4222.-LiftingHooks.jpg"
+                        alt="Lifing accessories"
+                      />
+                    </div>
+                    <div className="card-content">
+                      <div className="content">
+                        Lifting chains according to EN 818-2 and different
+                        components according to EN 1677-1, CE-marked.
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </Link>
+            </div>
+            <div className="column is-12-mobile is-6-tablet is-3-widescreen">
+              <Link href="/LiftingEquipment/LiftingAccessories/Chains/LiftingChain">
+                <a>
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">A.424. Lifting Chains</p>
+                    </div>
+                    <div className="card-image has-text-centered pt-6">
+                      <Image
+                        width={165}
+                        height={165}
+                        src="/G80Chain.jpg"
                         alt="Lifing accessories"
                       />
                     </div>

@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Table from '../../../../../components/Table';
-import Head from 'next/head';
-import { createClient } from 'contentful';
+import Link from "next/link";
+import Table from "../../../../../components/Table";
+import Head from "next/head";
+import { createClient } from "contentful";
 
 export async function getStaticProps(context) {
   const client = createClient({
@@ -9,13 +9,13 @@ export async function getStaticProps(context) {
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   });
   const res = await client.getEntries({
-    content_type: 'productTable',
+    content_type: "productTable",
   });
   console.log(res.items);
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === 'A.422.'
+    (item) => item.fields.productGroupId === "A.423."
   );
 
   return {
@@ -25,12 +25,12 @@ export async function getStaticProps(context) {
   };
 }
 
-function ChainComponents({ type }) {
+function LiftingHooks({ type }) {
   return (
     <div>
       <Head>
-        <title>Gutman chain components</title>
-        <meta name="description" content="Gutman chain components" />
+        <title>Gutman Master Lifting Hooks</title>
+        <meta name="description" content="Gutman Lifting Hooks" />
       </Head>
 
       <section className="pt-6"></section>
@@ -60,12 +60,13 @@ function ChainComponents({ type }) {
                 <div className="has-text-grey px-3">Chains</div>
               </Link>
             </li>
+
             <li>
               <Link
-                href="/LiftingEquipment/LiftingAccessories/Chains/ChainComponents"
+                href="/LiftingEquipment/LiftingAccessories/Chains/LiftingHooks"
                 passHref
               >
-                <div className="is-active px-3">Chain Components</div>
+                <div className="is-active px-3">LiftingHooks</div>
               </Link>
             </li>
           </ul>
@@ -77,4 +78,4 @@ function ChainComponents({ type }) {
   );
 }
 
-export default ChainComponents;
+export default LiftingHooks;
