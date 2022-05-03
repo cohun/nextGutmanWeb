@@ -1,17 +1,30 @@
-import Image from 'next/image';
+import Image from "next/image";
+import { useState } from "react";
 
 const Search = () => {
-  const handleSearch = (s) => {
-    console.log(s);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const searchItem = (item) => {
+    console.log(item);
   };
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (!searchTerm) return;
+    searchItem(searchTerm);
+    setSearchTerm("");
+  };
+
   return (
-    <div className="field has-addons">
+    <form className="field has-addons" onSubmit={handleSearch}>
       <p className="control has-icons-left">
         <input
           className="input is-primary is-focused"
           type="text"
           placeholder="Search for Products"
-          onKeyUp={(e) => handleSearch(e.target.value)}
+          value={searchTerm}
+          required
+          onChange={(e) => setSearchTerm(e.target.value)}
         ></input>
         <span className="icon is-small is-left">
           <figure className="image is-24x24">
@@ -20,9 +33,15 @@ const Search = () => {
         </span>
       </p>
       <div className="control">
-        <a className="button is-primary">Search</a>
+        <button
+          className="button is-primary"
+          type="submit"
+          onClick={handleSearch}
+        >
+          Search
+        </button>
       </div>
-    </div>
+    </form>
   );
 };
 
