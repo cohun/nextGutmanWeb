@@ -1,23 +1,25 @@
-import Image from "next/image";
-import { useState } from "react";
+import Image from 'next/image';
+import { useState } from 'react';
+import SearchItems from '../pages/SearchItems';
 
 const Search = () => {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState('');
 
   const searchItem = (item) => {
     console.log(item);
+    return <SearchItems />;
   };
 
   const handleSearch = (e) => {
     e.preventDefault();
     if (!searchTerm) return;
     searchItem(searchTerm);
-    setSearchTerm("");
+    setSearchTerm('');
   };
 
   return (
     <form className="field has-addons" onSubmit={handleSearch}>
-      <p className="control has-icons-left">
+      <div className="control has-icons-left">
         <input
           className="input is-primary is-focused"
           type="text"
@@ -31,7 +33,7 @@ const Search = () => {
             <Image width={24} height={24} src="/search.png" alt="Search" />
           </figure>
         </span>
-      </p>
+      </div>
       <div className="control">
         <button
           className="button is-primary"
