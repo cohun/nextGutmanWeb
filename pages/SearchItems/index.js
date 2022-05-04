@@ -1,13 +1,37 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const SearchTerms = () => {
   return (
-    <div>
-      <h1 className="mb-6">Search</h1>
-      <Link href={'/SearchItems/1'} passHref>
-        <button className="button">Button</button>
-      </Link>
-    </div>
+    <section className="section mt-6">
+      <article className="panel is-primary">
+        <p className="panel-heading">Search Hits for ....</p>
+
+        <a className="panel-block is-active">
+          <span className="panel-icon">
+            <i className="fas fa-book" aria-hidden="true"></i>
+          </span>
+          first
+        </a>
+        <a className="panel-block">
+          <span className="panel-icon">
+            <i className="fas fa-book" aria-hidden="true"></i>
+          </span>
+          second
+        </a>
+        <a className="panel-block">
+          <span className="panel-icon">
+            <i className="fas fa-book" aria-hidden="true"></i>
+          </span>
+          third
+        </a>
+        <a className="panel-block">
+          <span className="panel-icon">
+            <i className="fas fa-book" aria-hidden="true"></i>
+          </span>
+          fourth
+        </a>
+      </article>
+    </section>
   );
 };
 

@@ -1,20 +1,23 @@
-import Image from 'next/image';
-import { useState } from 'react';
-import SearchItems from '../pages/SearchItems';
+import Image from "next/image";
+import { useState } from "react";
+import SearchItems from "../pages/SearchItems";
+import { useRouter } from "next/router";
 
 const Search = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const router = useRouter();
 
   const searchItem = (item) => {
     console.log(item);
-    return <SearchItems />;
+    router.push("/SearchItems");
   };
 
   const handleSearch = (e) => {
     e.preventDefault();
     if (!searchTerm) return;
     searchItem(searchTerm);
-    setSearchTerm('');
+    setSearchTerm("");
   };
 
   return (
