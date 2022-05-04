@@ -1,10 +1,20 @@
-import Link from "next/link";
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 
-const SearchTerms = () => {
+const SearchTerms = (props) => {
+  const router = useRouter(props);
+  const [term, setTerm] = useState('');
+
+  useEffect(() => {
+    term = router.query.name;
+    setTerm(term);
+  });
+
   return (
     <section className="section mt-6">
       <article className="panel is-primary">
-        <p className="panel-heading">Search Hits for ....</p>
+        <p className="panel-heading">Search Hits for {term}</p>
 
         <a className="panel-block is-active">
           <span className="panel-icon">
