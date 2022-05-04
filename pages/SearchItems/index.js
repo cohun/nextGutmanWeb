@@ -14,7 +14,10 @@ const SearchTerms = (props) => {
   return (
     <section className="section mt-6">
       <article className="panel is-primary">
-        <p className="panel-heading">Search Hits for {term}</p>
+        <p className="panel-heading">
+          <span>Search hits for: </span>
+          <span className="has-text-warning is-size-5">...{term}...</span>
+        </p>
 
         <a className="panel-block is-active">
           <span className="panel-icon">
