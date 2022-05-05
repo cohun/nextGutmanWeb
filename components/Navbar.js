@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { useState } from 'react';
-import Search from './Search';
+import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
+import Search from "./Search";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -38,7 +38,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`navbar-menu ${active ? 'is-active' : ''}`}
+        className={`navbar-menu ${active ? "is-active" : ""}`}
         id="nav-links"
       >
         <div className="navbar-end container">
@@ -56,75 +56,107 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
-          <Link href="/" className="navbar-item" passHref>
-            <div className="navbar-item">Home</div>
-          </Link>
+          <a role="button" onClick={(e) => clickHandler(e)}>
+            <Link href="/" className="navbar-item" passHref>
+              <div className="navbar-item">Home</div>
+            </Link>
+          </a>
 
           <div className="navbar-item has-dropdown is-hoverable">
             <p className="navbar-link">Categories</p>
             <div className="navbar-dropdown">
               <div className="navbar-item has-text-weight-semibold">
-                <Link href="/LiftingEquipment">Lifting Equipment</Link>
+                <a role="button" onClick={(e) => clickHandler(e)}>
+                  <Link href="/LiftingEquipment">Lifting Equipment</Link>
+                </a>
               </div>
               <hr className="navbar-divider" />
               <div className="navbar-item ml-3">
-                <Link href="/LiftingEquipment/CraneAndTrolley">
-                  Crane and Trolley
-                </Link>
+                <a role="button" onClick={(e) => clickHandler(e)}>
+                  <Link href="/LiftingEquipment/CraneAndTrolley">
+                    Crane and Trolley
+                  </Link>
+                </a>
               </div>
               <div className="navbar-item ml-3">
-                <Link href="/LiftingEquipment/PoweredLiftingEquipment">
-                  Powered Lifting Equipment
-                </Link>
+                <a role="button" onClick={(e) => clickHandler(e)}>
+                  <Link href="/LiftingEquipment/PoweredLiftingEquipment">
+                    Powered Lifting Equipment
+                  </Link>
+                </a>
               </div>
               <div className="navbar-item ml-3">
-                <Link href="/LiftingEquipment/ManualLiftingEquipment">
-                  Manual Lifting Equipment
-                </Link>
+                <a role="button" onClick={(e) => clickHandler(e)}>
+                  <Link href="/LiftingEquipment/ManualLiftingEquipment">
+                    Manual Lifting Equipment
+                  </Link>
+                </a>
               </div>
               <div className="navbar-item ml-3">
-                <Link
-                  href="/LiftingEquipment/LiftingAccessories"
-                  className="navbar-item ml-3"
-                >
-                  Lifting Accessories
-                </Link>
-              </div>
-              <hr className="navbar-divider" />
-              <div className="navbar-item has-text-weight-semibold">
-                <Link href="/OperatorsDuty">Operators Duty Service</Link>
-              </div>
-              <hr className="navbar-divider" />
-              <div className="navbar-item ml-3">
-                <Link href="/OperatorsDuty">ETAR</Link>
-              </div>
-              <div className="navbar-item ml-3">
-                <Link href="/OperatorsDuty">ETAR EN</Link>
-              </div>
-              <hr className="navbar-divider" />
-              <div className="navbar-item has-text-weight-semibold">
-                <Link href="/MaterialHandling">Material Handling</Link>
-              </div>
-              <hr className="navbar-divider" />
-              <div className="navbar-item ml-3">
-                <Link href="/MaterialHandling/LiftTrucks">Lift Trucks</Link>
-              </div>
-              <div className="navbar-item ml-3">
-                <Link href="/MaterialHandling/Attachments">Attachments</Link>
+                <a role="button" onClick={(e) => clickHandler(e)}>
+                  <Link
+                    href="/LiftingEquipment/LiftingAccessories"
+                    className="navbar-item ml-3"
+                  >
+                    Lifting Accessories
+                  </Link>
+                </a>
               </div>
               <hr className="navbar-divider" />
               <div className="navbar-item has-text-weight-semibold">
-                <Link href="/Miscellaneous">Miscellaneous Products</Link>
+                <a role="button" onClick={(e) => clickHandler(e)}>
+                  <Link href="/OperatorsDuty">Operators Duty Service</Link>
+                </a>
               </div>
               <hr className="navbar-divider" />
               <div className="navbar-item ml-3">
-                <Link href="/Miscellaneous/Lashing">Lashing Systems</Link>
+                <a role="button" onClick={(e) => clickHandler(e)}>
+                  <Link href="/OperatorsDuty">ETAR</Link>
+                </a>
               </div>
               <div className="navbar-item ml-3">
-                <Link href="/">Shop Equipment</Link>
+                <a role="button" onClick={(e) => clickHandler(e)}>
+                  <Link href="/OperatorsDuty">ETAR EN</Link>
+                </a>
+              </div>
+              <hr className="navbar-divider" />
+              <div className="navbar-item has-text-weight-semibold">
+                <a role="button" onClick={(e) => clickHandler(e)}>
+                  <Link href="/MaterialHandling">Material Handling</Link>
+                </a>
+              </div>
+              <hr className="navbar-divider" />
+              <div className="navbar-item ml-3">
+                <a role="button" onClick={(e) => clickHandler(e)}>
+                  <Link href="/MaterialHandling/LiftTrucks">Lift Trucks</Link>
+                </a>
               </div>
               <div className="navbar-item ml-3">
-                <Link href="/">Fall Protection</Link>
+                <a role="button" onClick={(e) => clickHandler(e)}>
+                  <Link href="/MaterialHandling/Attachments">Attachments</Link>
+                </a>
+              </div>
+              <hr className="navbar-divider" />
+              <div className="navbar-item has-text-weight-semibold">
+                <a role="button" onClick={(e) => clickHandler(e)}>
+                  <Link href="/Miscellaneous">Miscellaneous Products</Link>
+                </a>
+              </div>
+              <hr className="navbar-divider" />
+              <div className="navbar-item ml-3">
+                <a role="button" onClick={(e) => clickHandler(e)}>
+                  <Link href="/Miscellaneous/Lashing">Lashing Systems</Link>
+                </a>
+              </div>
+              <div className="navbar-item ml-3">
+                <a role="button" onClick={(e) => clickHandler(e)}>
+                  <Link href="/">Shop Equipment</Link>
+                </a>
+              </div>
+              <div className="navbar-item ml-3">
+                <a role="button" onClick={(e) => clickHandler(e)}>
+                  <Link href="/">Fall Protection</Link>
+                </a>
               </div>
             </div>
           </div>
