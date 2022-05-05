@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="navbar has-shadow is-dark is-fixed-top">
       <div className="navbar-brand">
-        <Link href="https://gutmanlifting.com" className="navbar-item" passHref>
+        <Link href="/" className="navbar-item" passHref>
           <div className="ml-3 mt-2 mb-1">
             <Image
               width={100}
@@ -56,9 +56,17 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
-          <a role="button" onClick={(e) => clickHandler(e)}>
+          <a
+            role="button"
+            className="navbar-item has-text-white"
+            onClick={(e) => clickHandler(e)}
+          >
             <Link href="/" className="navbar-item" passHref>
-              <div className="navbar-item">Home</div>
+              <div
+                className={`${active ? "has-text-black" : "has-text-white"}`}
+              >
+                Home
+              </div>
             </Link>
           </a>
 
