@@ -1,15 +1,37 @@
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import { createClient } from "contentful";
+
+export async function getStaticProps(context) {
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
+  });
+  const res = await client.getEntries({
+    content_type: "search",
+  });
+  console.log(res.items);
+
+  // Here A.411. must be changed according to the actual productGroup
+  const resFiltered = res.items.filter(
+    (item) => item.fields.search === "roundsling"
+  );
+  console.log("filtered: " + resFiltered[0]);
+  return {
+    props: {
+      type: resFiltered,
+    },
+  };
+}
 
 const SearchTerms = (props) => {
   const router = useRouter(props);
-  const [term, setTerm] = useState('');
+  const [term, setTerm] = useState("");
 
   useEffect(() => {
-    term = router.query.name;
-    setTerm(term);
-  });
+    setTerm(router.query.name);
+  }, [router.query.name]);
 
   return (
     <section className="section mt-6">
