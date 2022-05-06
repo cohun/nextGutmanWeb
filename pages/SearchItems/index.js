@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
-import { createClient } from 'contentful';
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import { createClient } from "contentful";
 
 export async function getStaticProps(context) {
   const client = createClient({
@@ -9,25 +9,34 @@ export async function getStaticProps(context) {
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   });
   const res = await client.getEntries({
-    content_type: 'search',
+    content_type: "search",
   });
-  console.log(res.items);
-
+  console.log(res.items[1]);
+  console.log(res.items[1].fields);
+  console.log(res.items[1].fields.search);
+  console.log("term:");
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.search === 'roundsling'
+    (item) => item.fields.search === "polyester"
   );
-  console.log('filtered: ' + resFiltered);
+
+  const typeData = resFiltered[0].fields.references;
+  const tableHead = Object.values(typeData[3].fields);
+
+  console.log("tablehead: " + tableHead[0]);
+
+  console.log("filtered: " + tableHead[1]);
   return {
     props: {
-      type: resFiltered,
+      productId: tableHead[0],
+      name: tableHead[1],
     },
   };
 }
 
 const SearchTerms = (props) => {
   const router = useRouter(props);
-  const [term, setTerm] = useState('');
+  const [term, setTerm] = useState("");
 
   useEffect(() => {
     setTerm(router.query.name);
@@ -45,7 +54,7 @@ const SearchTerms = (props) => {
           <span className="panel-icon">
             <i className="fas fa-book" aria-hidden="true"></i>
           </span>
-          first
+          {props.productId} {props.name}
         </a>
         <a className="panel-block">
           <span className="panel-icon">
