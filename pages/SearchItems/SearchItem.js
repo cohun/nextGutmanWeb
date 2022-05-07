@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const SearchItem = ({ term, searchItems }) => {
   console.log(term);
   let refArray;
@@ -23,9 +25,15 @@ const SearchItem = ({ term, searchItems }) => {
           refArray.map((ref) => {
             return (
               <a key={ref.fields.name} className="panel-block is-active">
-                <span className="panel-icon">
-                  <i className="fas fa-book" aria-hidden="true"></i>
+                <span>
+                  <Image
+                    width={40}
+                    height={40}
+                    src="/searchIcon.png"
+                    alt="Search Icon"
+                  />
                 </span>
+
                 {ref.fields.productGroupId}
                 <span className="panel-icon">
                   <i className="fas fa-book" aria-hidden="true"></i>

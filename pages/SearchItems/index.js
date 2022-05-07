@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { createClient } from 'contentful';
 import SearchItem from './SearchItem';
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
