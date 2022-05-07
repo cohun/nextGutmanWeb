@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const SearchItem = ({ term, searchItems }) => {
   console.log(term);
-  let refArray;
+  let refArray = [];
 
   const resFiltered = searchItems.filter(
     (item) => item.fields.search === term.toLowerCase()
