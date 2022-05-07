@@ -3,10 +3,13 @@ import Image from 'next/image';
 const SearchItem = ({ term, searchItems }) => {
   console.log(term);
   let refArray = [];
+  let resFiltered = [];
 
-  const resFiltered = searchItems.filter(
-    (item) => item.fields.search === term.toLowerCase()
-  );
+  searchItems.length >= 1
+    ? (resFiltered = searchItems.filter(
+        (item) => item.fields.search === term.toLowerCase()
+      ))
+    : console.log('No');
 
   resFiltered.length >= 1
     ? (refArray = resFiltered[0].fields.references)
