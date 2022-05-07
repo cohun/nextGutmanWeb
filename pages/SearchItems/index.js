@@ -28,10 +28,12 @@ const SearchTerms = (props) => {
     setTerm(router.query.name);
   }, [router.query.name]);
 
-  return (
+  return term ? (
     <div>
       <SearchItem term={term} searchItems={props.searchItems} />
     </div>
+  ) : (
+    <div></div>
   );
 };
 
