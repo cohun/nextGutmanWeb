@@ -21,7 +21,7 @@ export async function getServerSideProps(context) {
 }
 
 const SearchTerms = (props) => {
-  const router = useRouter(props);
+  const router = useRouter();
   const [term, setTerm] = useState('');
 
   useEffect(() => {
