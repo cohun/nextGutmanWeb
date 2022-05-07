@@ -30,8 +30,7 @@ const SearchTerms = (props) => {
 
   return term ? (
     <div>
-      search item
-      {/* <SearchItem term={term} searchItems={props.searchItems} /> */}
+      <SearchItem term={term} searchItems={props.searchItems} />
     </div>
   ) : (
     <div></div>

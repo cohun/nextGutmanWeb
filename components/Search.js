@@ -8,10 +8,11 @@ const Search = ({ setActive }) => {
   const router = useRouter();
 
   const searchItem = (item) => {
-    router.push({
-      pathname: 'SearchItems',
-      query: { name: searchTerm },
-    });
+    // router.push({
+    //   pathname: 'SearchItems',
+    //   query: { name: searchTerm },
+    // });
+    console.log(item);
   };
 
   const handleSearch = (e) => {
