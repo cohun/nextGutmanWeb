@@ -1,16 +1,15 @@
-import Image from "next/image";
-import { useState } from "react";
-import SearchItems from "../pages/SearchItems";
-import { useRouter } from "next/router";
+import Image from 'next/image';
+import { useState } from 'react';
+import { useRouter } from 'next/router';
 
-const Search = ({ active, setActive }) => {
-  const [searchTerm, setSearchTerm] = useState("");
+const Search = ({ setActive }) => {
+  const [searchTerm, setSearchTerm] = useState('');
 
   const router = useRouter();
 
   const searchItem = (item) => {
     router.push({
-      pathname: "SearchItems",
+      pathname: 'SearchItems',
       query: { name: searchTerm },
     });
   };
@@ -18,9 +17,9 @@ const Search = ({ active, setActive }) => {
   const handleSearch = (e) => {
     e.preventDefault();
     if (!searchTerm) return;
+    setActive('');
     searchItem(searchTerm);
-    setSearchTerm("");
-    setActive(!active);
+    setSearchTerm('');
   };
 
   return (
