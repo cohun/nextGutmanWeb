@@ -12,9 +12,6 @@ export async function getStaticProps(context) {
     content_type: 'search',
   });
   const searchItems = res.items;
-  console.log(res.items[1]);
-  console.log(res.items[0].fields);
-  console.log(res.items[0].fields.search);
 
   return {
     props: {
