@@ -9,8 +9,8 @@ const Search = ({ setActive }) => {
 
   const searchItem = (item) => {
     router.push({
-      pathname: 'SearchItems',
-      query: { name: searchTerm },
+      pathname: '/SearchItems',
+      query: { name: item },
     });
   };
 

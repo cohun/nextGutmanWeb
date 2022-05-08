@@ -2,10 +2,13 @@ import Image from 'next/image';
 
 const SearchItem = ({ term, searchItems }) => {
   console.log(term);
+  console.log(
+    'searchItems: ' + searchItems[0].fields.references[0].fields.name
+  );
   let refArray = [];
   let resFiltered = [];
 
-  searchItems.length >= 1
+  searchItems.length >= 1 && term
     ? (resFiltered = searchItems.filter(
         (item) => item.fields.search === term.toLowerCase()
       ))
@@ -24,7 +27,7 @@ const SearchItem = ({ term, searchItems }) => {
           <span className="has-text-warning is-size-5">...{term}...</span>
         </p>
 
-        {refArray ? (
+        {refArray.length >= 1 ? (
           refArray.map((ref) => {
             return (
               <a key={ref.fields.name} className="panel-block is-active">

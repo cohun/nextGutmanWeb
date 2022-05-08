@@ -48,7 +48,7 @@ const Navbar = () => {
 
           <Link href="/" passHref className="container is-primary">
             <div className="navbar-item">
-              <Search active={active} setActive={setActive} />
+              <Search setActive={setActive} />
             </div>
           </Link>
 

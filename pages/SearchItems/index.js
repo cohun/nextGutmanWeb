@@ -21,14 +21,19 @@ export async function getServerSideProps(context) {
 }
 
 const SearchTerms = (props) => {
-  const router = useRouter();
+  const router = useRouter(props);
+  console.log('Path: ' + router.pathname);
+  console.log('ser:' + props.searchItems);
+  console.log(
+    'searchy: ' + props.searchItems[0].fields.references[0].fields.name
+  );
   const [term, setTerm] = useState('');
 
   useEffect(() => {
     setTerm(router.query.name);
   }, [router.query.name]);
 
-  return term ? (
+  return term !== '' ? (
     <div>
       <SearchItem term={term} searchItems={props.searchItems} />
     </div>
