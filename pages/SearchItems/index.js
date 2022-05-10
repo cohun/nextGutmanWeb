@@ -92,9 +92,6 @@ const SearchTerms = (props) => {
       </article>
     </section>
   ) : (
-    // <div>
-    //   {/* <SearchItem term={term} searchItems={props.searchItems} /> */}
-    // </div>
     <div></div>
   );
 };
