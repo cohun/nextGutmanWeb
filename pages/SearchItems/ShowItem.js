@@ -39,7 +39,7 @@ function ShowItem(props) {
             <span className="icon is-medium">
               <i className="fab fa-github"></i>
             </span>
-            Click here to go back to search results
+            Back to search results
           </button>
         </div>
       </div>

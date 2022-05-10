@@ -204,7 +204,7 @@ const Table = ({ type }) => {
                 <button
                   key={i.sys.id}
                   onClick={(e) => handleClick(index)}
-                  className={`button mr-4 mb-1 mt-2 is-outlined is-info + ${focus}`}
+                  className={`button mr-4 mb-1 mt-2 is-outlined is-small is-responsive is-info + ${focus}`}
                 >
                   {type[index].fields.name}
                 </button>
