@@ -1,14 +1,24 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import Disributors from "../components/Distributors";
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import Disributors from '../components/Distributors';
 
 export default function Home() {
   return (
     <div className="has-navbar-fixed-top">
       <Head>
         <title>Gutman lifting products</title>
-        <meta name="description" content="Gutman lifting products" />
+        <meta
+          name="description"
+          content="Gutman lifting products. Lifting equipment, cranes, lifting accessories,
+        textile slings, chains, steel wire ropes, material handling, lashing systems."
+        />
+        <link
+          rel="author"
+          title="H-ITB Emeléstechnika"
+          href="http://www.h-itb.hu"
+        ></link>
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="pt-6"></section>
