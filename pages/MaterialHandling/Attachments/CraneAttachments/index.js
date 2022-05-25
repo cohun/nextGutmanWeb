@@ -12,7 +12,7 @@ export async function getStaticProps(context) {
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === 'C.11.'
+    (item) => item.fields.productGroupId === 'C.21.'
   );
 
   return {
@@ -26,8 +26,8 @@ function HandPalletTrucks({ type }) {
   return (
     <div>
       <Head>
-        <title>Gutman Hand Pallet Trucks</title>
-        <meta name="description" content="Gutman Hand Pallet Trucks" />
+        <title>Gutman Crane Attachments</title>
+        <meta name="description" content="Gutman Crane Attachments" />
       </Head>
 
       <section className="pt-6"></section>
@@ -48,16 +48,16 @@ function HandPalletTrucks({ type }) {
               </Link>
             </li>
             <li>
-              <Link href="/MaterialHandling/LiftTrucks" passHref>
-                <div className="has-text-grey px-3">LiftTrucks</div>
+              <Link href="/MaterialHandling/Attachments" passHref>
+                <div className="has-text-grey px-3">Attachments</div>
               </Link>
             </li>
             <li>
               <Link
-                href="/MaterialHandling/LiftTrucks/HandPalletTrucks"
+                href="/MaterialHandling/Attachments/CraneAttachments"
                 passHref
               >
-                <div className="is-active px-3">HandPalletTrucks</div>
+                <div className="is-active px-3">CraneAttachments</div>
               </Link>
             </li>
           </ul>

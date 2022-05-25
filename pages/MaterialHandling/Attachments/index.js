@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import Head from "next/head";
+import Image from 'next/image';
+import Link from 'next/link';
+import Head from 'next/head';
 
 const Attachments = () => {
   return (
@@ -41,7 +41,7 @@ const Attachments = () => {
           <br />
           <div className="columns is-multiline">
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/MaterialHandling/Attachments/HandPalletTrucks">
+              <Link href="/MaterialHandling/Attachments/CraneAttachments">
                 <a>
                   <div className="card">
                     <div className="card-header">
@@ -73,7 +73,7 @@ const Attachments = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/MaterialHandling/Attachments/TableLifters">
+              <Link href="/MaterialHandling/Attachments/ForkliftAttachments">
                 <a>
                   <div className="card">
                     <div className="card-header">
