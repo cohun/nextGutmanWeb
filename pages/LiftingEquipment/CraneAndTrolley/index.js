@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 const LiftingEquipment = () => {
   return (
@@ -94,7 +94,7 @@ const LiftingEquipment = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/MaterialHandling">
+              <Link href="/LiftingEquipment/CraneAndTrolley/JibCrane">
                 <a>
                   <div className="card">
                     <div className="card-header">
