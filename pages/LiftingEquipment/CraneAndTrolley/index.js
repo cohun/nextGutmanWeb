@@ -37,7 +37,7 @@ const LiftingEquipment = () => {
           <br />
           <div className="columns is-multiline">
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/LiftingEquipment/CraneAndTrolley">
+              <Link href="/LiftingEquipment/CraneAndTrolley/Overhead">
                 <a>
                   <div className="card">
                     <div className="card-header">
