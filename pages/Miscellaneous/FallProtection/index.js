@@ -1,14 +1,37 @@
-import Image from "next/image";
-import Link from "next/link";
-import Head from "next/head";
+import Link from 'next/link';
+import Table from '../../../components/Table';
+import Head from 'next/head';
+import { createClient } from 'contentful';
 
-const FallProtection = () => {
+export async function getStaticProps(context) {
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
+  });
+  const res = await client.getEntries({
+    content_type: 'productTable',
+  });
+
+  // Here A.411. must be changed according to the actual productGroup
+  const resFiltered = res.items.filter(
+    (item) => item.fields.productGroupId === 'D.3.'
+  );
+
+  return {
+    props: {
+      type: resFiltered,
+    },
+  };
+}
+
+function FallProtection({ type }) {
   return (
     <div>
       <Head>
-        <title>Gutman FallProtection</title>
-        <meta name="description" content="Gutman FallProtection" />
+        <title>Fall protection</title>
+        <meta name="description" content="Fall protection" />
       </Head>
+
       <section className="pt-6"></section>
       <section className="pt-4 pb-0">
         <nav
@@ -26,95 +49,19 @@ const FallProtection = () => {
                 <div className="has-text-grey px-3">Miscellaneous</div>
               </Link>
             </li>
+
             <li>
               <Link href="/Miscellaneous/FallProtection" passHref>
-                <div className="is-active px-3">FallProtection</div>
+                <div className="is-active px-3">Fall Protection</div>
               </Link>
             </li>
           </ul>
         </nav>
       </section>
-      <section className="section mb-6">
-        <div className="container mb-6">
-          <h3 className="title has-text-centered is-size-3">FallProtection</h3>
-          <br />
-          <div className="columns is-multiline">
-            <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/Miscellaneous/FallProtection/">
-                <a>
-                  <div className="card">
-                    <div className="card-header">
-                      <p className="card-header-title">
-                        D.31. FallProtection straps
-                      </p>
-                    </div>
-                    <div className="card-image has-text-centered pt-6">
-                      <Image
-                        width={165}
-                        height={165}
-                        src="/D.11.-FallProtection-straps.jpg"
-                        alt="FallProtection"
-                      />
-                    </div>
-                    <div className="card-content">
-                      <div className="content">
-                        Cargo restraint ratchet straps are available in
-                        different sizes , capacities and lengths. Ratchet straps
-                        have a steel ratchet handle with a polyester webbing
-                        sling. Single part ratchet straps have the long webbing
-                        sling fitted permanently to the ratchet. 2 part ratchet
-                        straps have a separate web sling with end fittings. The
-                        web sling can be supplied with different end fittings
-                        dependant on our customer s applications, usually hook
-                        or eye or buckle (many types). We also supply cam buckle
-                        restraint straps, lorry straps, one way straps.
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </div>
-            <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/Miscellaneous/FallProtection/">
-                <a>
-                  <div className="card">
-                    <div className="card-header">
-                      <p className="card-header-title">
-                        D.32. FallProtection chains
-                      </p>
-                    </div>
-                    <div className="card-image has-text-centered pt-6">
-                      <Image
-                        width={165}
-                        height={165}
-                        src="/D.12.-FallProtection-chains.jpg"
-                        alt="FallProtection chain"
-                      />
-                    </div>
-                    <div className="card-content">
-                      <div className="content">
-                        Load binders are to achieve exactly the same function as
-                        ratchet straps. They are totally made from steel using a
-                        chain sling with grab hook as opposed to a webbing
-                        sling. There are differing styles available, ratchet
-                        load binders and lever action load binders. These are
-                        used in applications where items with shape edge s or
-                        abrasive surfaced need to be restrained; surfaces that
-                        would damage or cut a polyester sling ratchet load
-                        binder and can be supplied in different configurations
-                        with a hook or eye termination or with a permanently
-                        fitted restraint chain fitted.
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+
+      <Table type={type} />
     </div>
   );
-};
+}
 
 export default FallProtection;

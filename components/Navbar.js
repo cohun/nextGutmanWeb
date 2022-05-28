@@ -262,7 +262,9 @@ const Navbar = () => {
                     }
                   }}
                 >
-                  <Link href="/">Shop Equipment</Link>
+                  <Link href="/Miscellaneous/ShopEquipment">
+                    Shop Equipment
+                  </Link>
                 </div>
               </div>
               <div className="navbar-item ml-3">
@@ -274,7 +276,9 @@ const Navbar = () => {
                     }
                   }}
                 >
-                  <Link href="/">Fall Protection</Link>
+                  <Link href="/Miscellaneous/FallProtection">
+                    Fall Protection
+                  </Link>
                 </div>
               </div>
             </div>
