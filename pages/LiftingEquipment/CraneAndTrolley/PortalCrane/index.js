@@ -14,7 +14,7 @@ export async function getStaticProps(context) {
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === 'A.11.'
+    (item) => item.fields.productGroupId === 'A.14.'
   );
 
   return {
@@ -24,12 +24,12 @@ export async function getStaticProps(context) {
   };
 }
 
-function OverheadCrane({ type }) {
+function PortalCrane({ type }) {
   return (
     <div>
       <Head>
-        <title>Gutman OverheadCranes</title>
-        <meta name="description" content="Gutman OverheadCranes" />
+        <title>Gutman PortalCranes</title>
+        <meta name="description" content="Gutman PortalCranes" />
       </Head>
 
       <section className="pt-6"></section>
@@ -55,8 +55,11 @@ function OverheadCrane({ type }) {
               </Link>
             </li>
             <li>
-              <Link href="/LiftingEquipment/CraneAndTrolley/Overhead" passHref>
-                <div className="is-active px-3">OverheadCranes</div>
+              <Link
+                href="/LiftingEquipment/CraneAndTrolley/PortalCrane"
+                passHref
+              >
+                <div className="is-active px-3">PortalCranes</div>
               </Link>
             </li>
           </ul>
@@ -68,4 +71,4 @@ function OverheadCrane({ type }) {
   );
 }
 
-export default OverheadCrane;
+export default PortalCrane;
