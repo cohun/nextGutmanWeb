@@ -13,7 +13,7 @@ export async function getStaticProps(context) {
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === "A.21."
+    (item) => item.fields.productGroupId === "A.24."
   );
 
   return {
@@ -23,12 +23,12 @@ export async function getStaticProps(context) {
   };
 }
 
-function ElectricHoist({ type }) {
+function AirHoist({ type }) {
   return (
     <div>
       <Head>
-        <title>Electric hoist</title>
-        <meta name="description" content="Electric hoist" />
+        <title>Gutman airhoist</title>
+        <meta name="description" content="Gutman airhoist" />
       </Head>
 
       <section className="pt-6"></section>
@@ -57,10 +57,10 @@ function ElectricHoist({ type }) {
             </li>
             <li>
               <Link
-                href="/LiftingEquipment/PoweredLiftingEquipment/ElectricHoist"
+                href="/LiftingEquipment/PoweredLiftingEquipment/AirHoist"
                 passHref
               >
-                <div className="has-text-grey px-3">Electric Hoists</div>
+                <div className="has-text-grey px-3">Air Hoists</div>
               </Link>
             </li>
           </ul>
@@ -72,4 +72,4 @@ function ElectricHoist({ type }) {
   );
 }
 
-export default ElectricHoist;
+export default AirHoist;
