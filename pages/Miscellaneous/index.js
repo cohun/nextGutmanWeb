@@ -67,13 +67,13 @@ const Miscellaneous = () => {
                 <a>
                   <div className="card">
                     <div className="card-header">
-                      <p className="card-header-title">D.2. Shop equipment</p>
+                      <p className="card-header-title">D.2. Other Equipment</p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
                       <Image
                         width={165}
                         height={165}
-                        src="/D.2.-Shop-equipment_T.jpg"
+                        src="/D.2.-OtherEquipment.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
@@ -81,7 +81,7 @@ const Miscellaneous = () => {
                       <div className="content">
                         In this category Gutman offers many items that do not
                         really fall into any other category but for a
-                        maintenance or repair facility these items of garage
+                        maintenance or repair facility these items of other
                         equipment are needed to lift or move things around.
                       </div>
                     </div>
