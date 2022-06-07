@@ -21,17 +21,36 @@ const Table = ({ type }) => {
   const renderOption = {
     renderNode: {
       [BLOCKS.EMBEDDED_ASSET]: (node, children) => {
-        return image !== "" ? (
-          <Image
-            src={`https:${node.data.target.fields.file.url}`}
-            height={node.data.target.fields.file.details.image.height}
-            width={node.data.target.fields.file.details.image.width}
-            alt="Some Image"
-            priority={true}
-          />
-        ) : (
-          <span></span>
-        );
+        const web = node.data.target.fields.file.url;
+        const res = web.substr(web.length - 3);
+        if (res === "pdf") {
+          return (
+            <div>
+              <iframe
+                id="ytplayer"
+                src={`https:${node.data.target.fields.file.url}`}
+                type="text/html"
+                width="100%"
+                height="1050"
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture ; fullscreen"
+              ></iframe>
+            </div>
+          );
+          // return `https:${node.data.target.fields.file.url}`;
+        } else {
+          return image !== "" ? (
+            <Image
+              src={`https:${node.data.target.fields.file.url}`}
+              height={node.data.target.fields.file.details.image.height}
+              width={node.data.target.fields.file.details.image.width}
+              alt="Some Image"
+              priority={true}
+            />
+          ) : (
+            <span></span>
+          );
+        }
       },
       [BLOCKS.EMBEDDED_ENTRY]: (node, children) => {
         if (node.data.target.fields.length !== 0) {
