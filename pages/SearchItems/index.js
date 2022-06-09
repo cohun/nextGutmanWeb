@@ -37,7 +37,7 @@ const SearchTerms = (props) => {
     ? (resFiltered = props.searchItems.filter(
         (item) => item.fields.search === term.toLowerCase()
       ))
-    : console.log("No!");
+    : console.log("No");
 
   resFiltered.length >= 1
     ? (refArray = resFiltered[0].fields.references)
