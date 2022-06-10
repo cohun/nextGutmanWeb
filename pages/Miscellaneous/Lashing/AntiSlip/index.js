@@ -8,11 +8,13 @@ export async function getStaticProps(context) {
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   });
-  const res = await client.getEntries({ content_type: "productTable" });
+  const res = await client.getEntries({
+    content_type: "productTable",
+  });
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === "A.21."
+    (item) => item.fields.productGroupId === "D.15."
   );
 
   return {
@@ -22,12 +24,12 @@ export async function getStaticProps(context) {
   };
 }
 
-function ElectricHoist({ type }) {
+function AntiSlip({ type }) {
   return (
     <div>
       <Head>
-        <title>Electric hoist</title>
-        <meta name="description" content="Electric hoist" />
+        <title>Anti-slip Mats</title>
+        <meta name="description" content="Anti-slip mats" />
       </Head>
 
       <section className="pt-6"></section>
@@ -43,23 +45,18 @@ function ElectricHoist({ type }) {
               </Link>
             </li>
             <li>
-              <Link href="/LiftingEquipment" passHref>
-                <div className="has-text-grey px-3">Lifting Equipment</div>
+              <Link href="/Miscellaneous" passHref>
+                <div className="has-text-grey px-3">Miscellaneous</div>
               </Link>
             </li>
             <li>
-              <Link href="/LiftingEquipment/PoweredLiftingEquipment" passHref>
-                <div className="has-text-grey px-3">
-                  Powered Lifting Equipment
-                </div>
+              <Link href="/Miscellaneous/Lashing" passHref>
+                <div className="has-text-grey px-3">Lashing</div>
               </Link>
             </li>
             <li>
-              <Link
-                href="/LiftingEquipment/PoweredLiftingEquipment/ElectricHoist"
-                passHref
-              >
-                <div className="has-text-grey px-3">Electric Hoists</div>
+              <Link href="/Miscellaneous/Lashing/AntiSlip" passHref>
+                <div className="is-active px-3">AntiSlip</div>
               </Link>
             </li>
           </ul>
@@ -71,4 +68,4 @@ function ElectricHoist({ type }) {
   );
 }
 
-export default ElectricHoist;
+export default AntiSlip;

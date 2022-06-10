@@ -11,7 +11,6 @@ export async function getStaticProps(context) {
   const res = await client.getEntries({
     content_type: "productTable",
   });
-  console.log(res.items);
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
