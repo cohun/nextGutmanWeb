@@ -10,6 +10,7 @@ export async function getStaticProps(context) {
   });
   const res = await client.getEntries({
     content_type: 'productTable',
+    'fields.productGroupId[all]': 'A.11.',
   });
 
   // Here A.411. must be changed according to the actual productGroup
