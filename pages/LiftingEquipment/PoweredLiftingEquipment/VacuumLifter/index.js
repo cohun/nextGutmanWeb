@@ -39,7 +39,7 @@ const VacuumLifter = () => {
                 href="/LiftingEquipment/PoweredLiftingEquipment/VacuumLifter"
                 passHref
               >
-                <div className="is-active px-3">Vacuum Lifter</div>
+                <div className="tag is-active px-3 is-info">Vacuum Lifter</div>
               </Link>
             </li>
           </ul>

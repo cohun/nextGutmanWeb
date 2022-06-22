@@ -23,7 +23,9 @@ const MaterialHandling = () => {
             </li>
             <li>
               <Link href="/MaterialHandling" passHref>
-                <div className="px-3 is-active">Material Handling</div>
+                <div className="tag is-active px-3 is-info">
+                  Material Handling
+                </div>
               </Link>
             </li>
           </ul>

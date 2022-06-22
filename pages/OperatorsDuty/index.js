@@ -19,7 +19,9 @@ const OperatorsDuty = () => {
 
             <li>
               <Link href="/OperatorsDuty" passHref>
-                <div className="is-active px-3">Operators Duty Service</div>
+                <div className="tag is-active px-3 is-info">
+                  Operators Duty Service
+                </div>
               </Link>
             </li>
           </ul>

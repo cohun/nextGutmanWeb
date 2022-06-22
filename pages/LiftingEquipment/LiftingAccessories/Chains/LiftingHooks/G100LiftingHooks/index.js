@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Table from "../../../../../components/Table";
+import Table from "../../../../../../components/Table";
 import Head from "next/head";
 import { createClient } from "contentful";
 
@@ -10,12 +10,12 @@ export async function getStaticProps(context) {
   });
   const res = await client.getEntries({
     content_type: "productTable",
-    "fields.productGroupId[all]": "A.412.",
+    "fields.productGroupId[all]": "A.4232.",
   });
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === "A.412."
+    (item) => item.fields.productGroupId === "A.4232."
   );
 
   return {
@@ -25,12 +25,12 @@ export async function getStaticProps(context) {
   };
 }
 
-function WebbingSling({ type }) {
+function G100LiftingHooks({ type }) {
   return (
     <div>
       <Head>
-        <title>Gutman webbing slings</title>
-        <meta name="description" content="Gutman polyester webbing slings" />
+        <title>G100 Master Lifting Hooks</title>
+        <meta name="description" content="G100 Lifting Hooks" />
       </Head>
 
       <section className="pt-6"></section>
@@ -56,19 +56,26 @@ function WebbingSling({ type }) {
               </Link>
             </li>
             <li>
-              <Link
-                href="/LiftingEquipment/LiftingAccessories/TextileSlings"
-                passHref
-              >
-                <div className="has-text-grey px-3">Textile Slings</div>
+              <Link href="/LiftingEquipment/LiftingAccessories/Chains" passHref>
+                <div className="has-text-grey px-3">Chains</div>
               </Link>
             </li>
             <li>
               <Link
-                href="/LiftingEquipment/LiftingAccessories/TextileSlings/RoundSling"
+                href="/LiftingEquipment/LiftingAccessories/Chains/LiftingHooks"
                 passHref
               >
-                <div className="tag is-active px-3 is-info">Webbing Slings</div>
+                <div className="has-text-grey px-3">LiftingHooks</div>
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/LiftingEquipment/LiftingAccessories/Chains/LiftingHooks/G80LiftingHooks"
+                passHref
+              >
+                <div className="tag is-active px-3 is-info">
+                  G100 LiftingHooks
+                </div>
               </Link>
             </li>
           </ul>
@@ -80,4 +87,4 @@ function WebbingSling({ type }) {
   );
 }
 
-export default WebbingSling;
+export default G100LiftingHooks;

@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Table from '../../../../components/Table';
-import Head from 'next/head';
-import { createClient } from 'contentful';
+import Link from "next/link";
+import Table from "../../../../components/Table";
+import Head from "next/head";
+import { createClient } from "contentful";
 
 export async function getStaticProps(context) {
   const client = createClient({
@@ -9,13 +9,13 @@ export async function getStaticProps(context) {
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   });
   const res = await client.getEntries({
-    content_type: 'productTable',
-    'fields.productGroupId[all]': 'A.35.',
+    content_type: "productTable",
+    "fields.productGroupId[all]": "A.35.",
   });
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === 'A.35.'
+    (item) => item.fields.productGroupId === "A.35."
   );
 
   return {
@@ -62,7 +62,9 @@ function PulleyWinches({ type }) {
                 href="/LiftingEquipment/ManualLiftingEquipment/PulleyWinches"
                 passHref
               >
-                <div className="is-active px-3">Pulleys & Winches</div>
+                <div className="tag is-active px-3 is-info">
+                  Pulleys & Winches
+                </div>
               </Link>
             </li>
           </ul>

@@ -18,7 +18,7 @@ const Miscellaneous = () => {
             </li>
             <li>
               <Link href="/Miscellaneous" passHref>
-                <div className="px-3 is-active">Miscellaneous</div>
+                <div className="tag is-active px-3 is-info">Miscellaneous</div>
               </Link>
             </li>
           </ul>

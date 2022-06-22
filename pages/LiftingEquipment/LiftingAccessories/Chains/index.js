@@ -33,7 +33,7 @@ const Chains = () => {
             </li>
             <li>
               <Link href="/LiftingEquipment/LiftingAccessories/Chains" passHref>
-                <div className="is-active px-3">Chains</div>
+                <div className="tag is-active px-3 is-info">Chains</div>
               </Link>
             </li>
           </ul>
@@ -85,7 +85,7 @@ const Chains = () => {
                       <Image
                         width={165}
                         height={165}
-                        src="/A.4221.-MasterLinks.jpg"
+                        src="/A.422.-master.jpg"
                         alt="Lifing accessories"
                       />
                     </div>
@@ -110,7 +110,7 @@ const Chains = () => {
                       <Image
                         width={165}
                         height={165}
-                        src="/A.4222.-LiftingHooks.jpg"
+                        src="/A.423.-hook.jpg"
                         alt="Lifing accessories"
                       />
                     </div>

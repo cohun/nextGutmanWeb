@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Table from '../../../../../components/Table';
-import Head from 'next/head';
-import { createClient } from 'contentful';
+import Link from "next/link";
+import Table from "../../../../../components/Table";
+import Head from "next/head";
+import { createClient } from "contentful";
 
 export async function getStaticProps(context) {
   const client = createClient({
@@ -9,13 +9,13 @@ export async function getStaticProps(context) {
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   });
   const res = await client.getEntries({
-    content_type: 'productTable',
-    'fields.productGroupId[all]': 'A.414.',
+    content_type: "productTable",
+    "fields.productGroupId[all]": "A.414.",
   });
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === 'A.414.'
+    (item) => item.fields.productGroupId === "A.414."
   );
 
   return {
@@ -68,7 +68,7 @@ function FibreRope({ type }) {
                 href="/LiftingEquipment/LiftingAccessories/TextileSlings/RoundSling"
                 passHref
               >
-                <div className="is-active px-3">Fibre ropes</div>
+                <div className="tag is-active px-3 is-info">Fibre ropes</div>
               </Link>
             </li>
           </ul>

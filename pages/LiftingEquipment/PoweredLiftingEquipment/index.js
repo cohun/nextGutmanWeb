@@ -29,7 +29,9 @@ const PoweredLiftingEquipment = () => {
             </li>
             <li>
               <Link href="/LiftingEquipment/PoweredLiftingEquipment">
-                <a className="has-text-grey">Powered Lifting Equipment</a>
+                <a className="tag is-active px-3 is-info">
+                  Powered Lifting Equipment
+                </a>
               </Link>
             </li>
           </ul>
@@ -134,7 +136,7 @@ const PoweredLiftingEquipment = () => {
             </div>
 
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/Miscellaneous">
+              <Link href="/LiftingEquipment/PoweredLiftingEquipment/AirHoist">
                 <a>
                   <div className="card">
                     <div className="card-header">

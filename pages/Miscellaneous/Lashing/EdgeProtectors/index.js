@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Table from '../../../../components/Table';
-import Head from 'next/head';
-import { createClient } from 'contentful';
+import Link from "next/link";
+import Table from "../../../../components/Table";
+import Head from "next/head";
+import { createClient } from "contentful";
 
 export async function getStaticProps(context) {
   const client = createClient({
@@ -9,13 +9,13 @@ export async function getStaticProps(context) {
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   });
   const res = await client.getEntries({
-    content_type: 'productTable',
-    'fields.productGroupId[all]': 'D.13.',
+    content_type: "productTable",
+    "fields.productGroupId[all]": "D.13.",
   });
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === 'D.13.'
+    (item) => item.fields.productGroupId === "D.13."
   );
 
   return {
@@ -57,7 +57,7 @@ function EdgeProtectors({ type }) {
             </li>
             <li>
               <Link href="/Miscellaneous/Lashing/EdgeProtectors" passHref>
-                <div className="is-active px-3">EdgeProtectors</div>
+                <div className="tag is-active px-3 is-info">EdgeProtectors</div>
               </Link>
             </li>
           </ul>

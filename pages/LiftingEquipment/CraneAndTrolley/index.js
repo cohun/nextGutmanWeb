@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 const LiftingEquipment = () => {
   return (
@@ -23,7 +23,7 @@ const LiftingEquipment = () => {
             </li>
             <li>
               <Link href="/LiftingEquipment/CraneAndTrolley">
-                <a className="has-text-grey">Crane and Trolley</a>
+                <a className="tag is-active px-3 is-info">Crane and Trolley</a>
               </Link>
             </li>
           </ul>
