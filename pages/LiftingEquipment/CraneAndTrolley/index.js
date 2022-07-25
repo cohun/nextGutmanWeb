@@ -151,7 +151,7 @@ const LiftingEquipment = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/Miscellaneous">
+              <Link href="/LiftingEquipment/CraneAndTrolley/LightCrane">
                 <a>
                   <div className="card">
                     <div className="card-header">
@@ -180,7 +180,7 @@ const LiftingEquipment = () => {
               </Link>
             </div>
             <div className="column is-12-mobile is-6-tablet is-3-widescreen">
-              <Link href="/Miscellaneous">
+              <Link href="/LiftingEquipment/CraneAndTrolley/Components">
                 <a>
                   <div className="card">
                     <div className="card-header">
