@@ -10,12 +10,12 @@ export async function getStaticProps(context) {
   });
   const res = await client.getEntries({
     content_type: "productTable",
-    "fields.productGroupId[all]": "A.15.",
+    "fields.productGroupId[all]": "A.12.",
   });
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === "A.15."
+    (item) => item.fields.productGroupId === "A.12."
   );
 
   return {
@@ -25,12 +25,12 @@ export async function getStaticProps(context) {
   };
 }
 
-function LightCrane({ type }) {
+function GantryCrane({ type }) {
   return (
     <div>
       <Head>
-        <title>Gutman LightCranes</title>
-        <meta name="description" content="Gutman LightCranes" />
+        <title>Gutman GantryCranes</title>
+        <meta name="description" content="Gutman GantryCranes" />
       </Head>
 
       <section className="pt-6"></section>
@@ -57,10 +57,10 @@ function LightCrane({ type }) {
             </li>
             <li>
               <Link
-                href="/LiftingEquipment/CraneAndTrolley/LightCrane"
+                href="/LiftingEquipment/CraneAndTrolley/GantryCrane"
                 passHref
               >
-                <div className="tag is-active px-3 is-info">LightCranes</div>
+                <div className="tag is-active px-3 is-info">GantryCranes</div>
               </Link>
             </li>
           </ul>
@@ -72,4 +72,4 @@ function LightCrane({ type }) {
   );
 }
 
-export default LightCrane;
+export default GantryCrane;

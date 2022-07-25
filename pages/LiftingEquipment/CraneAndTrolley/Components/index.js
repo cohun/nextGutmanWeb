@@ -56,7 +56,10 @@ function Components({ type }) {
               </Link>
             </li>
             <li>
-              <Link href="/LiftingEquipment/CraneAndTrolley/JibCranes" passHref>
+              <Link
+                href="/LiftingEquipment/CraneAndTrolley/Components"
+                passHref
+              >
                 <div className="tag is-active px-3 is-info">
                   CraneComponents
                 </div>
