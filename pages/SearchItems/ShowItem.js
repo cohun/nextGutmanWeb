@@ -12,6 +12,7 @@ export async function getServerSideProps(context) {
   });
   const res = await client.getEntries({
     content_type: "productTable",
+    "fields.productGroupId[all]": productGroupId,
   });
 
   const resFiltered = res.items.filter(

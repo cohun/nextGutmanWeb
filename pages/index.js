@@ -22,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="pt-6"></section>
-      <section className="pt-4 pb-0">
+      <section className="pt-4 pb-0 mr-2">
         <nav
           className="breadcrumb is-right has-arrow-separator"
           aria-label="breadcrumbs"
