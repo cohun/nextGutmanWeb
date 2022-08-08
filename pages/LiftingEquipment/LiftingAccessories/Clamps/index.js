@@ -61,10 +61,15 @@ const Clamps = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        Grade 80 chain components are designed for Chain Slings
-                        for industrial lifting applications. It is made from
-                        alloy steel, hardened and tempered. It has a high
-                        resistance to impact and meets critical requirements.
+                        Standard lifting clamps used in general lifting
+                        applications. Suitable for lifting steel plates and
+                        structures. Gutman lifting clamps are user-friendly,
+                        safe and have a long lifespan courtesy of their solid,
+                        premium-quality steel construction. All Gutman lifting
+                        clamps are tested to up to twice the maximum load
+                        capacity and comply with all standards and regulations,
+                        such as European standard EN 13155, and European
+                        Machinery Directive 2006/42/EC.
                       </div>
                     </div>
                   </div>
@@ -88,11 +93,48 @@ const Clamps = () => {
                     </div>
                     <div className="card-content">
                       <div className="content">
-                        G100 chain components are European manufactured,
-                        generally used for Chain Slings with 25% higher lifting
-                        capacity than G80. Manufactured from hardened and
-                        tempered alloy steels and has a high resistance to
-                        impact and wear to meet critical requirements.
+                        Lifting clamps are used in general lifting applications
+                        and are compatible with a wide array of designs, loads
+                        and attachments. Suitable for lifting steel plates and
+                        structures, Pewag lifting clamps are user-friendly, safe
+                        and have a long lifespan courtesy of their solid,
+                        premium-quality steel construction. All Pewag lifting
+                        clamps are tested to up to twice the maximum load
+                        capacity and comply with all standards and regulations,
+                        such as European standard EN 13155 and European
+                        Machinery Directive 2006/42/EC.
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </Link>
+            </div>
+            <div className="column is-12-mobile is-6-tablet is-3-widescreen">
+              <Link href="/LiftingEquipment/LiftingAccessories/Clamps/DrumClamps">
+                <a>
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">A.443. Drum Clamps</p>
+                    </div>
+                    <div className="card-image has-text-centered pt-6">
+                      <Image
+                        width={165}
+                        height={165}
+                        src="/A.443.drum.jpg"
+                        alt="Lifing accessories"
+                      />
+                    </div>
+                    <div className="card-content">
+                      <div className="content">
+                        Drum clamps are used for lifting drums in different
+                        positions and are compatible with a wide array of
+                        designs, loads. Our drum clamps are user-friendly, safe
+                        and have a long lifespan courtesy of their solid,
+                        premium-quality steel construction. All Pewag drum
+                        clamps are tested to up to twice the maximum load
+                        capacity and comply with all standards and regulations,
+                        such as European standard EN 13155 and European
+                        Machinery Directive 2006/42/EC.
                       </div>
                     </div>
                   </div>
