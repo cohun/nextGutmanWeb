@@ -236,7 +236,7 @@ const LiftingEquipment = () => {
                   <div className="card">
                     <div className="card-header">
                       <p className="card-header-title">
-                        A.47. Lifting Eyes, Connecting Links
+                        A.47. Lifting Eyes, Shackles
                       </p>
                     </div>
                     <div className="card-image has-text-centered pt-6">
