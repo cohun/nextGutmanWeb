@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 const Disributors = () => {
   return (
@@ -31,12 +31,19 @@ const Disributors = () => {
                   <div className="card">
                     <div className="card-header">
                       <div className="card-header-title is-flex-direction-row">
-                        <p className="mr-6 ml-4 is-justify-content-flex-center is-flex-wrap-nowrap">
+                        <p className="mr-2 ml-4 is-justify-content-flex-start is-flex-wrap-nowrap">
                           Hungary
                         </p>
+                        <Image
+                          className="is-justify-content-flex-center"
+                          width={40}
+                          height={40}
+                          src="/hungary.png"
+                          alt="Flag"
+                        />
 
                         <Image
-                          className="is-justify-content-flex-end"
+                          className="is-justify-content-flex-end pl-4"
                           width={100}
                           height={40}
                           src="/H-ITBLogo.jpg"
@@ -74,12 +81,19 @@ const Disributors = () => {
                   <div className="card">
                     <div className="card-header">
                       <div className="card-header-title is-flex-direction-row">
-                        <p className="mr-6 ml-4 is-justify-content-flex-center is-flex-wrap-nowrap">
+                        <p className="mr-2 ml-4 is-justify-content-flex-center is-flex-wrap-nowrap">
                           Romania
                         </p>
+                        <Image
+                          className="is-justify-content-flex-center"
+                          width={40}
+                          height={40}
+                          src="/romania.png"
+                          alt="Flag"
+                        />
 
                         <Image
-                          className="is-justify-content-flex-end"
+                          className="is-justify-content-flex-end pl-4"
                           width={160}
                           height={40}
                           src="/alfa.jpg"
@@ -117,12 +131,19 @@ const Disributors = () => {
                   <div className="card">
                     <div className="card-header">
                       <div className="card-header-title is-flex-direction-row">
-                        <p className="mr-6 ml-4 is-justify-content-flex-center is-flex-wrap-nowrap">
+                        <p className="mr-2 ml-4 is-justify-content-flex-center is-flex-wrap-nowrap">
                           Slovakia
                         </p>
+                        <Image
+                          className="is-justify-content-flex-center"
+                          width={40}
+                          height={40}
+                          src="/slovakia.png"
+                          alt="Flag"
+                        />
 
                         <Image
-                          className="is-justify-content-flex-end"
+                          className="is-justify-content-flex-end pl-4"
                           width={128}
                           height={38}
                           src="/Gutman_Dizalica.png"
@@ -160,12 +181,19 @@ const Disributors = () => {
                   <div className="card">
                     <div className="card-header">
                       <div className="card-header-title is-flex-direction-row">
-                        <p className="mr-6 ml-4 is-justify-content-flex-center is-flex-wrap-nowrap">
+                        <p className="mr-2 ml-4 is-justify-content-flex-center is-flex-wrap-nowrap">
                           Serbia
                         </p>
+                        <Image
+                          className="is-justify-content-flex-center"
+                          width={40}
+                          height={40}
+                          src="/serbia.png"
+                          alt="Flag"
+                        />
 
                         <Image
-                          className="is-justify-content-flex-end"
+                          className="is-justify-content-flex-end pl-4"
                           width={128}
                           height={38}
                           src="/Gutman_Dizalica.png"
@@ -201,12 +229,19 @@ const Disributors = () => {
                   <div className="card">
                     <div className="card-header">
                       <div className="card-header-title is-flex-direction-row">
-                        <p className="mr-6 ml-4 is-justify-content-flex-center is-flex-wrap-nowrap">
+                        <p className="mr-2 ml-4 is-justify-content-flex-center is-flex-wrap-nowrap">
                           Croatia
                         </p>
+                        <Image
+                          className="is-justify-content-flex-center"
+                          width={40}
+                          height={40}
+                          src="/croatia.png"
+                          alt="Flag"
+                        />
 
                         <Image
-                          className="is-justify-content-flex-end"
+                          className="is-justify-content-flex-end pl-4"
                           width={128}
                           height={38}
                           src="/Gutman_Dizalica.png"
