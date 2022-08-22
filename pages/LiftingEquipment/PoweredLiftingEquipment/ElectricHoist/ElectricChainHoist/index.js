@@ -10,12 +10,12 @@ export async function getStaticProps(context) {
   });
   const res = await client.getEntries({
     content_type: "productTable",
-    "fields.productGroupId[all]": "A.21.",
+    "fields.productGroupId[all]": "A.211.",
   });
 
   // Here A.411. must be changed according to the actual productGroup
   const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === "A.21."
+    (item) => item.fields.productGroupId === "A.211."
   );
 
   return {
