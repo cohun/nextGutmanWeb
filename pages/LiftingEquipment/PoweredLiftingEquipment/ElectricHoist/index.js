@@ -1,38 +1,15 @@
+import Image from "next/image";
 import Link from "next/link";
-import Table from "../../../../components/Table";
 import Head from "next/head";
-import { createClient } from "contentful";
 
-export async function getStaticProps(context) {
-  const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
-  });
-  const res = await client.getEntries({
-    content_type: "productTable",
-    "fields.productGroupId[all]": "A.21.",
-  });
-
-  // Here A.411. must be changed according to the actual productGroup
-  const resFiltered = res.items.filter(
-    (item) => item.fields.productGroupId === "A.21."
-  );
-
-  return {
-    props: {
-      type: resFiltered,
-    },
-  };
-}
-
-function ElectricHoist({ type }) {
+const ElectricHoist = () => {
   return (
     <div>
       <Head>
-        <title>Electric hoist</title>
-        <meta name="description" content="Electric hoist" />
+        <title>Electric Hoists</title>
+        <meta name="description" content="Electric Hoists" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <section className="pt-6"></section>
       <section className="pt-4 pb-0">
         <nav
@@ -70,10 +47,99 @@ function ElectricHoist({ type }) {
           </ul>
         </nav>
       </section>
-
-      <Table type={type} />
+      <section className="section mb-6">
+        <div className="container mb-6">
+          <h3 className="title has-text-centered is-size-3">Electric Hoists</h3>
+          <br />
+          <div className="columns is-multiline">
+            <div className="column is-12-mobile is-6-tablet is-3-widescreen">
+              <Link href="/LiftingEquipment/PoweredLiftingEquipment/ElectricHoist/ElectricChainHoist">
+                <a>
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">
+                        A.211. Electric Chain Hoist
+                      </p>
+                    </div>
+                    <div className="card-image has-text-centered pt-6">
+                      <Image
+                        width={165}
+                        height={165}
+                        src="/A.21.-Electric-hoists_T.jpg"
+                        alt="Lifing accessories"
+                      />
+                    </div>
+                    <div className="card-content">
+                      <div className="content">
+                        An electric chain hoist is designed so that the chain
+                        passes over a pocketed wheel, the slack chain may hang
+                        freely or be stored in a chain collecting box. they can
+                        be combined with trolleys.
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </Link>
+            </div>
+            <div className="column is-12-mobile is-6-tablet is-3-widescreen">
+              <Link href="/LiftingEquipment/PoweredLiftingEquipment/ElectricHoist/ElectricWireRopeHoist">
+                <a>
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">
+                        A.212. Electric Wire Rope Hoist
+                      </p>
+                    </div>
+                    <div className="card-image has-text-centered pt-6">
+                      <Image
+                        width={165}
+                        height={165}
+                        src="/A.212.ElectricWireRopeHoist.jpg"
+                        alt="Lifing accessories"
+                      />
+                    </div>
+                    <div className="card-content">
+                      <div className="content">
+                        An electric wire rope hoist is designed so that the wire
+                        rope winds on and off a drum upon it is stored. The
+                        hoist may be combined with travelling trolleys.
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </Link>
+            </div>
+            <div className="column is-12-mobile is-6-tablet is-3-widescreen">
+              <Link href="/LiftingEquipment/PoweredLiftingEquipment/ElectricHoist/ElectricWinch">
+                <a>
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">A.213. Electric Winch</p>
+                    </div>
+                    <div className="card-image has-text-centered pt-6">
+                      <Image
+                        width={165}
+                        height={165}
+                        src="/A.213.ElectricWinches.jpg"
+                        alt="Lifing accessories"
+                      />
+                    </div>
+                    <div className="card-content">
+                      <div className="content">
+                        Winches provide a winding mechanism which may be fitted
+                        or built into structure to enable loads to be moved from
+                        one position to another.
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
-}
+};
 
 export default ElectricHoist;
